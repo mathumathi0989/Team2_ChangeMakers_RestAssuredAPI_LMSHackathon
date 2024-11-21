@@ -1,6 +1,6 @@
-[INFO ]2024-11-2107:16:25.719-Executing setup code...
-[INFO ]2024-11-2107:16:25.803-===============================================================================================
-[INFO ]2024-11-2107:16:25.803-[@GetAllPrograms] : Check if Admin able to retrieve all programs with valid Endpoint
-[INFO ]2024-11-2107:16:25.804------------------------------------------------------------------------------------------------
-[INFO ]2024-11-2107:16:25.814-Executing some precondition step => Check authentication details
-[INFO ]2024-11-2107:16:25.814-User is authenticated!!!
+[INFO ]2024-11-2107:32:42.204-Executing setup code...
+[INFO ]2024-11-2107:32:42.275-===============================================================================================
+[INFO ]2024-11-2107:32:42.275-[@GetAllPrograms] : Check if Admin able to retrieve all programs with valid Endpoint
+[INFO ]2024-11-2107:32:42.275------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2107:32:42.280-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2107:32:42.280-User is authenticated!!!

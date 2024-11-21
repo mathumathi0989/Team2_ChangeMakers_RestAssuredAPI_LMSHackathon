@@ -16,7 +16,7 @@ Body:
     "password": "LmsHackathonApi@2024"
 }
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MTM4NSwiZXhwIjoxNzMyMjIwMTg1fQ._fdLl4fhxhYRrVyKa5WPUKBgMGI3m5Fspku6QVXYX_AeS8ZiE7Tg8C0l-PWK5Ll1_MGCPjuuYOSXj3lDTDMS1A",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MjM2MSwiZXhwIjoxNzMyMjIxMTYxfQ.v5m8b7J4Jvy1C2nh9OV2PpC-CGuXgikF4-KbSVF1P-A0JM1ja3tq1AoejKe4KonelupQN31wJBtwtln-_q2ZlA",
     "type": "Bearer",
     "userId": "U107",
     "email": "sdet@gmail.com",
@@ -33,7 +33,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MTM4NSwiZXhwIjoxNzMyMjIwMTg1fQ._fdLl4fhxhYRrVyKa5WPUKBgMGI3m5Fspku6QVXYX_AeS8ZiE7Tg8C0l-PWK5Ll1_MGCPjuuYOSXj3lDTDMS1A
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MjM2MSwiZXhwIjoxNzMyMjIxMTYxfQ.v5m8b7J4Jvy1C2nh9OV2PpC-CGuXgikF4-KbSVF1P-A0JM1ja3tq1AoejKe4KonelupQN31wJBtwtln-_q2ZlA
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
