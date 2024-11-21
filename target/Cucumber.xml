@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="18.275" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="ProgramModule : positive flow" name="Check if Admin able to retrieve all programs with valid Endpoint" time="0.209">
+<system-out><![CDATA[
+Given Admin provides valid authentication details...........................passed
+When Admin creates and executes GET all program Request for the LMS API.....passed
+Then Admin receives 200 OK Status with program response body................passed
+]]></system-out>
+</testcase>
+</testsuite>

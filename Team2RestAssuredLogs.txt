@@ -1,0 +1,427 @@
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MTM4NSwiZXhwIjoxNzMyMjIwMTg1fQ._fdLl4fhxhYRrVyKa5WPUKBgMGI3m5Fspku6QVXYX_AeS8ZiE7Tg8C0l-PWK5Ll1_MGCPjuuYOSXj3lDTDMS1A",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/allPrograms
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjE5MTM4NSwiZXhwIjoxNzMyMjIwMTg1fQ._fdLl4fhxhYRrVyKa5WPUKBgMGI3m5Fspku6QVXYX_AeS8ZiE7Tg8C0l-PWK5Ll1_MGCPjuuYOSXj3lDTDMS1A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "programId": 16209,
+        "programName": "SF",
+        "programDescription": "SalesForce",
+        "programStatus": "Active",
+        "creationTime": "2023-11-03T16:38:42.239+00:00",
+        "lastModTime": "2023-12-18T21:38:49.858+00:00"
+    },
+    {
+        "programId": 16220,
+        "programName": "Core Java Program",
+        "programDescription": "Core Java Programming",
+        "programStatus": "Active",
+        "creationTime": "2023-12-21T07:07:32.548+00:00",
+        "lastModTime": "2023-12-21T07:09:22.476+00:00"
+    },
+    {
+        "programId": 16224,
+        "programName": "Micro services",
+        "programDescription": "Micron services for developer",
+        "programStatus": "Active",
+        "creationTime": "2024-04-09T00:41:46.395+00:00",
+        "lastModTime": "2024-04-09T00:42:06.894+00:00"
+    },
+    {
+        "programId": 16225,
+        "programName": "Java SpringBoot",
+        "programDescription": "For Developers",
+        "programStatus": "Inactive",
+        "creationTime": "2024-04-09T02:16:44.088+00:00",
+        "lastModTime": "2024-04-09T02:16:44.088+00:00"
+    },
+    {
+        "programId": 16226,
+        "programName": "JavaLanguage",
+        "programDescription": "For SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-04-09T02:17:24.325+00:00",
+        "lastModTime": "2024-04-09T02:19:05.280+00:00"
+    },
+    {
+        "programId": 16227,
+        "programName": "Test Program",
+        "programDescription": "Sample",
+        "programStatus": "Active",
+        "creationTime": "2024-05-02T16:27:04.878+00:00",
+        "lastModTime": "2024-05-02T16:27:04.878+00:00"
+    },
+    {
+        "programId": 16213,
+        "programName": "Java-Program",
+        "programDescription": "Java-Program",
+        "programStatus": "Active",
+        "creationTime": "2023-12-14T18:36:46.264+00:00",
+        "lastModTime": "2024-06-03T00:36:12.606+00:00"
+    },
+    {
+        "programId": 16228,
+        "programName": "TestChatBot",
+        "programDescription": "testing Creation of Program",
+        "programStatus": "Inactive",
+        "creationTime": "2024-06-18T03:14:13.136+00:00",
+        "lastModTime": "2024-06-18T03:14:13.136+00:00"
+    },
+    {
+        "programId": 16231,
+        "programName": "Java-oops-inheritance",
+        "programDescription": "Java for SDET",
+        "programStatus": "Inactive",
+        "creationTime": "2024-07-02T17:28:47.894+00:00",
+        "lastModTime": "2024-07-02T17:29:23.023+00:00"
+    },
+    {
+        "programId": 16232,
+        "programName": "Inheritance-Java",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:51:49.421+00:00",
+        "lastModTime": "2024-07-02T17:51:49.421+00:00"
+    },
+    {
+        "programId": 16233,
+        "programName": "Inheritance-JavaOOPS",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-03T15:48:25.678+00:00",
+        "lastModTime": "2024-07-03T15:48:25.678+00:00"
+    },
+    {
+        "programId": 16234,
+        "programName": "Inheritance-JavaOOPSconcept",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-06T01:20:45.017+00:00",
+        "lastModTime": "2024-07-06T01:20:45.017+00:00"
+    },
+    {
+        "programId": 16230,
+        "programName": "OOPS-Java",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:21:06.473+00:00",
+        "lastModTime": "2024-07-06T01:21:29.920+00:00"
+    },
+    {
+        "programId": 16229,
+        "programName": "OOPS-Java-Inheritance",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:16:37.779+00:00",
+        "lastModTime": "2024-07-06T01:21:58.513+00:00"
+    },
+    {
+        "programId": 16235,
+        "programName": "SAP",
+        "programDescription": "SAP Basic",
+        "programStatus": "Active",
+        "creationTime": "2024-08-07T16:06:11.732+00:00",
+        "lastModTime": "2024-08-07T16:06:11.732+00:00"
+    },
+    {
+        "programId": 16236,
+        "programName": "ScrumMasterProductOwner",
+        "programDescription": "Professional Training",
+        "programStatus": "Active",
+        "creationTime": "2024-08-07T16:08:49.245+00:00",
+        "lastModTime": "2024-08-07T16:08:49.245+00:00"
+    },
+    {
+        "programId": 16237,
+        "programName": "Testingchatbot",
+        "programDescription": "New tool",
+        "programStatus": "Active",
+        "creationTime": "2024-08-27T18:18:30.802+00:00",
+        "lastModTime": "2024-08-27T18:18:30.802+00:00"
+    },
+    {
+        "programId": 16238,
+        "programName": "Grading",
+        "programDescription": "testinggrading",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T14:43:58.317+00:00",
+        "lastModTime": "2024-09-17T14:43:58.317+00:00"
+    },
+    {
+        "programId": 16239,
+        "programName": "LearnNewTech",
+        "programDescription": "New technology",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T15:27:19.018+00:00",
+        "lastModTime": "2024-09-17T15:27:19.018+00:00"
+    },
+    {
+        "programId": 16240,
+        "programName": "WhyThisProgram",
+        "programDescription": "Checking123",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T16:12:27.229+00:00",
+        "lastModTime": "2024-09-17T16:12:27.229+00:00"
+    },
+    {
+        "programId": 16223,
+        "programName": "DAA",
+        "programDescription": "Basic",
+        "programStatus": "Inactive",
+        "creationTime": "2024-01-12T01:43:03.160+00:00",
+        "lastModTime": "2024-10-03T18:09:07.252+00:00"
+    },
+    {
+        "programId": 16210,
+        "programName": "SMPO",
+        "programDescription": "Scrum Master Product Owner",
+        "programStatus": "Inactive",
+        "creationTime": "2023-11-03T16:39:17.715+00:00",
+        "lastModTime": "2024-10-03T18:11:16.942+00:00"
+    },
+    {
+        "programId": 16242,
+        "programName": "TownandCountry",
+        "programDescription": "Country",
+        "programStatus": "Active",
+        "creationTime": "2024-11-19T16:51:53.399+00:00",
+        "lastModTime": "2024-11-19T16:51:53.399+00:00"
+    },
+    {
+        "programId": 16243,
+        "programName": "Canada",
+        "programDescription": "Country",
+        "programStatus": "Active",
+        "creationTime": "2024-11-19T16:52:36.891+00:00",
+        "lastModTime": "2024-11-19T16:52:36.891+00:00"
+    },
+    {
+        "programId": 16208,
+        "programName": "Updated",
+        "programDescription": "TestUpdated",
+        "programStatus": "Inactive",
+        "creationTime": "2023-11-03T16:37:52.985+00:00",
+        "lastModTime": "2024-11-19T16:58:07.187+00:00"
+    },
+    {
+        "programId": 16241,
+        "programName": "SDET",
+        "programDescription": "TestProgram",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-19T16:18:16.362+00:00",
+        "lastModTime": "2024-11-19T16:59:26.573+00:00"
+    },
+    {
+        "programId": 16244,
+        "programName": "Program-a",
+        "programDescription": "Program Desc",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T04:23:15.001+00:00",
+        "lastModTime": "2024-11-20T04:42:14.537+00:00"
+    },
+    {
+        "programId": 16253,
+        "programName": "TeamProg",
+        "programDescription": "Team3Prog1",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T11:58:25.886+00:00",
+        "lastModTime": "2024-11-20T11:58:54.197+00:00"
+    },
+    {
+        "programId": 16245,
+        "programName": "AWS",
+        "programDescription": "Cloud",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T05:21:05.265+00:00",
+        "lastModTime": "2024-11-20T14:00:03.422+00:00"
+    },
+    {
+        "programId": 16246,
+        "programName": "Python",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T05:23:17.120+00:00",
+        "lastModTime": "2024-11-20T14:00:16.570+00:00"
+    },
+    {
+        "programId": 16247,
+        "programName": "pythonabcdefgshiooooooooooooooolllllllll",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T06:47:41.032+00:00",
+        "lastModTime": "2024-11-20T14:00:40.289+00:00"
+    },
+    {
+        "programId": 16252,
+        "programName": "PythonLearning",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T06:58:30.234+00:00",
+        "lastModTime": "2024-11-20T14:01:13.483+00:00"
+    },
+    {
+        "programId": 16254,
+        "programName": "ApiNinjas",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T14:05:06.486+00:00",
+        "lastModTime": "2024-11-20T14:05:06.486+00:00"
+    },
+    {
+        "programId": 16255,
+        "programName": "ApiNinjasProg",
+        "programDescription": "PythonLearning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T14:08:46.194+00:00",
+        "lastModTime": "2024-11-20T14:08:46.194+00:00"
+    },
+    {
+        "programId": 16256,
+        "programName": "ApiNinjasTeam",
+        "programDescription": "AWS Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T14:09:50.135+00:00",
+        "lastModTime": "2024-11-20T14:09:50.135+00:00"
+    },
+    {
+        "programId": 16257,
+        "programName": "JavaProgramMathu",
+        "programDescription": "Java Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T16:17:05.289+00:00",
+        "lastModTime": "2024-11-20T16:18:16.413+00:00"
+    },
+    {
+        "programId": 16258,
+        "programName": "JavaProgramMathum",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T16:25:21.166+00:00",
+        "lastModTime": "2024-11-20T16:25:21.166+00:00"
+    },
+    {
+        "programId": 16259,
+        "programName": "JavaProgramMathuma",
+        "programDescription": "Java Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T16:29:50.613+00:00",
+        "lastModTime": "2024-11-20T16:30:01.739+00:00"
+    },
+    {
+        "programId": 16260,
+        "programName": "JavaProgramathuma",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T16:31:04.421+00:00",
+        "lastModTime": "2024-11-20T16:31:04.421+00:00"
+    },
+    {
+        "programId": 16261,
+        "programName": "DanceFifteen",
+        "programDescription": "SpringDanceClass",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T18:00:34.977+00:00",
+        "lastModTime": "2024-11-20T18:00:42.475+00:00"
+    },
+    {
+        "programId": 16262,
+        "programName": "TestingBUG",
+        "programDescription": null,
+        "programStatus": "Active",
+        "creationTime": "2024-11-21T01:25:44.830+00:00",
+        "lastModTime": "2024-11-21T01:25:44.830+00:00"
+    },
+    {
+        "programId": 16263,
+        "programName": "Program-b",
+        "programDescription": null,
+        "programStatus": "Active",
+        "creationTime": "2024-11-21T01:42:20.615+00:00",
+        "lastModTime": "2024-11-21T01:42:20.615+00:00"
+    },
+    {
+        "programId": 16264,
+        "programName": "Program-c",
+        "programDescription": "Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T03:47:52.144+00:00",
+        "lastModTime": "2024-11-21T03:51:24.195+00:00"
+    },
+    {
+        "programId": 16265,
+        "programName": "Program-y",
+        "programDescription": "Program Desc abc",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:13:03.816+00:00",
+        "lastModTime": "2024-11-21T04:14:01.363+00:00"
+    },
+    {
+        "programId": 16266,
+        "programName": "Data",
+        "programDescription": "Data Analytics",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:49:03.278+00:00",
+        "lastModTime": "2024-11-21T04:50:08.639+00:00"
+    },
+    {
+        "programId": 16267,
+        "programName": "Teaching",
+        "programDescription": "Data Analytics",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:49:03.614+00:00",
+        "lastModTime": "2024-11-21T04:50:21.485+00:00"
+    },
+    {
+        "programId": 16268,
+        "programName": "DataA",
+        "programDescription": "DataScience",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T05:08:00.142+00:00",
+        "lastModTime": "2024-11-21T05:56:36.286+00:00"
+    },
+    {
+        "programId": 16269,
+        "programName": "TeachingZ",
+        "programDescription": "DataScience",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T05:08:00.491+00:00",
+        "lastModTime": "2024-11-21T05:56:50.340+00:00"
+    }
+]
