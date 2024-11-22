@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.647 s <<< FAILURE! -- in TestSuite
+apiRunner.TestRunner.runScenario["Check if admin able to retrieve upcoming classes with invalid studentID", "Class 2 module"](22) -- Time elapsed: 0.213 s <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
+	at stepDefinitions.class2Steps.admin_receives_status_for_getUpcomingClasses(class2Steps.java:313)
+	at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:116)
+
