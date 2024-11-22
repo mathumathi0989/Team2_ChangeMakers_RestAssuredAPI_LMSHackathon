@@ -1,14 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="2.296" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Class 2 module" name="Check if admin able to update a Class with a deleted classID in the endpoint" time="0.188">
+<testsuite name="Cucumber" time="8.778" tests="34" skipped="0" failures="4" errors="0">
+<testcase classname="ProgramModule : positive flow" name="Check if Admin able to retrieve all programs with valid Endpoint" time="0.231">
+<system-out><![CDATA[
+Given Admin provides valid authentication details...........................passed
+When Admin creates and executes GET all program Request for the LMS API.....passed
+Then Admin receives 200 OK Status with program response body................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve all class recording" time="0.271">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with endpoint for getAllRecordings.passed
+Then Admin receives 200 "OK" Status for getAllRecordings....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve all class recording with invalid Endpoint" time="0.229">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getAllRecordings.passed
+Then Admin receives 404 "Not Found" Status for getAllRecordings.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve all class recording with invalid method" time="0.208">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getAllRecordings.passed
+Then Admin receives 405 "Method Not Allowed" Status for getAllRecordings....passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve all class recording without Authorization" time="0.155">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getAllRecordings.passed
+Then Admin receives 401 "Unauthorized" Status for getAllRecordings..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording  with valid Batchid" time="0.214">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with endpoint for getClassRecordingsByBatchID.passed
+Then Admin receives 200 "OK" Status for getClassRecordingsByBatchID.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording with invalid Batchid" time="0.123">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassRecordingsByBatchID.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByBatchID..passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid Endpoint" time="0.138">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassRecordingsByBatchID.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByBatchID..passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid method" time="0.203">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByBatchID.passed
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByBatchID.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording without Authorization" time="0.147">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassRecordingsByBatchID.passed
+Then Admin receives 401 "Unauthorized" Status for getClassRecordingsByBatchID.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording  with valid ClassID" time="0.121">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with endpoint for getClassRecordingsByClassID.passed
+Then Admin receives 200 "OK" Status for getClassRecordingsByClassID.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording with invalid ClassID" time="0.098">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassRecordingsByClassID.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID..passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid Endpoint" time="0.155">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassRecordingsByClassID.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID..passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid method" time="0.188">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID.passed
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByClassID.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording without Authorization" time="0.173">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassRecordingsByClassID.passed
+Then Admin receives 401 "Unauthorized" Status for getClassRecordingsByClassID.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording  with valid ClassID" time="0.232">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with endpoint for getClassRecordingsByClassID2.passed
+Then Admin receives 200 "OK" Status for getClassRecordingsByClassID2........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording with invalid ClassID" time="0.139">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassRecordingsByClassID2.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID2.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid Endpoint" time="0.204">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassRecordingsByClassID2.passed
+Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID2.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve class recording with invalid method" time="0.129">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID2.passed
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByClassID2.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve  class recording without Authorization" time="0.192">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassRecordingsByClassID2.passed
+Then Admin receives 401 "Unauthorized" Status for getClassRecordingsByClassID2.passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve upcoming classes with valid studentID" time="0.54">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with endpoint for getUpcomingClasses.passed
+Then Admin receives 200 "OK" Status for getUpcomingClasses..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve upcoming classes with invalid studentID" time="0.186">
 <failure type="java.lang.AssertionError" message="expected [404] but found [200]">
 <![CDATA[java.lang.AssertionError: expected [404] but found [200]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
+	at stepDefinitions.class2Steps.admin_receives_status_for_getUpcomingClasses(class2Steps.java:314)
+	at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:116)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid studentID for getUpcomingClasses.passed
+Then Admin receives 404 "Not Found" Status for getUpcomingClasses...........failed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve upcoming classes with invalid Endpoint" time="0.26">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getUpcomingClasses.passed
+Then Admin receives 404 "Not Found" Status for getUpcomingClasses...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve upcoming classes with invalid method" time="0.172">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getUpcomingClasses.passed
+Then Admin receives 405 "Method Not Allowed" Status for getUpcomingClasses..passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to retrieve upcoming classes without Authorization" time="0.158">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getUpcomingClasses.passed
+Then Admin receives 401 "Unauthorized" Status for getUpcomingClasses........passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a class with valid ClassID and all fields in requestBody" time="0.172">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields for updateClass.passed
+Then Admin receives 200 "OK" Status for updateClass.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a class with valid classID and mandatory fields in request body without authorization" time="0.151">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields without Auth for updateClass.passed
+Then Admin receives 401 "Unauthorized" Status for updateClass...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with valid classID and mandatory fields in request body" time="0.187">
+<failure type="java.lang.AssertionError" message="expected [401] but found [400]">
+<![CDATA[java.lang.AssertionError: expected [401] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
+	at stepDefinitions.class2Steps.admin_receives_status_for_updateClass(class2Steps.java:397)
+	at ✽.Admin receives 401 "Unauthorized" Status for updateClass(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:147)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and mandatory fields for updateClass.passed
+Then Admin receives 401 "Unauthorized" Status for updateClass...............failed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with invalid ClassID and mandatory fields in request body" time="0.168">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with invalid classId and mandatory fields for updateClass.passed
+Then Admin receives 404 "Not Found" Status for updateClass..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with valid ClassID and missing mandatory fields request body" time="0.217">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and missing mandatory fields for updateClass.passed
+Then Admin receives 400 "Bad Request" Status for updateClass................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with invalid data" time="0.191">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and invalid data for updateClass.passed
+Then Admin receives 400 "Bad Request" Status for updateClass................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with invalid enpoint" time="0.158">
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and invalid endpoint for updateClass.passed
+Then Admin receives 404 "Not Found" Status for updateClass..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields" time="0.202">
+<failure type="java.lang.AssertionError" message="expected [400] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
+	at stepDefinitions.class2Steps.admin_receives_status_for_updateClass(class2Steps.java:397)
+	at ✽.Admin receives 400 "Bad Request" Status for updateClass(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:172)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin sets Authorization for class module.............................passed
+When Admin creates PUT Request and sends HTTPS Request with valid classId and deleted batchID for updateClass.passed
+Then Admin receives 400 "Bad Request" Status for updateClass................failed
+]]></system-out>
+</testcase>
+<testcase classname="Class 2 module" name="Check if admin able to update a Class with a deleted classID in the endpoint" time="0.268">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
 	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
 	at stepDefinitions.class2Steps.admin_receives_status_for_updateClass(class2Steps.java:397)
 	at ✽.Admin receives 404 "Not Found" Status for updateClass(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:177)

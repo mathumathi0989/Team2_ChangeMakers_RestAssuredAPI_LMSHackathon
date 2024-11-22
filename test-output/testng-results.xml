@@ -1,65 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-22T12:13:27 EST" name="Default suite" finished-at="2024-11-22T12:13:34 EST" duration-ms="7390">
+  <suite started-at="2024-11-22T12:26:00 EST" name="Suite" finished-at="2024-11-22T12:26:04 EST" duration-ms="3581">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@1ffaf86]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-11-22T12:13:27 EST" name="Default test" finished-at="2024-11-22T12:13:34 EST" duration-ms="7390">
+    <test started-at="2024-11-22T12:26:00 EST" name="LMSAPIRestAssuredTest" finished-at="2024-11-22T12:26:04 EST" duration-ms="3581">
       <class name="apiRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:apiRunner.TestRunner@1ffaf86]" started-at="2024-11-22T12:13:27 EST" name="setUpClass" finished-at="2024-11-22T12:13:30 EST" duration-ms="2866" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:apiRunner.TestRunner@1ffaf86]" started-at="2024-11-22T12:26:00 EST" name="setUpClass" finished-at="2024-11-22T12:26:03 EST" duration-ms="2125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@46ab8e4b]]>
+                <![CDATA[org.testng.TestRunner@56a72887]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@1ffaf86]" started-at="2024-11-22T12:13:30 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-22T12:13:30 EST" duration-ms="255" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check if admin able to update a Class with a deleted classID in the endpoint"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Class 2 module"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [404] but found [200]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [404] but found [200]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at org.testng.Assert.assertEquals(Assert.java:917)
-at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
-at stepDefinitions.class2Steps.admin_receives_status_for_updateClass(class2Steps.java:397)
-at ✽.Admin receives 404 "Not Found" Status for updateClass(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:apiRunner.TestRunner@1ffaf86]" started-at="2024-11-22T12:13:30 EST" name="tearDownClass" finished-at="2024-11-22T12:13:34 EST" duration-ms="4228" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:apiRunner.TestRunner@1ffaf86]" started-at="2024-11-22T12:26:03 EST" name="tearDownClass" finished-at="2024-11-22T12:26:04 EST" duration-ms="1444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- apiRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LMSAPIRestAssuredTest -->
+  </suite> <!-- Suite -->
 </testng-results>

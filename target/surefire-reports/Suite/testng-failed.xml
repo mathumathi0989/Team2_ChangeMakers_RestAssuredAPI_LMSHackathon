@@ -6,8 +6,8 @@
       <class name="apiRunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="21"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="32 33 21 27"/>
         </methods>
       </class> <!-- apiRunner.TestRunner -->
     </classes>
