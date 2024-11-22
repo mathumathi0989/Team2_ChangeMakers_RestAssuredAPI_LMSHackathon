@@ -29,6 +29,7 @@ public class class2Steps {
 	private int http_MethodNotAllowed = EnvConstants.http_MethodNotAllowed;
 	private static BaseRequest login;
 	private static BaseRequest getClass2;
+	private static BaseRequest updateClass2;
 	ApiUtils restUtil = new ApiUtils();
 	static String requestBody="";
 	private static boolean isAuthTokenGenerated = false;
@@ -315,4 +316,88 @@ public class class2Steps {
 	    }
 
 
+	   //Update Class step definition
+	    
+	   
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_all_the_fields_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClass(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	    
+	   
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields without Auth for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_all_the_fields_without_auth_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassWithoutAuth(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	  
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and mandatory fields for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_mandatory_fields_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassMandatoryValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	   
+	   @When("Admin creates PUT Request and sends HTTPS Request with invalid classId and mandatory fields for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_invalid_classid_and_mandatory_fields_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassMandatoryInValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and missing mandatory fields for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_missing_mandatory_fields_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassMissingMandatoryValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	   
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and invalid data for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_invalid_data_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassInvalidDataValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	  
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and invalid endpoint for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_invalid_endpoint_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassInvalidEndpointValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+
+	   @When("Admin creates PUT Request and sends HTTPS Request with valid classId and deleted batchID for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_valid_classid_and_deleted_batchid_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassDeletedBatchIDValidClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	  
+	   @When("Admin creates PUT Request and sends HTTPS Request with deleted classId for updateClass")
+	    public void admin_creates_put_request_and_sends_https_request_with_deleted_classid_for_updateclass() {
+		   updateClass2 = class2Actions.setDetailsToUpdateClassDeletedClassID(updateClass2);
+	    	requestSpecs = updateClass2.buildRequest();
+	    	response = requestSpecs.put(updateClass2.getServiceUrl());
+	    }
+	   
+	   
+	   @Then("Admin receives {int} {string} Status for updateClass")
+	    public void admin_receives_status_for_updateClass(Integer statusCode, String statusMessage) {
+	    	restUtil.extractRes(response);
+	    	restUtil.validateStatusCode(response, statusCode);
+	    	restUtil.validateStatusMessage(response, statusMessage);
+	    }
+
+	   
+	   
 }

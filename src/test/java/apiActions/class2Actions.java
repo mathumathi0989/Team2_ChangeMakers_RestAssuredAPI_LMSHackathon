@@ -2,6 +2,7 @@ package apiActions;
 
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
+import generics.DataDrivenTestingUsingJsonFile;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
 import io.restassured.response.Response;
@@ -21,40 +22,7 @@ public class class2Actions {
 	private String updateClass=EnvConstants.endPoint_Updateclass;
 
 	
-///* Set ProgramID value in environment variable to be used by programController requests  */
-//	
-//	public void setProgramID(Response response)  {
-//		int programID = Integer.parseInt(ApiUtils.extractFromResponse(response, "programId"));
-//		System.out.println("programID is "+programID);
-//		System.out.println("Setting programID in Env Variables");
-//		EnvVariables.programID = programID;
-//	}
-//	
-//	/* Set ProgramName value in environment variable to be used by programController requests  */
-//	
-//	public void setProgramName(Response response){
-//		String programNAME = ApiUtils.extractFromResponse(response, "programName");
-//		System.out.println("programName is "+programNAME);
-//		System.out.println("Setting programName in Env Variables");
-//		EnvVariables.programName = programNAME;
-//	}
-//	
-//	/*Get ProgramId from envvariables */
-//	
-//	public int getProgramID() {
-//		int prgmID = EnvVariables.programID;
-//		System.out.println("Reading prgmID from env variables : "+prgmID);
-//		return prgmID;
-//	}
-//	
-//	/*Get ProgramName from envvariables */
-//	
-//	public String getProgramName() {
-//		String prgmName = EnvVariables.programName;
-//		System.out.println("Reading prgmName from env variables : "+prgmName);
-//		return prgmName;
-//	}
-//	
+
 	public static BaseRequest validLogin(BaseRequest login) {
 		login = RequestFactory.setAuthentication(login, "post",EnvConstants.userLoginId,EnvConstants.password, EnvConstants.qaEnvironmentbaseURI);
     	login = RequestFactory.createRequest(login,EnvConstants.jsonContentType,EnvConstants.loginRequestBody,EnvConstants.endPoint_Login,0);
@@ -194,24 +162,66 @@ public class class2Actions {
 			return RequestFactory.createRequest(getClass2UpcomingClasses,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetUpcomingclasses,0);
 		}
 		
-	
-//	
-//	public static BaseRequest setDetailsToCreateProgram(BaseRequest postProgram, String programType) {
-//		postProgram = RequestFactory.setAuthentication(postProgram, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-//    	return RequestFactory.createRequest(postProgram,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetAllPrograms,0);	
-//	}
-//	
-//	public static BaseRequest setDetailsToUpdateProgram(BaseRequest putProgram) {
-//		putProgram = RequestFactory.setAuthentication(putProgram, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-//		return RequestFactory.createRequest(putProgram,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetAllPrograms,0);		
-//	}
-//	
-//	public static BaseRequest setDetailsToDeleteProgram(BaseRequest deleteProgram) {
-//		deleteProgram = RequestFactory.setAuthentication(deleteProgram, "delete",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-//		return RequestFactory.createRequest(deleteProgram,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetAllPrograms,0);		
-//		
-//	}
-	
+		
+		
+		//Update class StepDefinition
+		
+		public static BaseRequest setDetailsToUpdateClass(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDetails");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassWithoutAuth(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put","", EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDetails");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassMandatoryValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassMandatoryInValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/100001",0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassMissingMandatoryValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMissingMandatoryValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassInvalidDataValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassInvalidDataValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassInvalidEndpointValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClasses/invalid",0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassDeletedBatchIDValidClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDeletedBatchIDValidClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/105",0);	
+		}
+		
+		public static BaseRequest setDetailsToUpdateClassDeletedClassID(BaseRequest putClass) {
+			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDeletedClassID");
+	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/106",0);	
+		}
+		
+		
+
 	
 	
 	

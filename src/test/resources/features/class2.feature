@@ -131,5 +131,54 @@ When Admin creates GET Request and sends HTTPS Request with valid endpoint but w
 Then Admin receives 401 "Unauthorized" Status for getUpcomingClasses
 
 
+@UpdateNewClass
+Scenario: Check if admin able to update a class with valid ClassID and all fields in requestBody
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields for updateClass
+Then Admin receives 200 "OK" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a class with valid classID and mandatory fields in request body without authorization
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields without Auth for updateClass
+Then Admin receives 401 "Unauthorized" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with valid classID and mandatory fields in request body
+When Admin creates PUT Request and sends HTTPS Request with valid classId and mandatory fields for updateClass
+Then Admin receives 401 "Unauthorized" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with invalid ClassID and mandatory fields in request body
+When Admin creates PUT Request and sends HTTPS Request with invalid classId and mandatory fields for updateClass
+Then Admin receives 404 "Not Found" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with valid ClassID and missing mandatory fields request body
+When Admin creates PUT Request and sends HTTPS Request with valid classId and missing mandatory fields for updateClass
+Then Admin receives 400 "Bad Request" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with invalid data
+When Admin creates PUT Request and sends HTTPS Request with valid classId and invalid data for updateClass
+Then Admin receives 400 "Bad Request" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with invalid enpoint
+When Admin creates PUT Request and sends HTTPS Request with valid classId and invalid endpoint for updateClass
+Then Admin receives 404 "Not Found" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields
+When Admin creates PUT Request and sends HTTPS Request with valid classId and deleted batchID for updateClass
+Then Admin receives 400 "Bad Request" Status for updateClass
+
+@UpdateNewClass
+Scenario: Check if admin able to update a Class with a deleted classID in the endpoint
+When Admin creates PUT Request and sends HTTPS Request with deleted classId for updateClass
+Then Admin receives 404 "Not Found" Status for updateClass
+
+
+
+
+
 
 
