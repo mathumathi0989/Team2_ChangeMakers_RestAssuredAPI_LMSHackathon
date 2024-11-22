@@ -19,7 +19,7 @@ Then Admin receives 404 "Not Found" Status for getAllRecordings
 @GetAllRecordings
 Scenario: Check if admin able to retrieve all class recording with invalid method
 When Admin creates Other Request and sends HTTPS Request with valid endpoint for getAllRecordings
-Then Admin receives 405 "Method not allowed" Status for getAllRecordings
+Then Admin receives 405 "Method Not Allowed" Status for getAllRecordings
 
 @GetAllRecordings
 Scenario: Check if admin able to retrieve all class recording without Authorization
@@ -45,7 +45,7 @@ Then Admin receives 404 "Not Found" Status for getClassRecordingsByBatchID
 @GetClassRecordingsbyBatchId 
 Scenario: Check if admin able to retrieve class recording with invalid method
 When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByBatchID
-Then Admin receives 405 "Method not allowed" Status for getClassRecordingsByBatchID
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByBatchID
 
 @GetClassRecordingsbyBatchId 
 Scenario: Check if admin able to retrieve  class recording without Authorization
@@ -71,7 +71,7 @@ Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID
 @GetClassRecordingsbyClassId
 Scenario: Check if admin able to retrieve class recording with invalid method
 When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID
-Then Admin receives 405 "Method not allowed" Status for getClassRecordingsByClassID
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByClassID
 
 @GetClassRecordingsbyClassId
 Scenario: Check if admin able to retrieve  class recording without Authorization
@@ -97,7 +97,7 @@ Then Admin receives 404 "Not Found" Status for getClassRecordingsByClassID2
 @GetClassRecordingsbyClassId2
 Scenario: Check if admin able to retrieve class recording with invalid method
 When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID2
-Then Admin receives 405 "Method not allowed" Status for getClassRecordingsByClassID2
+Then Admin receives 405 "Method Not Allowed" Status for getClassRecordingsByClassID2
 
 @GetClassRecordingsbyClassId2
 Scenario: Check if admin able to retrieve  class recording without Authorization
@@ -123,7 +123,7 @@ Then Admin receives 404 "Not Found" Status for getUpcomingClasses
 @GetUpcomingClasses
 Scenario: Check if admin able to retrieve upcoming classes with invalid method
 When Admin creates Other Request and sends HTTPS Request with valid endpoint for getUpcomingClasses
-Then Admin receives 405 "Method not allowed" Status for getUpcomingClasses
+Then Admin receives 405 "Method Not Allowed" Status for getUpcomingClasses
 
 @GetUpcomingClasses
 Scenario: Check if admin able to retrieve upcoming classes without Authorization

@@ -75,7 +75,7 @@ public class class2Actions {
 	
 	
 	public static BaseRequest setDetailsToCreateClass2forGet(BaseRequest getClass2AllRecordings) {
-		getClass2AllRecordings = RequestFactory.setAuthentication(getClass2AllRecordings, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		getClass2AllRecordings = RequestFactory.setAuthentication(getClass2AllRecordings, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
     	return RequestFactory.createRequest(getClass2AllRecordings,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetAllRecordings,0);	
 	}
 		
@@ -102,7 +102,7 @@ public class class2Actions {
 	}
 	
 	public static BaseRequest setDetailsToCreateClass2RecordingsByBatchIDforGet(BaseRequest getClass2RecordingsBatchID) {
-		getClass2RecordingsBatchID = RequestFactory.setAuthentication(getClass2RecordingsBatchID, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		getClass2RecordingsBatchID = RequestFactory.setAuthentication(getClass2RecordingsBatchID, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
     	return RequestFactory.createRequest(getClass2RecordingsBatchID,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassRecordingsBatchID,0);	
 	}
 	
@@ -129,7 +129,7 @@ public class class2Actions {
 	}
 	
 	public static BaseRequest setDetailsToCreateClass2RecordingsByClassIDforGet(BaseRequest getClass2RecordingsClassID) {
-		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
     	return RequestFactory.createRequest(getClass2RecordingsClassID,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassRecordingsClassID,0);	
 	}
 	
@@ -156,7 +156,7 @@ public class class2Actions {
 		}
 		
 		public static BaseRequest setDetailsToCreateClass2RecordingsByClassID2forGet(BaseRequest getClass2RecordingsClassID) {
-			getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 	    	return RequestFactory.createRequest(getClass2RecordingsClassID,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassRecordingsClassID2,0);	
 		}
 		
@@ -185,7 +185,7 @@ public class class2Actions {
 		}
 		
 		public static BaseRequest setDetailsToCreateClass2UpcomingClassesforGet(BaseRequest getClass2UpcomingClasses) {
-			getClass2UpcomingClasses = RequestFactory.setAuthentication(getClass2UpcomingClasses, "post",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			getClass2UpcomingClasses = RequestFactory.setAuthentication(getClass2UpcomingClasses, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 	    	return RequestFactory.createRequest(getClass2UpcomingClasses,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetUpcomingclasses,0);	
 		}
 		

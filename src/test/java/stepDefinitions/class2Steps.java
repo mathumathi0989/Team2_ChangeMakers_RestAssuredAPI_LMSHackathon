@@ -94,7 +94,7 @@ public class class2Steps {
 	    public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getallrecordings() {
 		   getClass2 = class2Actions.setDetailsToCreateClass2forGet(getClass2);
 	    	requestSpecs = getClass2.buildRequest();
-	    response = requestSpecs.get(getClass2.getServiceUrl());
+	    response = requestSpecs.post(getClass2.getServiceUrl());
 		 
 	    }
 	    
@@ -146,7 +146,7 @@ public class class2Steps {
 	    public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByBatchID() {
 		   getClass2 = class2Actions.setDetailsToCreateClass2RecordingsByBatchIDforGet(getClass2);
 	    	requestSpecs = getClass2.buildRequest();
-	    response = requestSpecs.get(getClass2.getServiceUrl());
+	    response = requestSpecs.post(getClass2.getServiceUrl());
 		 
 	    }
 	   
@@ -196,7 +196,7 @@ public class class2Steps {
 	    public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID() {
 		   getClass2 = class2Actions.setDetailsToCreateClass2RecordingsByClassIDforGet(getClass2);
 	    	requestSpecs = getClass2.buildRequest();
-	    response = requestSpecs.get(getClass2.getServiceUrl());
+	    response = requestSpecs.post(getClass2.getServiceUrl());
 		 
 	    }
 	   
@@ -244,7 +244,7 @@ public class class2Steps {
 	    public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID2() {
 		   getClass2 = class2Actions.setDetailsToCreateClass2RecordingsByClassID2forGet(getClass2);
 	    	requestSpecs = getClass2.buildRequest();
-	    response = requestSpecs.get(getClass2.getServiceUrl());
+	    response = requestSpecs.post(getClass2.getServiceUrl());
 		 
 	    }
 	   
@@ -294,7 +294,7 @@ public class class2Steps {
 	    public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getUpcomingClasses() {
 		   getClass2 = class2Actions.setDetailsToCreateClass2UpcomingClassesforGet(getClass2);
 	    	requestSpecs = getClass2.buildRequest();
-	    response = requestSpecs.get(getClass2.getServiceUrl());
+	    response = requestSpecs.post(getClass2.getServiceUrl());
 		 
 	    }
 	   

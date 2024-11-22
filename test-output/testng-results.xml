@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="25" passed="19" failed="6" skipped="0">
+<testng-results ignored="0" total="25" passed="24" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-21T19:53:17 EST" name="Default suite" finished-at="2024-11-21T19:53:24 EST" duration-ms="7149">
+  <suite started-at="2024-11-21T21:02:16 EST" name="Default suite" finished-at="2024-11-21T21:02:26 EST" duration-ms="10467">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-11-21T19:53:17 EST" name="Default test" finished-at="2024-11-21T19:53:24 EST" duration-ms="7149">
+    <test started-at="2024-11-21T21:02:16 EST" name="Default test" finished-at="2024-11-21T21:02:26 EST" duration-ms="10467">
       <class name="apiRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:17 EST" name="setUpClass" finished-at="2024-11-21T19:53:18 EST" duration-ms="1837" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:16 EST" name="setUpClass" finished-at="2024-11-21T21:02:18 EST" duration-ms="1942" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6dd59886]]>
+                <![CDATA[org.testng.TestRunner@5d729af6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:18 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="187" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:18 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:18 EST" duration-ms="185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="108" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:18 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:18 EST" duration-ms="122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="97" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:18 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:18 EST" duration-ms="101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="15" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:18 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="367" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,22 +82,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[Required fields are not set.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Required fields are not set.
-at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
-at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getallrecordings(class2Steps.java:96)
-at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getAllRecordings(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:21)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="82" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,7 +101,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="93" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,7 +117,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="107" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="98" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +133,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="91" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="88" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +149,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,22 +162,10 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[Required fields are not set.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Required fields are not set.
-at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
-at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByBatchID(class2Steps.java:148)
-at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByBatchID(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:47)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="98" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +181,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:19 EST" duration-ms="104" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,7 +197,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="110" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:19 EST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,7 +213,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="91" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,7 +229,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="11" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,22 +242,10 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[Required fields are not set.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Required fields are not set.
-at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
-at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID(class2Steps.java:198)
-at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:73)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="104" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="97" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,7 +261,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="93" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -313,7 +277,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="96" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="126" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,7 +293,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="78" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -345,7 +309,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="4" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -358,22 +322,10 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[Required fields are not set.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Required fields are not set.
-at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
-at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID2(class2Steps.java:246)
-at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID2(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:99)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="110" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:20 EST" duration-ms="97" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -389,7 +341,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="101" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:21 EST" duration-ms="180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -405,7 +357,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="117" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:21 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:21 EST" duration-ms="135" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -431,7 +383,7 @@ at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at org.testng.Assert.assertEquals(Assert.java:917)
 at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
-at stepDefinitions.class2Steps.admin_receives_status_for_getUpcomingClasses(class2Steps.java:316)
+at stepDefinitions.class2Steps.admin_receives_status_for_getUpcomingClasses(class2Steps.java:312)
 at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:116)
 ]]>
             </full-stacktrace>
@@ -439,7 +391,7 @@ at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="135" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:21 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:21 EST" duration-ms="103" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -455,7 +407,7 @@ at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///User
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:20 EST" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:21 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:21 EST" duration-ms="98" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -468,22 +420,10 @@ at ✽.Admin receives 404 "Not Found" Status for getUpcomingClasses(file:///User
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[Required fields are not set.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: Required fields are not set.
-at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
-at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getUpcomingClasses(class2Steps.java:300)
-at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:125)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T19:53:21 EST" duration-ms="92" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:21 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T21:02:21 EST" duration-ms="113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -499,7 +439,7 @@ at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T19:53:21 EST" name="tearDownClass" finished-at="2024-11-21T19:53:24 EST" duration-ms="3150" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:apiRunner.TestRunner@45099dd3]" started-at="2024-11-21T21:02:21 EST" name="tearDownClass" finished-at="2024-11-21T21:02:26 EST" duration-ms="5290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
