@@ -33,4 +33,14 @@ public class EnvConstants {
 	public static final int http_MethodNotAllowed = 405;
 	
 	
+	//Adding class constants - Mathumathi
+	public static final String endPoint_GetAllRecordings="classrecordings";
+	public static final String endPoint_Updateclass="updateClass/{classId}";
+	public static final String endPoint_UpdateclassRecording="updateClassrecording/{classId}";
+	public static final String endPoint_GetClassRecordingsBatchID="batchRecordings/"+EnvVariables.batchID;
+	public static final String endPoint_GetClassRecordingsClassID2="download/"+EnvVariables.csId;
+	public static final String endPoint_GetUpcomingclasses="upcomingClasses/"+EnvVariables.studentId;
+	public static final String endPoint_GetClassRecordingsClassID = "classRecordings/"+EnvVariables.csId;
+	
+	
 }

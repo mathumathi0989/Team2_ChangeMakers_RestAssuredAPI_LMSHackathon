@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">25 methods, 6 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all class recording with invalid method&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve all class recording with invalid method", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid method&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve upcoming classes with invalid method", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid studentID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve upcoming classes with invalid studentID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +143,97 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all class recording&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve all class recording", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording with invalid ClassID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all class recording without Authorization&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve all class recording without Authorization", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve upcoming classes with invalid Endpoint", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve upcoming classes without Authorization&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve upcoming classes without Authorization", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording  with valid ClassID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording  with valid ClassID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording with invalid ClassID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve class recording  with valid Batchid&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve class recording  with valid Batchid", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve upcoming classes with valid studentID&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve upcoming classes with valid studentID", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule : positive flow&quot;)">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule : positive flow")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve all class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve all class recording with invalid Endpoint", "Class 2 module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="apiRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if admin able to retrieve  class recording with invalid Batchid&quot;, &quot;Class 2 module&quot;)">runScenario("Check if admin able to retrieve  class recording with invalid Batchid", "Class 2 module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,12 +248,282 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">apiRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all class recording with invalid method&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all class recording with invalid method", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all class recording with invalid method", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Required fields are not set.
+	at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
+	at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getallrecordings(class2Steps.java:96)
+	at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getAllRecordings(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:21)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Required fields are not set.
+	at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
+	at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByBatchID(class2Steps.java:148)
+	at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByBatchID(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:47)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid method&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve upcoming classes with invalid method", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve upcoming classes with invalid method", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Required fields are not set.
+	at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
+	at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getUpcomingClasses(class2Steps.java:300)
+	at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:125)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Required fields are not set.
+	at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
+	at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID(class2Steps.java:198)
+	at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:73)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid method&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Required fields are not set.
+	at httpRequest.PostRequest.buildRequest(PostRequest.java:19)
+	at stepDefinitions.class2Steps.admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassRecordingsByClassID2(class2Steps.java:246)
+	at ✽.Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassRecordingsByClassID2(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:99)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid studentID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve upcoming classes with invalid studentID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve upcoming classes with invalid studentID", "Class 2 module")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at generics.ApiUtils.validateStatusCode(ApiUtils.java:27)
+	at stepDefinitions.class2Steps.admin_receives_status_for_getUpcomingClasses(class2Steps.java:316)
+	at ✽.Admin receives 404 &quot;Not Found&quot; Status for getUpcomingClasses(file:///Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/Team2_ChangeMakers_RestAssured/src/test/resources/features/class2.feature:116)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">apiRunner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all class recording&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all class recording", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all class recording", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording with invalid ClassID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all class recording without Authorization&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all class recording without Authorization", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all class recording without Authorization", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve upcoming classes with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve upcoming classes with invalid Endpoint", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve upcoming classes with invalid Endpoint", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve upcoming classes without Authorization&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve upcoming classes without Authorization", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve upcoming classes without Authorization", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording  with valid ClassID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording  with valid ClassID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording with invalid ClassID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve class recording  with valid Batchid&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve class recording  with valid Batchid", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve class recording  with valid Batchid", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording without Authorization&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve upcoming classes with valid studentID&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve upcoming classes with valid studentID", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve upcoming classes with valid studentID", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Check if Admin able to retrieve all programs with valid Endpoint&quot;, &quot;ProgramModule : positive flow&quot;)">
@@ -135,12 +534,32 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve all class recording with invalid Endpoint&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve all class recording with invalid Endpoint", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve all class recording with invalid Endpoint", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if admin able to retrieve  class recording with invalid Batchid&quot;, &quot;Class 2 module&quot;)">
+                  </a> <!-- runScenario("Check if admin able to retrieve  class recording with invalid Batchid", "Class 2 module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if admin able to retrieve  class recording with invalid Batchid", "Class 2 module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-1550128343/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-1143416913/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,16 +616,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'apiRunner.TestRunner')
-data.setCell(0, 3, 214);
+data.setCell(0, 3, 187);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'apiRunner.TestRunner')
+data.setCell(1, 3, 135);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'apiRunner.TestRunner')
+data.setCell(2, 3, 117);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'apiRunner.TestRunner')
+data.setCell(3, 3, 110);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'apiRunner.TestRunner')
+data.setCell(4, 3, 110);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'apiRunner.TestRunner')
+data.setCell(5, 3, 108);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'apiRunner.TestRunner')
+data.setCell(6, 3, 107);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'apiRunner.TestRunner')
+data.setCell(7, 3, 104);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'apiRunner.TestRunner')
+data.setCell(8, 3, 104);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'apiRunner.TestRunner')
+data.setCell(9, 3, 101);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'apiRunner.TestRunner')
+data.setCell(10, 3, 98);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'apiRunner.TestRunner')
+data.setCell(11, 3, 97);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'apiRunner.TestRunner')
+data.setCell(12, 3, 96);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'apiRunner.TestRunner')
+data.setCell(13, 3, 93);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'apiRunner.TestRunner')
+data.setCell(14, 3, 93);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'apiRunner.TestRunner')
+data.setCell(15, 3, 92);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'apiRunner.TestRunner')
+data.setCell(16, 3, 91);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'apiRunner.TestRunner')
+data.setCell(17, 3, 91);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'apiRunner.TestRunner')
+data.setCell(18, 3, 82);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'apiRunner.TestRunner')
+data.setCell(19, 3, 78);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'apiRunner.TestRunner')
+data.setCell(20, 3, 15);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'apiRunner.TestRunner')
+data.setCell(21, 3, 11);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'apiRunner.TestRunner')
+data.setCell(22, 3, 5);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'apiRunner.TestRunner')
+data.setCell(23, 3, 5);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'apiRunner.TestRunner')
+data.setCell(24, 3, 4);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 214 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -234,16 +749,124 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">apiRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@61c4fc34)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6dd59886)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check if Admin able to retrieve all programs with valid Endpoint", "ProgramModule : positive flow")</span>
-                <span class="method-start">1726 ms</span>
+                <span class="method-start">1841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all class recording", "Class 2 module")</span>
+                <span class="method-start">2029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all class recording with invalid Endpoint", "Class 2 module")</span>
+                <span class="method-start">2137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve all class recording with invalid method", "Class 2 module")</span>
+                <span class="method-start">2236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve all class recording without Authorization", "Class 2 module")</span>
+                <span class="method-start">2252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording  with valid Batchid", "Class 2 module")</span>
+                <span class="method-start">2334 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording with invalid Batchid", "Class 2 module")</span>
+                <span class="method-start">2428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                <span class="method-start">2536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                <span class="method-start">2627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                <span class="method-start">2633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</span>
+                <span class="method-start">2732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</span>
+                <span class="method-start">2837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                <span class="method-start">2947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                <span class="method-start">3038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                <span class="method-start">3050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording  with valid ClassID", "Class 2 module")</span>
+                <span class="method-start">3154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording with invalid ClassID", "Class 2 module")</span>
+                <span class="method-start">3247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid Endpoint", "Class 2 module")</span>
+                <span class="method-start">3343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve class recording with invalid method", "Class 2 module")</span>
+                <span class="method-start">3422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve  class recording without Authorization", "Class 2 module")</span>
+                <span class="method-start">3426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve upcoming classes with valid studentID", "Class 2 module")</span>
+                <span class="method-start">3536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve upcoming classes with invalid studentID", "Class 2 module")</span>
+                <span class="method-start">3637 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve upcoming classes with invalid Endpoint", "Class 2 module")</span>
+                <span class="method-start">3754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if admin able to retrieve upcoming classes with invalid method", "Class 2 module")</span>
+                <span class="method-start">3890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if admin able to retrieve upcoming classes without Authorization", "Class 2 module")</span>
+                <span class="method-start">3895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1941 ms</span>
+                <span class="method-start">3987 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
