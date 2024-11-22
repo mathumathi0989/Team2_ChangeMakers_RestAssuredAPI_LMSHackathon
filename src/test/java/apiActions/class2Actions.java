@@ -2,7 +2,7 @@ package apiActions;
 
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
-import generics.DataDrivenTestingUsingJsonFile;
+import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
 import io.restassured.response.Response;
@@ -168,55 +168,55 @@ public class class2Actions {
 		
 		public static BaseRequest setDetailsToUpdateClass(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDetails");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDetails");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassWithoutAuth(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put","", EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDetails");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDetails");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassMandatoryValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassMandatoryInValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/100001",0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassMissingMandatoryValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMissingMandatoryValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMissingMandatoryValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassInvalidDataValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassInvalidDataValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassInvalidDataValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,EnvConstants.endPoint_Updateclass,0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassInvalidEndpointValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClasses/invalid",0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassDeletedBatchIDValidClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDeletedBatchIDValidClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDeletedBatchIDValidClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/105",0);	
 		}
 		
 		public static BaseRequest setDetailsToUpdateClassDeletedClassID(BaseRequest putClass) {
 			putClass = RequestFactory.setAuthentication(putClass, "put",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		String classDetails = DataDrivenTestingUsingJsonFile.run_all_test_scenarios_from_json_data("updateClassDeletedClassID");
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDeletedClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/106",0);	
 		}
 		

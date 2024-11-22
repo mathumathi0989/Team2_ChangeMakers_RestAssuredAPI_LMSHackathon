@@ -41,6 +41,7 @@ public class EnvConstants {
 	public static final String endPoint_GetClassRecordingsClassID2="download/"+EnvVariables.csId;
 	public static final String endPoint_GetUpcomingclasses="upcomingClasses/"+EnvVariables.studentId;
 	public static final String endPoint_GetClassRecordingsClassID = "classRecordings/"+EnvVariables.csId;
+	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
 	
 	
 }
