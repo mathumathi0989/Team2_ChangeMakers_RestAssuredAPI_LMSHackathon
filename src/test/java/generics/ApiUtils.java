@@ -27,5 +27,43 @@ public class ApiUtils {
 		Assert.assertEquals(response.getStatusCode(), status_Code);
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	/*============================= extracting response for debugging (mathu) =============================*/
+	public void extractRes(Response response) {
+		String res = response.getBody().asString();
+		System.out.println(res);
+	}
+	
+	
+	// Verify status message
+		public void validateStatusMessage(Response response, String status_Message) {
+			int statusCode = response.getStatusCode();
+			String statusText = getHttpStatusText(statusCode);
+			System.out.println("Status Code: " + statusCode);
+		    System.out.println("Mapped Status Text: " + statusText);
+			Assert.assertEquals(statusText, status_Message);
+
+		}
+		private String getHttpStatusText(int statusCode) {
+		    switch (statusCode) {
+		        case 200: return "OK";
+		        case 201: return "Created";
+		        case 204: return "No Content";
+		        case 400: return "Bad Request";
+		        case 401: return "Unauthorized";
+		        case 403: return "Forbidden";
+		        case 404: return "Not Found";
+		        case 405: return "Method Not Allowed";
+		        case 500: return "Internal Server Error";
+		        default: return "Unknown Status";
+		    }
+		}
+		
 
 }

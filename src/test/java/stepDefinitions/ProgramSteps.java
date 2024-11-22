@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.testng.annotations.BeforeMethod;
 import apiConfig.EnvConstants;
 import generics.ApiUtils;
 import apiActions.ProgramActions;
@@ -60,7 +61,7 @@ public class ProgramSteps {
         }
     }
     
-    @Before
+    @BeforeMethod
 	public void scenario(Scenario scenario) {
 		LoggerLoad.info("===============================================================================================");
 		LoggerLoad.info(scenario.getSourceTagNames() +" : "+scenario.getName());

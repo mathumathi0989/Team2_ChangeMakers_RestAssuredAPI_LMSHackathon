@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a class with valid ClassID and all fields in requestBody",
+      "updateClassDetails": {
+        "batchId": "{{batchId}}",
+        "classNo": "1",
+        "classDate": "2024-12-23",
+        "classTopic": "Mathu Java topics updated",
+        "classDescription": "Mathu class description",
+        "classComments": "Mathu class comments",
+        "classNotes": "Mathu notes",
+        "classRecordingPath": "D://Downloads",
+        "classStaffId": "U49",
+        "classScheduledDates": [
+          "2024-11-29T15:11:08.750Z"
+        ]
+      }
+    },
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a Class with valid classID and mandatory fields in request body",
+      "updateClassMandatoryValidClassID": {
+        "batchId": "{{batchId}}",
+        "classNo": "1",
+        "classTopic": "Mathu Java topics updated",
+        "classDate": "2024-12-23",
+        "classStaffId": "U49",
+        "classStatus" : "Active"
+      }
+    },
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a Class with valid ClassID and missing mandatory fields request body",
+      "updateClassMissingMandatoryValidClassID": {
+        "batchId": "{{batchId}}",
+        "classNo": "1",
+        "classTopic": "",
+        "classDate": "2024-12-23",
+        "classStaffId": "U49",
+        "classStatus" : "Active"
+      }
+    },
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a Class with invalid data",
+      "updateClassInvalidDataValidClassID": {
+        "batchId": "{{batchId}}",
+        "classNo": "1",
+        "classTopic": "Java 123!!!",
+        "classDate": "2024-12-23",
+        "classStaffId": "U49",
+        "classStatus" : "Active"
+      }
+    },
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields",
+      "updateClassDeletedBatchIDValidClassID": {
+          "batchId": "8593",
+          "classNo": "1",
+          "classDate": "2024-12-23",
+          "classTopic": "Mathu Java topics updated aga",
+          "classDescription": "Mathu class description",
+          "classComments": "Mathu class comments",
+          "classNotes": "Mathu notes",
+          "classRecordingPath": "D://Downloads",
+          "classStaffId": "U49",
+          "classScheduledDates": [
+            "2024-11-29T15:11:08.750Z"
+          ]
+      }
+    },
+    {
+      "feature": "Update class",
+      "scenarioName": "Check if admin able to update a Class with a deleted classID in the endpoint",
+      "updateClassDeletedClassID": {
+          "batchId": "8594",
+          "classNo": "1",
+          "classDate": "2024-12-23",
+          "classTopic": "Mathu Java topics updated aga",
+          "classDescription": "Mathu class description",
+          "classComments": "Mathu class comments",
+          "classNotes": "Mathu notes",
+          "classRecordingPath": "D://Downloads",
+          "classStaffId": "U49",
+          "classScheduledDates": [
+            "2024-11-29T15:11:08.750Z"
+          ]
+      }
+    }
+    
+    
+    
+  ]
+}

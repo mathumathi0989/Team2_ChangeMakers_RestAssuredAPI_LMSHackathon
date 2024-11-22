@@ -15,7 +15,7 @@ public class PostRequest extends BaseRequest {
 	 public RequestSpecification buildRequest() {
 		 
 		
-		if (username == null || password == null || baseUrl == null) {
+		if (baseUrl == null) {
 	        throw new IllegalStateException("Required fields are not set.");
 	    }
 //		 BasicAuthScheme basicAuthScheme = new BasicAuthScheme();
