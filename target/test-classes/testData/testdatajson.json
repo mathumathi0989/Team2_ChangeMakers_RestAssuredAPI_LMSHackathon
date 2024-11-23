@@ -1,4 +1,5 @@
 {
+
   "data": [
     {
       "feature": "Update class",
@@ -89,9 +90,47 @@
             "2024-11-29T15:11:08.750Z"
           ]
       }
+    },
+    {
+      "feature": "Update class Recording",
+      "scenarioName": "Check if admin able to update a Class Recording with valid classID  in request body without authorization",
+      "updateClassRecording": {
+            "classRecordingPath": "E://Mathu",
+            "csId": 0
+      }
+    },
+    {
+      "feature": "Update class Recording",
+      "scenarioName": "Check if admin able to update a Class Recording with invalid data",
+      "updateClassRecordingInvalidData": {
+            "classRecordingPath": "132!!!",
+            "csId": 0
+      },
+{
+    "feature" : "ProgramModule_create valid program",
+    "scenarioName" : "Check if Admin able to create a ValidProgramWithAllValidFieldsPresentInRequestBody",
+    "ValidProgramWithAllValidFieldsPresentInRequestBody" : {
+      "programName" : "{{programName}}",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "Active"
     }
-    
-    
-    
-  ]
+  }, {
+    "feature" : "ProgramModule_create valid program",
+    "scenarioName" : "Check if Admin able to create a ValidProgramWithMissingOptionalFieldInRequestBody",
+    "ValidProgramWithMissingOptionalFieldInRequestBody" : {
+      "programName" : "{{programName}}",
+      "programStatus" : "Active"
+    }
+  }, {
+    "feature" : "ProgramModule_create valid program",
+    "scenarioName" : "Check if Admin able to create a ValidProgramWithAllValidFieldsPresentInRequestBody",
+    "UpdateProgramWithAllValidFieldsPresentInRequestBody" : {
+      "programId" : "{{programID}}",
+      "programName" : "{{programNameToUpdate}}",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDDUpdated",
+      "programStatus" : "Active",
+      "creationTime" : "2024-11-22T23:18:35.198+00:00",
+      "lastModTime" : "2024-11-22T23:18:36.895+00:35"
+    }
+  } ]
 }

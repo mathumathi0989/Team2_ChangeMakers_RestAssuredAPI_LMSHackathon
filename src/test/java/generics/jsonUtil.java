@@ -53,7 +53,6 @@ public class jsonUtil {
             if (testData.has(reqBodyFieldName)) {
                 reqBody = testData.getJSONObject(reqBodyFieldName);
             } else {
-                System.out.println("Field " + reqBodyFieldName + " not found in the scenario.");
                 continue; 
             }
             
