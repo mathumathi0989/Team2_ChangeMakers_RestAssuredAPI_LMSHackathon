@@ -1,0 +1,1750 @@
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ3OCwiZXhwIjoxNzMyMzQ1Mjc4fQ.oANfnvKbSe271mRcQi2D2j6TmB1M2I1Zo01jz0LCZ_oDtC94rjF3EDUkVvbWFrACHw2y4wbhzYHsCy0z3g66Sw",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/allPrograms
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "programId": 16209,
+        "programName": "SF",
+        "programDescription": "SalesForce",
+        "programStatus": "Active",
+        "creationTime": "2023-11-03T16:38:42.239+00:00",
+        "lastModTime": "2023-12-18T21:38:49.858+00:00"
+    },
+    {
+        "programId": 16220,
+        "programName": "Core Java Program",
+        "programDescription": "Core Java Programming",
+        "programStatus": "Active",
+        "creationTime": "2023-12-21T07:07:32.548+00:00",
+        "lastModTime": "2023-12-21T07:09:22.476+00:00"
+    },
+    {
+        "programId": 16224,
+        "programName": "Micro services",
+        "programDescription": "Micron services for developer",
+        "programStatus": "Active",
+        "creationTime": "2024-04-09T00:41:46.395+00:00",
+        "lastModTime": "2024-04-09T00:42:06.894+00:00"
+    },
+    {
+        "programId": 16225,
+        "programName": "Java SpringBoot",
+        "programDescription": "For Developers",
+        "programStatus": "Inactive",
+        "creationTime": "2024-04-09T02:16:44.088+00:00",
+        "lastModTime": "2024-04-09T02:16:44.088+00:00"
+    },
+    {
+        "programId": 16226,
+        "programName": "JavaLanguage",
+        "programDescription": "For SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-04-09T02:17:24.325+00:00",
+        "lastModTime": "2024-04-09T02:19:05.280+00:00"
+    },
+    {
+        "programId": 16227,
+        "programName": "Test Program",
+        "programDescription": "Sample",
+        "programStatus": "Active",
+        "creationTime": "2024-05-02T16:27:04.878+00:00",
+        "lastModTime": "2024-05-02T16:27:04.878+00:00"
+    },
+    {
+        "programId": 16213,
+        "programName": "Java-Program",
+        "programDescription": "Java-Program",
+        "programStatus": "Active",
+        "creationTime": "2023-12-14T18:36:46.264+00:00",
+        "lastModTime": "2024-06-03T00:36:12.606+00:00"
+    },
+    {
+        "programId": 16228,
+        "programName": "TestChatBot",
+        "programDescription": "testing Creation of Program",
+        "programStatus": "Inactive",
+        "creationTime": "2024-06-18T03:14:13.136+00:00",
+        "lastModTime": "2024-06-18T03:14:13.136+00:00"
+    },
+    {
+        "programId": 16231,
+        "programName": "Java-oops-inheritance",
+        "programDescription": "Java for SDET",
+        "programStatus": "Inactive",
+        "creationTime": "2024-07-02T17:28:47.894+00:00",
+        "lastModTime": "2024-07-02T17:29:23.023+00:00"
+    },
+    {
+        "programId": 16232,
+        "programName": "Inheritance-Java",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:51:49.421+00:00",
+        "lastModTime": "2024-07-02T17:51:49.421+00:00"
+    },
+    {
+        "programId": 16233,
+        "programName": "Inheritance-JavaOOPS",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-03T15:48:25.678+00:00",
+        "lastModTime": "2024-07-03T15:48:25.678+00:00"
+    },
+    {
+        "programId": 16234,
+        "programName": "Inheritance-JavaOOPSconcept",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-06T01:20:45.017+00:00",
+        "lastModTime": "2024-07-06T01:20:45.017+00:00"
+    },
+    {
+        "programId": 16230,
+        "programName": "OOPS-Java",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:21:06.473+00:00",
+        "lastModTime": "2024-07-06T01:21:29.920+00:00"
+    },
+    {
+        "programId": 16229,
+        "programName": "OOPS-Java-Inheritance",
+        "programDescription": "Java for SDET",
+        "programStatus": "Active",
+        "creationTime": "2024-07-02T17:16:37.779+00:00",
+        "lastModTime": "2024-07-06T01:21:58.513+00:00"
+    },
+    {
+        "programId": 16235,
+        "programName": "SAP",
+        "programDescription": "SAP Basic",
+        "programStatus": "Active",
+        "creationTime": "2024-08-07T16:06:11.732+00:00",
+        "lastModTime": "2024-08-07T16:06:11.732+00:00"
+    },
+    {
+        "programId": 16236,
+        "programName": "ScrumMasterProductOwner",
+        "programDescription": "Professional Training",
+        "programStatus": "Active",
+        "creationTime": "2024-08-07T16:08:49.245+00:00",
+        "lastModTime": "2024-08-07T16:08:49.245+00:00"
+    },
+    {
+        "programId": 16237,
+        "programName": "Testingchatbot",
+        "programDescription": "New tool",
+        "programStatus": "Active",
+        "creationTime": "2024-08-27T18:18:30.802+00:00",
+        "lastModTime": "2024-08-27T18:18:30.802+00:00"
+    },
+    {
+        "programId": 16238,
+        "programName": "Grading",
+        "programDescription": "testinggrading",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T14:43:58.317+00:00",
+        "lastModTime": "2024-09-17T14:43:58.317+00:00"
+    },
+    {
+        "programId": 16239,
+        "programName": "LearnNewTech",
+        "programDescription": "New technology",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T15:27:19.018+00:00",
+        "lastModTime": "2024-09-17T15:27:19.018+00:00"
+    },
+    {
+        "programId": 16240,
+        "programName": "WhyThisProgram",
+        "programDescription": "Checking123",
+        "programStatus": "Active",
+        "creationTime": "2024-09-17T16:12:27.229+00:00",
+        "lastModTime": "2024-09-17T16:12:27.229+00:00"
+    },
+    {
+        "programId": 16223,
+        "programName": "DAA",
+        "programDescription": "Basic",
+        "programStatus": "Inactive",
+        "creationTime": "2024-01-12T01:43:03.160+00:00",
+        "lastModTime": "2024-10-03T18:09:07.252+00:00"
+    },
+    {
+        "programId": 16210,
+        "programName": "SMPO",
+        "programDescription": "Scrum Master Product Owner",
+        "programStatus": "Inactive",
+        "creationTime": "2023-11-03T16:39:17.715+00:00",
+        "lastModTime": "2024-10-03T18:11:16.942+00:00"
+    },
+    {
+        "programId": 16242,
+        "programName": "TownandCountry",
+        "programDescription": "Country",
+        "programStatus": "Active",
+        "creationTime": "2024-11-19T16:51:53.399+00:00",
+        "lastModTime": "2024-11-19T16:51:53.399+00:00"
+    },
+    {
+        "programId": 16208,
+        "programName": "Updated",
+        "programDescription": "TestUpdated",
+        "programStatus": "Inactive",
+        "creationTime": "2023-11-03T16:37:52.985+00:00",
+        "lastModTime": "2024-11-19T16:58:07.187+00:00"
+    },
+    {
+        "programId": 16241,
+        "programName": "SDET",
+        "programDescription": "TestProgram",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-19T16:18:16.362+00:00",
+        "lastModTime": "2024-11-19T16:59:26.573+00:00"
+    },
+    {
+        "programId": 16244,
+        "programName": "Program-a",
+        "programDescription": "Program Desc",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T04:23:15.001+00:00",
+        "lastModTime": "2024-11-20T04:42:14.537+00:00"
+    },
+    {
+        "programId": 16253,
+        "programName": "TeamProg",
+        "programDescription": "Team3Prog1",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T11:58:25.886+00:00",
+        "lastModTime": "2024-11-20T11:58:54.197+00:00"
+    },
+    {
+        "programId": 16245,
+        "programName": "AWS",
+        "programDescription": "Cloud",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T05:21:05.265+00:00",
+        "lastModTime": "2024-11-20T14:00:03.422+00:00"
+    },
+    {
+        "programId": 16246,
+        "programName": "Python",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T05:23:17.120+00:00",
+        "lastModTime": "2024-11-20T14:00:16.570+00:00"
+    },
+    {
+        "programId": 16247,
+        "programName": "pythonabcdefgshiooooooooooooooolllllllll",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T06:47:41.032+00:00",
+        "lastModTime": "2024-11-20T14:00:40.289+00:00"
+    },
+    {
+        "programId": 16252,
+        "programName": "PythonLearning",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T06:58:30.234+00:00",
+        "lastModTime": "2024-11-20T14:01:13.483+00:00"
+    },
+    {
+        "programId": 16256,
+        "programName": "ApiNinjasTeam",
+        "programDescription": "AWS Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T14:09:50.135+00:00",
+        "lastModTime": "2024-11-20T14:09:50.135+00:00"
+    },
+    {
+        "programId": 16257,
+        "programName": "JavaProgramMathu",
+        "programDescription": "Java Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T16:17:05.289+00:00",
+        "lastModTime": "2024-11-20T16:18:16.413+00:00"
+    },
+    {
+        "programId": 16258,
+        "programName": "JavaProgramMathum",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T16:25:21.166+00:00",
+        "lastModTime": "2024-11-20T16:25:21.166+00:00"
+    },
+    {
+        "programId": 16259,
+        "programName": "JavaProgramMathuma",
+        "programDescription": "Java Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T16:29:50.613+00:00",
+        "lastModTime": "2024-11-20T16:30:01.739+00:00"
+    },
+    {
+        "programId": 16260,
+        "programName": "JavaProgramathuma",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-20T16:31:04.421+00:00",
+        "lastModTime": "2024-11-20T16:31:04.421+00:00"
+    },
+    {
+        "programId": 16285,
+        "programName": "ApiNinjas-BC",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T04:02:49.901+00:00",
+        "lastModTime": "2024-11-22T04:11:08.510+00:00"
+    },
+    {
+        "programId": 16261,
+        "programName": "DanceFifteen",
+        "programDescription": "SpringDanceClass",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T18:00:34.977+00:00",
+        "lastModTime": "2024-11-20T18:00:42.475+00:00"
+    },
+    {
+        "programId": 16262,
+        "programName": "TestingBUG",
+        "programDescription": null,
+        "programStatus": "Active",
+        "creationTime": "2024-11-21T01:25:44.830+00:00",
+        "lastModTime": "2024-11-21T01:25:44.830+00:00"
+    },
+    {
+        "programId": 16263,
+        "programName": "Program-b",
+        "programDescription": null,
+        "programStatus": "Active",
+        "creationTime": "2024-11-21T01:42:20.615+00:00",
+        "lastModTime": "2024-11-21T01:42:20.615+00:00"
+    },
+    {
+        "programId": 16264,
+        "programName": "Program-c",
+        "programDescription": "Program Description",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T03:47:52.144+00:00",
+        "lastModTime": "2024-11-21T03:51:24.195+00:00"
+    },
+    {
+        "programId": 16265,
+        "programName": "Program-y",
+        "programDescription": "Program Desc abc",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:13:03.816+00:00",
+        "lastModTime": "2024-11-21T04:14:01.363+00:00"
+    },
+    {
+        "programId": 16266,
+        "programName": "Data",
+        "programDescription": "Data Analytics",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:49:03.278+00:00",
+        "lastModTime": "2024-11-21T04:50:08.639+00:00"
+    },
+    {
+        "programId": 16267,
+        "programName": "Teaching",
+        "programDescription": "Data Analytics",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T04:49:03.614+00:00",
+        "lastModTime": "2024-11-21T04:50:21.485+00:00"
+    },
+    {
+        "programId": 16268,
+        "programName": "DataA",
+        "programDescription": "DataScience",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T05:08:00.142+00:00",
+        "lastModTime": "2024-11-21T05:56:36.286+00:00"
+    },
+    {
+        "programId": 16269,
+        "programName": "TeachingZ",
+        "programDescription": "DataScience",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T05:08:00.491+00:00",
+        "lastModTime": "2024-11-21T05:56:50.340+00:00"
+    },
+    {
+        "programId": 16272,
+        "programName": "JavaProgramathumat",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-21T13:55:28.108+00:00",
+        "lastModTime": "2024-11-21T13:55:28.108+00:00"
+    },
+    {
+        "programId": 16273,
+        "programName": "ApiNinjastest",
+        "programDescription": "AWS Learning001",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T15:46:01.610+00:00",
+        "lastModTime": "2024-11-21T15:46:01.610+00:00"
+    },
+    {
+        "programId": 16274,
+        "programName": "ApiNinjastest-",
+        "programDescription": "AWS Learning001",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T15:46:43.873+00:00",
+        "lastModTime": "2024-11-21T15:46:43.873+00:00"
+    },
+    {
+        "programId": 16275,
+        "programName": "Team-two-three-four-five-six-seven",
+        "programDescription": "",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T19:53:00.230+00:00",
+        "lastModTime": "2024-11-21T19:53:16.433+00:00"
+    },
+    {
+        "programId": 16277,
+        "programName": "JavaProgramAnumat",
+        "programDescription": "Java Program Description",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T00:23:29.950+00:00",
+        "lastModTime": "2024-11-22T00:23:29.950+00:00"
+    },
+    {
+        "programId": 16279,
+        "programName": "TeamChangeMakers-APIPhaseTwo-aaaaf",
+        "programDescription": "RestfulAPI_Java_Cucumber_BDD",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T01:08:10.178+00:00",
+        "lastModTime": "2024-11-22T01:11:13.020+00:00"
+    },
+    {
+        "programId": 16278,
+        "programName": "TeamChangeMakers-APIPhaseTwo-aaaae",
+        "programDescription": "RestfulAPI_Java_Cucumber_BDD",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T00:56:50.434+00:00",
+        "lastModTime": "2024-11-22T01:11:44.355+00:00"
+    },
+    {
+        "programId": 16243,
+        "programName": "Canada",
+        "programDescription": "Country",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-19T16:52:36.891+00:00",
+        "lastModTime": "2024-11-22T02:02:04.928+00:00"
+    },
+    {
+        "programId": 16280,
+        "programName": "TeamChangeMakers-APIPhaseTwo-aaaag",
+        "programDescription": "RestfulAPI_Java_Cucumber_BDD",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T02:55:56.342+00:00",
+        "lastModTime": "2024-11-22T02:58:50.465+00:00"
+    },
+    {
+        "programId": 16281,
+        "programName": "TeamChangeMakers-APIPhaseTwo-aaaah",
+        "programDescription": "RestfulAPI_Java_Cucumber_BDD",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T02:59:24.889+00:00",
+        "lastModTime": "2024-11-22T02:59:25.988+00:00"
+    },
+    {
+        "programId": 16276,
+        "programName": "Teamthree-four-five-six-seven",
+        "programDescription": "",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-21T22:46:22.733+00:00",
+        "lastModTime": "2024-11-22T03:21:25.235+00:00"
+    },
+    {
+        "programId": 16282,
+        "programName": "star",
+        "programDescription": "                         ",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T03:43:56.122+00:00",
+        "lastModTime": "2024-11-22T03:43:56.122+00:00"
+    },
+    {
+        "programId": 16254,
+        "programName": "ApiNinjas",
+        "programDescription": "Java Programming001",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T14:05:06.486+00:00",
+        "lastModTime": "2024-11-22T03:44:25.491+00:00"
+    },
+    {
+        "programId": 16255,
+        "programName": "ApiNinjasProg",
+        "programDescription": "PythonLearning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-20T14:08:46.194+00:00",
+        "lastModTime": "2024-11-22T03:44:52.642+00:00"
+    },
+    {
+        "programId": 16283,
+        "programName": "MATHUJSON",
+        "programDescription": "Mathu Json Desc",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T03:46:05.124+00:00",
+        "lastModTime": "2024-11-22T03:46:05.124+00:00"
+    },
+    {
+        "programId": 16284,
+        "programName": "ApiNinjas-A",
+        "programDescription": "AWS Learning002",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T03:56:37.445+00:00",
+        "lastModTime": "2024-11-22T03:56:51.780+00:00"
+    },
+    {
+        "programId": 16291,
+        "programName": "-------",
+        "programDescription": "Ab0",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:24:42.834+00:00",
+        "lastModTime": "2024-11-22T05:42:26.315+00:00"
+    },
+    {
+        "programId": 16292,
+        "programName": "prgName",
+        "programDescription": "Ab0467",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:32:25.326+00:00",
+        "lastModTime": "2024-11-22T05:42:47.035+00:00"
+    },
+    {
+        "programId": 16293,
+        "programName": "prgNamesample",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:33:13.918+00:00",
+        "lastModTime": "2024-11-22T05:43:02.998+00:00"
+    },
+    {
+        "programId": 16294,
+        "programName": "prgNamesampleone",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:33:52.462+00:00",
+        "lastModTime": "2024-11-22T05:43:12.645+00:00"
+    },
+    {
+        "programId": 16295,
+        "programName": "prgNamesampletwo",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:35:10.341+00:00",
+        "lastModTime": "2024-11-22T05:43:26.665+00:00"
+    },
+    {
+        "programId": 16296,
+        "programName": "prgNamesamplethree",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:35:46.477+00:00",
+        "lastModTime": "2024-11-22T05:43:30.795+00:00"
+    },
+    {
+        "programId": 16297,
+        "programName": "prgNamesamplethreefour",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:36:20.886+00:00",
+        "lastModTime": "2024-11-22T05:43:48.468+00:00"
+    },
+    {
+        "programId": 16298,
+        "programName": "prgNamesamplethreefourfive",
+        "programDescription": null,
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:37:03.662+00:00",
+        "lastModTime": "2024-11-22T05:43:52.164+00:00"
+    },
+    {
+        "programId": 16287,
+        "programName": "ApiNinjas-TIKC",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T04:58:41.885+00:00",
+        "lastModTime": "2024-11-22T08:08:09.295+00:00"
+    },
+    {
+        "programId": 16288,
+        "programName": "ApiNinjas-KRCR",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:00:04.338+00:00",
+        "lastModTime": "2024-11-22T08:08:28.441+00:00"
+    },
+    {
+        "programId": 16286,
+        "programName": "ApiNinjas-BCD",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T04:13:03.771+00:00",
+        "lastModTime": "2024-11-22T08:09:02.255+00:00"
+    },
+    {
+        "programId": 16289,
+        "programName": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "programDescription": "Ab0",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:20:50.707+00:00",
+        "lastModTime": "2024-11-22T05:40:31.005+00:00"
+    },
+    {
+        "programId": 16290,
+        "programName": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "programDescription": "Ab0",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T05:21:42.794+00:00",
+        "lastModTime": "2024-11-22T05:40:48.876+00:00"
+    },
+    {
+        "programId": 16299,
+        "programName": "DAgeresvr",
+        "programDescription": "Analytics",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T05:53:35.695+00:00",
+        "lastModTime": "2024-11-22T05:53:35.695+00:00"
+    },
+    {
+        "programId": 16311,
+        "programName": "AvgAPI",
+        "programDescription": "TestB",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T07:53:57.546+00:00",
+        "lastModTime": "2024-11-22T07:53:57.546+00:00"
+    },
+    {
+        "programId": 16312,
+        "programName": "ApiNinjas-IBIP",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T08:05:13.908+00:00",
+        "lastModTime": "2024-11-22T08:05:13.908+00:00"
+    },
+    {
+        "programId": 16300,
+        "programName": "ApiNinjas-MFLA",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:21:05.503+00:00",
+        "lastModTime": "2024-11-22T08:11:10.705+00:00"
+    },
+    {
+        "programId": 16301,
+        "programName": "ApiNinjas-JZOA",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:22:39.939+00:00",
+        "lastModTime": "2024-11-22T08:11:14.667+00:00"
+    },
+    {
+        "programId": 16302,
+        "programName": "ApiNinjas-BYMM",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:23:55.138+00:00",
+        "lastModTime": "2024-11-22T08:11:46.766+00:00"
+    },
+    {
+        "programId": 16303,
+        "programName": "ApiNinjas-QBXX",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:26:19.153+00:00",
+        "lastModTime": "2024-11-22T08:11:50.596+00:00"
+    },
+    {
+        "programId": 16304,
+        "programName": "ApiNinjas-FNTI",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:30:17.057+00:00",
+        "lastModTime": "2024-11-22T08:11:53.825+00:00"
+    },
+    {
+        "programId": 16305,
+        "programName": "ApiNinjas-HCOE",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T06:56:02.147+00:00",
+        "lastModTime": "2024-11-22T08:11:57.019+00:00"
+    },
+    {
+        "programId": 16306,
+        "programName": "ApiNinjas-VEEJ",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T07:00:13.765+00:00",
+        "lastModTime": "2024-11-22T08:12:01.312+00:00"
+    },
+    {
+        "programId": 16307,
+        "programName": "ApiNinjas-RIGK",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T07:03:08.501+00:00",
+        "lastModTime": "2024-11-22T08:12:06.271+00:00"
+    },
+    {
+        "programId": 16308,
+        "programName": "APIAvg",
+        "programDescription": "TestingA",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T07:12:17.738+00:00",
+        "lastModTime": "2024-11-22T08:12:11.032+00:00"
+    },
+    {
+        "programId": 16309,
+        "programName": "ApiNinjas-WLWC",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T07:18:25.899+00:00",
+        "lastModTime": "2024-11-22T08:12:15.514+00:00"
+    },
+    {
+        "programId": 16310,
+        "programName": "ApiNinjas-HHCF",
+        "programDescription": "Python Learning",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T07:40:38.382+00:00",
+        "lastModTime": "2024-11-22T08:12:19.938+00:00"
+    },
+    {
+        "programId": 16313,
+        "programName": "ApiNinjas-WJGJ",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T08:17:46.626+00:00",
+        "lastModTime": "2024-11-22T08:17:46.626+00:00"
+    },
+    {
+        "programId": 16314,
+        "programName": "ApiNinjas-EXNH",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T08:18:49.393+00:00",
+        "lastModTime": "2024-11-22T08:18:49.393+00:00"
+    },
+    {
+        "programId": 16315,
+        "programName": "nugusdz",
+        "programDescription": "System Applications",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T15:18:45.731+00:00",
+        "lastModTime": "2024-11-22T15:18:45.731+00:00"
+    },
+    {
+        "programId": 16317,
+        "programName": "teamThreeProgram",
+        "programDescription": "",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T16:00:09.016+00:00",
+        "lastModTime": "2024-11-22T16:00:09.016+00:00"
+    },
+    {
+        "programId": 16318,
+        "programName": "team-ThreeProgram",
+        "programDescription": "System Applications",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T16:00:09.421+00:00",
+        "lastModTime": "2024-11-22T16:00:09.421+00:00"
+    },
+    {
+        "programId": 16319,
+        "programName": "PythonLearning-aa",
+        "programDescription": null,
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T18:27:27.385+00:00",
+        "lastModTime": "2024-11-22T18:27:27.385+00:00"
+    },
+    {
+        "programId": 16316,
+        "programName": "Avengers",
+        "programDescription": "TestC",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T15:32:27.428+00:00",
+        "lastModTime": "2024-11-22T18:38:10.909+00:00"
+    },
+    {
+        "programId": 16320,
+        "programName": "DanceSixteen",
+        "programDescription": "SpringDanceClass",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T18:49:14.153+00:00",
+        "lastModTime": "2024-11-22T18:49:20.096+00:00"
+    },
+    {
+        "programId": 16323,
+        "programName": "ApiNinjas-EEIE",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T19:20:47.280+00:00",
+        "lastModTime": "2024-11-22T19:20:47.280+00:00"
+    },
+    {
+        "programId": 16324,
+        "programName": "ApiNinjas-PVZE",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T19:21:23.463+00:00",
+        "lastModTime": "2024-11-22T19:21:23.463+00:00"
+    },
+    {
+        "programId": 16321,
+        "programName": "AvengersTest",
+        "programDescription": "TestD",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T19:15:03.165+00:00",
+        "lastModTime": "2024-11-22T19:34:28.378+00:00"
+    },
+    {
+        "programId": 16322,
+        "programName": "JavaX",
+        "programDescription": "",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T19:15:04.310+00:00",
+        "lastModTime": "2024-11-22T19:34:41.942+00:00"
+    },
+    {
+        "programId": 16325,
+        "programName": "ApiNinjas-TSNL",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T19:47:18.834+00:00",
+        "lastModTime": "2024-11-22T19:47:18.834+00:00"
+    },
+    {
+        "programId": 16326,
+        "programName": "ApiNinjas-YVJJ",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T19:51:33.564+00:00",
+        "lastModTime": "2024-11-22T19:51:33.564+00:00"
+    },
+    {
+        "programId": 16327,
+        "programName": "ApiNinjas-EAZG",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T19:54:33.609+00:00",
+        "lastModTime": "2024-11-22T19:54:33.609+00:00"
+    },
+    {
+        "programId": 16328,
+        "programName": "ApiNinjas-DIAD",
+        "programDescription": "Python Learning",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T20:10:01.413+00:00",
+        "lastModTime": "2024-11-22T20:10:01.413+00:00"
+    },
+    {
+        "programId": 16329,
+        "programName": "ExcelInJava",
+        "programDescription": "Excel Read and Write in Java",
+        "programStatus": "Inactive",
+        "creationTime": "2024-11-22T21:11:28.671+00:00",
+        "lastModTime": "2024-11-22T21:11:28.671+00:00"
+    },
+    {
+        "programId": 16330,
+        "programName": "AI",
+        "programDescription": "Artificial Intelligence",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T22:39:36.254+00:00",
+        "lastModTime": "2024-11-22T22:39:36.254+00:00"
+    },
+    {
+        "programId": 16331,
+        "programName": "TeamthreeWar",
+        "programDescription": "                                     ",
+        "programStatus": "Active",
+        "creationTime": "2024-11-22T22:58:49.850+00:00",
+        "lastModTime": "2024-11-22T22:58:49.850+00:00"
+    }
+]
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classrecordings
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "csId": 38,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 48,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 51,
+        "classRecordingPath": "video1334142932.mp4"
+    },
+    {
+        "csId": 52,
+        "classRecordingPath": "/Users/akshatakanaje/Downloads/video1334142932.mp4"
+    },
+    {
+        "csId": 53,
+        "classRecordingPath": "/Users/SamaS/Downloads/video1334142932.mp4"
+    },
+    {
+        "csId": 54,
+        "classRecordingPath": "string"
+    },
+    {
+        "csId": 42,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 55,
+        "classRecordingPath": "C://Recording"
+    },
+    {
+        "csId": 56,
+        "classRecordingPath": "https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"
+    },
+    {
+        "csId": 57,
+        "classRecordingPath": "https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"
+    },
+    {
+        "csId": 58,
+        "classRecordingPath": "https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"
+    },
+    {
+        "csId": 59,
+        "classRecordingPath": "https://transcripts.gotomeeting.com/?utm_source=recordingReadyNotification&utm_medium=email#/s/3340bd05252ea34272a4245c70a14f8392d1bda9790d28ae37df98636e9c6451"
+    },
+    {
+        "csId": 60,
+        "classRecordingPath": "https://transcripts.gotomeeting.com/?utm_source=recordingReadyNotification&utm_medium=email#/s/3340bd05252ea34272a4245c70a14f8392d1bda9790d28ae37df98636e9c6451"
+    },
+    {
+        "csId": 36,
+        "classRecordingPath": "C:\\Recordings"
+    },
+    {
+        "csId": 50,
+        "classRecordingPath": "https://www.youtube.com/watch?v=YyB2NGV69xE&list=PLFGoYjJG_fqo4oVsa6l_V-_7-tzBnlulT&index=1"
+    },
+    {
+        "csId": 61,
+        "classRecordingPath": "C:\\Recordings"
+    },
+    {
+        "csId": 35,
+        "classRecordingPath": "C:\\Recordings"
+    },
+    {
+        "csId": 62,
+        "classRecordingPath": "RecordingPath"
+    },
+    {
+        "csId": 63,
+        "classRecordingPath": "C:\\Recordings"
+    },
+    {
+        "csId": 64,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 95,
+        "classRecordingPath": "Rec"
+    },
+    {
+        "csId": 96,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 97,
+        "classRecordingPath": null
+    },
+    {
+        "csId": 104,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 98,
+        "classRecordingPath": "D:\\ClassRecording"
+    },
+    {
+        "csId": 99,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 100,
+        "classRecordingPath": "E://Mathu"
+    },
+    {
+        "csId": 105,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 101,
+        "classRecordingPath": "C:\\DanceRecordings"
+    },
+    {
+        "csId": 103,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 107,
+        "classRecordingPath": "C:\\DanceRecordings"
+    },
+    {
+        "csId": 106,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 102,
+        "classRecordingPath": "D://Downloads"
+    }
+]
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Invalid endpoint
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classrecordings
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Request method 'POST' is not supported",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classrecordings
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/batchRecordings/8551
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "csId": 104,
+        "classRecordingPath": "D://Downloads"
+    },
+    {
+        "csId": 102,
+        "classRecordingPath": "D://Downloads"
+    }
+]
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/batchRecordings/100001
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Class Recording not found with batchId :100001",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/batchRecordings/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Invalid endpoint
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/batchRecordings/8551
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Request method 'POST' is not supported",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/batchRecordings/8551
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classRecordings/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "csId": 102,
+    "classRecordingPath": "D://Downloads"
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classRecordings/100001
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Class not found with Id : 100001 ",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classRecordings/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Invalid endpoint
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classRecordings/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Request method 'POST' is not supported",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/classRecordings/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/download/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "csId": 102,
+    "classRecordingPath": "D://Downloads"
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/download/100001
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Class not found with Id : 100001 ",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/download/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Invalid endpoint
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/download/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Request method 'POST' is not supported",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/download/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/upcomingClasses/U02
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "csId": 63,
+        "batchId": 8432,
+        "classNo": 6,
+        "classDate": "2024-12-01T00:00:00.000+00:00",
+        "classTopic": "Basics of AWS",
+        "classStatus": "Inactive",
+        "classStaffId": "U49",
+        "classDescription": "class desc",
+        "classComments": "comments",
+        "classNotes": "C:\\Classnotes",
+        "classRecordingPath": "C:\\Recordings",
+        "batchName": "DVLPR-0001",
+        "classScheduledDates": [
+            "2024-12-01T00:00:00.000+00:00",
+            "2024-12-02T00:00:00.000+00:00",
+            "2024-12-03T00:00:00.000+00:00",
+            "2024-12-04T00:00:00.000+00:00",
+            "2024-12-05T00:00:00.000+00:00",
+            "2024-12-06T00:00:00.000+00:00"
+        ]
+    }
+]
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/upcomingClasses/U1000001
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    
+]
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/upcomingClass/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Invalid endpoint
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/upcomingClasses/U02
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "message": "Request method 'POST' is not supported",
+    "success": false
+}
+Request method:	GET
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/upcomingClasses/U02
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classDate": "2024-12-23",
+    "classTopic": "Mathu Java topics updated",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classRecordingPath": "D://Downloads",
+    "classNotes": "Mathu notes",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750Z"
+    ],
+    "batchId": "8551",
+    "classComments": "Mathu class comments",
+    "classDescription": "Mathu class description"
+}
+{
+    "csId": 102,
+    "batchId": 8551,
+    "classNo": 1,
+    "classDate": "2024-12-23T00:00:00.000+00:00",
+    "classTopic": "Mathu Java topics updated",
+    "classStatus": null,
+    "classStaffId": "U49",
+    "classDescription": "Mathu class description",
+    "classComments": "Mathu class comments",
+    "classNotes": "Mathu notes",
+    "classRecordingPath": "D://Downloads",
+    "batchName": "JavaBatchMathuma",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750+00:00"
+    ]
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classDate": "2024-12-23",
+    "classTopic": "Mathu Java topics updated",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classRecordingPath": "D://Downloads",
+    "classNotes": "Mathu notes",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750Z"
+    ],
+    "batchId": "8551",
+    "classComments": "Mathu class comments",
+    "classDescription": "Mathu class description"
+}
+
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classTopic": "Mathu Java topics updated",
+    "classDate": "2024-12-23",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classStatus": "Active",
+    "batchId": "8551"
+}
+{
+    "message": "Count of Class Scheduled Dates should be equal to Number of Classes",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/100001
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classTopic": "Mathu Java topics updated",
+    "classDate": "2024-12-23",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classStatus": "Active",
+    "batchId": "8551"
+}
+{
+    "message": "Class not found with Id : 100001 ",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classTopic": "",
+    "classDate": "2024-12-23",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classStatus": "Active",
+    "batchId": "8551"
+}
+{
+    "message": "Count of Class Scheduled Dates should be equal to Number of Classes",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/102
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classTopic": "Java 123!!!",
+    "classDate": "2024-12-23",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classStatus": "Active",
+    "batchId": "8551"
+}
+{
+    "message": "Count of Class Scheduled Dates should be equal to Number of Classes",
+    "success": false
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClasses/invalid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classTopic": "Mathu Java topics updated",
+    "classDate": "2024-12-23",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classStatus": "Active",
+    "batchId": "8551"
+}
+Invalid endpoint
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/105
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classDate": "2024-12-23",
+    "classTopic": "Mathu Java topics updated aga",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classRecordingPath": "D://Downloads",
+    "classNotes": "Mathu notes",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750Z"
+    ],
+    "batchId": "8593",
+    "classComments": "Mathu class comments",
+    "classDescription": "Mathu class description"
+}
+{
+    "csId": 105,
+    "batchId": 8593,
+    "classNo": 1,
+    "classDate": "2024-12-23T00:00:00.000+00:00",
+    "classTopic": "Mathu Java topics updated aga",
+    "classStatus": null,
+    "classStaffId": "U49",
+    "classDescription": "Mathu class description",
+    "classComments": "Mathu class comments",
+    "classNotes": "Mathu notes",
+    "classRecordingPath": "D://Downloads",
+    "batchName": "JavaBatchMathumat",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750+00:00"
+    ]
+}
+Request method:	PUT
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/updateClass/106
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjMxNjQ4MCwiZXhwIjoxNzMyMzQ1MjgwfQ.uheSWM3MbE5EmPx7kISfdjnoUbtBfzf9GRjdA87bo5qqWUPlXpHYTVTUZl0WPRDVai4b3_gS2ohaQM5jSUgk2Q
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "classDate": "2024-12-23",
+    "classTopic": "Mathu Java topics updated aga",
+    "classStaffId": "U49",
+    "classNo": "1",
+    "classRecordingPath": "D://Downloads",
+    "classNotes": "Mathu notes",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750Z"
+    ],
+    "batchId": "8594",
+    "classComments": "Mathu class comments",
+    "classDescription": "Mathu class description"
+}
+{
+    "csId": 106,
+    "batchId": 8594,
+    "classNo": 1,
+    "classDate": "2024-12-23T00:00:00.000+00:00",
+    "classTopic": "Mathu Java topics updated aga",
+    "classStatus": "Inactive",
+    "classStaffId": "U49",
+    "classDescription": "Mathu class description",
+    "classComments": "Mathu class comments",
+    "classNotes": "Mathu notes",
+    "classRecordingPath": "D://Downloads",
+    "batchName": "JavaBatchMathumath",
+    "classScheduledDates": [
+        "2024-11-29T15:11:08.750+00:00"
+    ]
+}
