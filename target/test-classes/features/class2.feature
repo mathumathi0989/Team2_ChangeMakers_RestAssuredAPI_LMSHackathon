@@ -176,9 +176,32 @@ Scenario: Check if admin able to update a Class with a deleted classID in the en
 When Admin creates PUT Request and sends HTTPS Request with deleted classId for updateClass
 Then Admin receives 404 "Not Found" Status for updateClass
 
+@UpdateClassRecording
+Scenario: Check if admin able to update a Class Recording with valid classID  in request body without authorization
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields without Auth for updateClassRecording
+Then Admin receives 401 "Unauthorized" Status for updateClassRecording
 
+@UpdateClassRecording
+Scenario: Check if admin able to update a Class Recording with valid classID  in request body
+When Admin creates PUT Request and sends HTTPS Request with valid classId and all the fields for updateClassRecording
+Then Admin receives 200 "OK" Status for updateClassRecording
 
+@UpdateClassRecording
+Scenario: Check if admin able to update a Class Recording with invalid ClassID  in request body
+When Admin creates PUT Request and sends HTTPS Request with invalid classId and all the fields for updateClassRecording
+Then Admin receives 404 "Not Found" Status for updateClassRecording
 
+@UpdateClassRecording
+Scenario: Check if admin able to update a Class Recording with invalid data
+When Admin creates PUT Request and sends HTTPS Request with invalid data for updateClassRecording
+Then Admin receives 400 "Bad Request" Status for updateClassRecording
 
+@UpdateClassRecording
+Scenario: Check if admin able to retrieve class recording with invalid method
+When Admin creates PUT Request and sends HTTPS Request with invalid method for updateClassRecording
+Then Admin receives 405 "Method Not Allowed" Status for updateClassRecording
 
-
+@UpdateClassRecording
+Scenario: Check if admin able to update a Class Recording with invalid enpoint
+When Admin creates PUT Request and sends HTTPS Request with invalid endpoint for updateClassRecording
+Then Admin receives 404 "Not Found" Status for updateClassRecording

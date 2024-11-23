@@ -89,6 +89,22 @@
             "2024-11-29T15:11:08.750Z"
           ]
       }
+    },
+    {
+      "feature": "Update class Recording",
+      "scenarioName": "Check if admin able to update a Class Recording with valid classID  in request body without authorization",
+      "updateClassRecording": {
+            "classRecordingPath": "E://Mathu",
+            "csId": 0
+      }
+    },
+    {
+      "feature": "Update class Recording",
+      "scenarioName": "Check if admin able to update a Class Recording with invalid data",
+      "updateClassRecordingInvalidData": {
+            "classRecordingPath": "132!!!",
+            "csId": 0
+      }
     }
     
     
