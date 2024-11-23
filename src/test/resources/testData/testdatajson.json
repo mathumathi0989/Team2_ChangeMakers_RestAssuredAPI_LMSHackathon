@@ -105,6 +105,7 @@
       "updateClassRecordingInvalidData": {
             "classRecordingPath": "132!!!",
             "csId": 0
+      }
       },
 {
     "feature" : "ProgramModule_create valid program",
