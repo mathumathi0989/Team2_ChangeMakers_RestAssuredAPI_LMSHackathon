@@ -219,6 +219,10 @@ public class class2Actions {
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDeletedClassID");
 	    	return RequestFactory.createRequest(putClass,EnvConstants.jsonContentType,classDetails,"updateClass/106",0);	
 		}
+
+	
+
+		
 		
 		
 
