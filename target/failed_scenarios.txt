@@ -1,2 +1,2 @@
 file:src/test/resources/features/class2.feature:114:145:170:175:195
-file:src/test/resources/features/Program.feature:25:39
+file:src/test/resources/features/Program.feature:24:28:33:45
