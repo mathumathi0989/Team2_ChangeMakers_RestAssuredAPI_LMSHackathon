@@ -29,6 +29,7 @@ public class class2Steps {
 	private int http_MethodNotAllowed = EnvConstants.http_MethodNotAllowed;
 	private static BaseRequest login;
 	private static BaseRequest getClass2;
+	
 	private static BaseRequest updateClass2;
 	ApiUtils restUtil = new ApiUtils();
 	static String requestBody="";

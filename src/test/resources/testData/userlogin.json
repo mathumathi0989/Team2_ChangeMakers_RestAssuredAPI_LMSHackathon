@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "userLoginEmailId": "sdet@gmail.com",
+            "password": "LmsHackathonApi@2024"
+        },
+        {
+            "userLoginEmailId": "user2@example.com",
+            "password": "password2"
+        },
+        {
+            "userLoginEmailId": "invalid@example.com",
+            "password": "wrongpass"
+        }
+    ]
+}

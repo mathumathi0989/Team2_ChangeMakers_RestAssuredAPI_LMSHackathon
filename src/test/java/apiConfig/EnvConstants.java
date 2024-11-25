@@ -12,6 +12,7 @@ public class EnvConstants {
 	public static final String file_Path_expectedResponseMsg="/Users/bhagyashri/eclipse-workspace/com.lmsapi/src/test/resources/TestData/ResponseMessage.json";
 	public static final String file_Path_RequestRespLogs = "/Users/bhagyashri/eclipse-workspace/com.lmsapi/Team2LmsApiPhase2RestAssuredLogs.txt";
 	public static final String endPoint_Login = "login";
+	public static final String endPoint_invalidLogin = "invalidlogin";
 	public static final String endPoint_CreateProgram="saveprogram";
 	public static final String endPoint_UpdateProgramByProgName="program/";
 	public static final String endPoint_UpdateProgramByProgId="putprogram/";
@@ -21,10 +22,16 @@ public class EnvConstants {
 	public static final String endPoint_GetProgramWithUsers="allProgramsWithUsers";
 	public static final String endPoint_GetProgramByID="programs/";
 	public static final String userLoginId = "sdet@gmail.com";
+	public static final String userLoginwrongId = "sdetwrong@gmail.com";
+	
 	public static final String password = "LmsHackathonApi@2024";
+	public static final String Wrongpassword = "LmsHackathonApi@2023";
+	
 	public static final String jsonContentType = "application/json";
 	public static final String loginRequestBody = "{ \"userLoginEmailId\" : \"sdet@gmail.com\",\n"
 			+ "  \"password\" : \"LmsHackathonApi@2024\"}";
+	public static final String loginRequestBodyWrong = "{ \"userLoginEmailId\" : \"sdetwrong@gmail.com\",\n"
+			+ "  \"password\" : \"LmsHackathonApi@2023\"}";
 	public static final int http_OK = 200;
 	public static final int http_Created = 201;
 	public static final int http_BadRequest = 400;
@@ -41,7 +48,9 @@ public class EnvConstants {
 	public static final String endPoint_GetClassRecordingsClassID2="download/"+EnvVariables.csId;
 	public static final String endPoint_GetUpcomingclasses="upcomingClasses/"+EnvVariables.studentId;
 	public static final String endPoint_GetClassRecordingsClassID = "classRecordings/"+EnvVariables.csId;
-	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
+//	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
 	
+	//for userlogin JSON File
 	
+	public static final String TestDatajsonPath ="src/test/resources/testData/userlogin.json";
 }

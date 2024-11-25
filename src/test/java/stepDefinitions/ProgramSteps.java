@@ -40,6 +40,7 @@ public class ProgramSteps {
 	private static BaseRequest postProgram;
 	private static BaseRequest putProgram;
 	private static BaseRequest deleteProgram;
+	
 	ApiUtils restUtil = new ApiUtils();
 	static String requestBody="";
 	private static boolean isAuthTokenGenerated = false;
@@ -80,14 +81,14 @@ public class ProgramSteps {
     			}	
     }
     
-    @When("Admin creates and executes GET all program Request for the LMS API")
+    @When("Admin creates and executes get all program request for the lms api")
     public void admin_creates_and_executes_get_all_program_request_for_the_lms_api() {
 		getProgram = ProgramActions.setDetailsToReadProgram(getProgram);
     	requestSpecs = getProgram.buildRequest();
 	    response = requestSpecs.get(getProgram.getServiceUrl());
 		
     }
-    @Then("Admin receives {int} OK Status with program response body")
+    @Then("Admin receives {int} ok status with program response body")
     public void admin_receives_ok_status_with_program_response_body(Integer int1) {
     	restUtil.validateStatusCode(response, int1);
 		

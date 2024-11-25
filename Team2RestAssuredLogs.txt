@@ -1,0 +1,112 @@
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjU2MjQ4NiwiZXhwIjoxNzMyNTkxMjg2fQ.AJ3wQaQVzwXEb4nMpIhe_Ln8rvZ03cZFwApET5ZwnvUuGxCmgDSE9bPipmilzO7gURY63JzaGr5R-Iwk2UmmdQ",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjU2MjQ4NywiZXhwIjoxNzMyNTkxMjg3fQ.nvAN3-TNzMw1LCotAyKv07dk0DdCHAmNv40nfl3hhEAqdlKCt7zp9ArBXZNep0oknnqmq25KhiFFXPTdXIIuKg",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjU2MjQ4OCwiZXhwIjoxNzMyNTkxMjg4fQ.z2a2vkNne4SVS2iD8C84TSazNNN73dwAog24VoonL3sMf25HRmhQEvvHbqPSoKf55VVsqFV55kmKbghzNxSlWQ",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
+Request method:	POST
+Request URI:	https://lms-hackthon-oct24-3efc7e0df381.herokuapp.com/lms/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Authorization=Bearer null
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userLoginEmailId": "sdet@gmail.com",
+    "password": "LmsHackathonApi@2024"
+}
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZGV0QGdtYWlsLmNvbSIsImlhdCI6MTczMjU2MjQ4OSwiZXhwIjoxNzMyNTkxMjg5fQ.fVa_Ao5Tvuc9gY2Ip2xOvjfU_tGuF78GKVBzUX8a9PXBiGgdoySYPLfJTaifWecnpVyURFx-3iEaz1K-S__2gQ",
+    "type": "Bearer",
+    "userId": "U107",
+    "email": "sdet@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "Active",
+    "passwordExpired": false
+}
