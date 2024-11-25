@@ -10,14 +10,14 @@ import io.restassured.specification.RequestSpecification;
 
 public class class2Actions {
 
-	private String loginServiceUrl = EnvConstants.endPoint_Login;
-	private String getclassRecordingBatchIDServiceUrl = EnvConstants.endPoint_GetClassRecordingsBatchID;
-	private String getclassRecordingsClassid2ServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID2;
-	private String getUpcomingClassServiceUrl = EnvConstants.endPoint_GetUpcomingclasses;
-	private String getClassRecordingsClassidServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID;
-	private String getAllRecordingsServiceUrl = EnvConstants.endPoint_GetAllRecordings;
-	private String updateClassRecordingServiceUrl = EnvConstants.endPoint_UpdateclassRecording;
-	private String updateClass = EnvConstants.endPoint_Updateclass;
+//	private String loginServiceUrl = EnvConstants.endPoint_Login;
+//	private String getclassRecordingBatchIDServiceUrl = EnvConstants.endPoint_GetClassRecordingsBatchID;
+//	private String getclassRecordingsClassid2ServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID2;
+//	private String getUpcomingClassServiceUrl = EnvConstants.endPoint_GetUpcomingclasses;
+//	private String getClassRecordingsClassidServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID;
+//	private String getAllRecordingsServiceUrl = EnvConstants.endPoint_GetAllRecordings;
+//	private String updateClassRecordingServiceUrl = EnvConstants.endPoint_UpdateclassRecording;
+//	private String updateClass = EnvConstants.endPoint_Updateclass;
 
 	public static BaseRequest validLogin(BaseRequest login) {
 		login = RequestFactory.setAuthentication(login, "post", EnvConstants.userLoginId, EnvConstants.password,
@@ -340,5 +340,87 @@ public class class2Actions {
 		return RequestFactory.createRequest(putClassRecordings, EnvConstants.jsonContentType, classRecordingDetails,
 				"updaterecording/106", 0);
 	}
+	
+	// GetClassDetailsbyBatchId step definition
+
+		public static BaseRequest setDetailsToReadClass2DetailsByBatchIDValid(BaseRequest getClass2DetailsBatchID) {
+			getClass2DetailsBatchID = RequestFactory.setAuthentication(getClass2DetailsBatchID, "get",
+					EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			return RequestFactory.createRequest(getClass2DetailsBatchID, EnvConstants.jsonContentType, "",
+					EnvConstants.endPoint_GetClassDetailsBatchID, 0);
+		}
+
+		public static BaseRequest setDetailsToReadClass2DetailsByBatchIDInvalidBatchID(
+				BaseRequest getClass2DetailsBatchID) {
+			getClass2DetailsBatchID = RequestFactory.setAuthentication(getClass2DetailsBatchID, "get",
+					EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			return RequestFactory.createRequest(getClass2DetailsBatchID, EnvConstants.jsonContentType, "",
+					"classesbyBatch/100001", 0);
+		}
+
+		public static BaseRequest setDetailsToReadClass2DetailsByBatchIDInvalidEndpoint(
+				BaseRequest getClass2DetailsBatchID) {
+			getClass2DetailsBatchID = RequestFactory.setAuthentication(getClass2DetailsBatchID, "get",
+					EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			return RequestFactory.createRequest(getClass2DetailsBatchID, EnvConstants.jsonContentType, "",
+					"classesbyBatch/invalid", 0);
+		}
+
+		public static BaseRequest setDetailsToCreateClass2DetailsByBatchIDforGet(
+				BaseRequest getClass2DetailsBatchID) {
+			getClass2DetailsBatchID = RequestFactory.setAuthentication(getClass2DetailsBatchID, "get",
+					EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+			return RequestFactory.createRequest(getClass2DetailsBatchID, EnvConstants.jsonContentType, "",
+					EnvConstants.endPoint_GetClassDetailsBatchID, 0);
+		}
+
+		public static BaseRequest setDetailsToReadClass2DetailsByBatchIDInvalidAuth(
+				BaseRequest getClass2DetailsBatchID) {
+			getClass2DetailsBatchID = RequestFactory.setAuthentication(getClass2DetailsBatchID, "get", "",
+					EnvConstants.qaEnvironmentbaseURI);
+			return RequestFactory.createRequest(getClass2DetailsBatchID, EnvConstants.jsonContentType, "",
+					EnvConstants.endPoint_GetClassDetailsBatchID, 0);
+		}
+
+		// GetClassDetailsbyStaffId step definition
+
+				public static BaseRequest setDetailsToReadClass2DetailsByStaffIDValid(BaseRequest getClass2DetailsStaffID) {
+					getClass2DetailsStaffID = RequestFactory.setAuthentication(getClass2DetailsStaffID, "get",
+							EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+					return RequestFactory.createRequest(getClass2DetailsStaffID, EnvConstants.jsonContentType, "",
+							EnvConstants.endPoint_GetClassDetailsStaffID, 0);
+				}
+
+				public static BaseRequest setDetailsToReadClass2DetailsByStaffIDInvalidBatchID(
+						BaseRequest getClass2DetailsStaffID) {
+					getClass2DetailsStaffID = RequestFactory.setAuthentication(getClass2DetailsStaffID, "get",
+							EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+					return RequestFactory.createRequest(getClass2DetailsStaffID, EnvConstants.jsonContentType, "",
+							"classesByStaff/100001", 0);
+				}
+
+				public static BaseRequest setDetailsToReadClass2DetailsByStaffIDInvalidEndpoint(
+						BaseRequest getClass2DetailsStaffID) {
+					getClass2DetailsStaffID = RequestFactory.setAuthentication(getClass2DetailsStaffID, "get",
+							EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+					return RequestFactory.createRequest(getClass2DetailsStaffID, EnvConstants.jsonContentType, "",
+							"classesByStaff/invalid", 0);
+				}
+
+				public static BaseRequest setDetailsToCreateClass2DetailsByStaffIDforGet(
+						BaseRequest getClass2DetailsStaffID) {
+					getClass2DetailsStaffID = RequestFactory.setAuthentication(getClass2DetailsStaffID, "get",
+							EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
+					return RequestFactory.createRequest(getClass2DetailsStaffID, EnvConstants.jsonContentType, "",
+							EnvConstants.endPoint_GetClassDetailsStaffID, 0);
+				}
+
+				public static BaseRequest setDetailsToReadClass2DetailsByStaffIDInvalidAuth(
+						BaseRequest getClass2DetailsStaffID) {
+					getClass2DetailsStaffID = RequestFactory.setAuthentication(getClass2DetailsStaffID, "get", "",
+							EnvConstants.qaEnvironmentbaseURI);
+					return RequestFactory.createRequest(getClass2DetailsStaffID, EnvConstants.jsonContentType, "",
+							EnvConstants.endPoint_GetClassDetailsStaffID, 0);
+				}		
 
 }

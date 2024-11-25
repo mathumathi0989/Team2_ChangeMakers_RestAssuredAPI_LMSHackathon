@@ -205,3 +205,54 @@ Then Admin receives 405 "Method Not Allowed" Status for updateClassRecording
 Scenario: Check if admin able to update a Class Recording with invalid enpoint
 When Admin creates PUT Request and sends HTTPS Request with invalid endpoint for updateClassRecording
 Then Admin receives 404 "Not Found" Status for updateClassRecording
+
+
+@GetClassDetailsbyBatchId 
+Scenario: Check if admin able to retrieve all Classes  with valid Batchid
+When Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByBatchID
+Then Admin receives 200 "OK" Status for getClassDetailsByBatchID
+
+@GetClassDetailsbyBatchId 
+Scenario: Check if admin able to retrieve  all Classes with invalid Batchid
+When Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassDetailsByBatchID
+Then Admin receives 404 "Not Found" Status for getClassDetailsByBatchID
+
+@GetClassDetailsbyBatchId  
+Scenario: Check if admin able to retrieve all Classes with invalid Endpoint
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByBatchID
+Then Admin receives 404 "Not Found" Status for getClassDetailsByBatchID
+
+@GetClassDetailsbyBatchId  
+Scenario: Check if admin able to retrieve all Classes with invalid method
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByBatchID
+Then Admin receives 405 "Method Not Allowed" Status for getClassDetailsByBatchID
+
+@GetClassDetailsbyBatchId  
+Scenario: Check if admin able to retrieve all Classes without Authorization
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByBatchID
+Then Admin receives 401 "Unauthorized" Status for getClassDetailsByBatchID
+
+@GetClassDetailsbyStaffId 
+Scenario: Check if admin able to retrieve all Classes  with valid Staffid
+When Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByStaffID
+Then Admin receives 200 "OK" Status for getClassDetailsByStaffID
+
+@GetClassDetailsbyStaffId 
+Scenario: Check if admin able to retrieve  all Classes with invalid Staffid
+When Admin creates GET Request and sends HTTPS Request with invalid staffID for getClassDetailsByStaffID
+Then Admin receives 404 "Not Found" Status for getClassDetailsByStaffID
+
+@GetClassDetailsbyStaffId  
+Scenario: Check if admin able to retrieve all Classes with invalid Endpoint
+When Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByStaffID
+Then Admin receives 404 "Not Found" Status for getClassDetailsByStaffID
+
+@GetClassDetailsbyStaffId  
+Scenario: Check if admin able to retrieve all Classes with invalid method
+When Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByStaffID
+Then Admin receives 405 "Method Not Allowed" Status for getClassDetailsByStaffID
+
+@GetClassDetailsbyStaffId  
+Scenario: Check if admin able to retrieve all Classes without Authorization
+When Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByStaffID
+Then Admin receives 401 "Unauthorized" Status for getClassDetailsByStaffID

@@ -40,6 +40,8 @@ public class EnvConstants {
 	public static final String endPoint_GetUpcomingclasses="upcomingClasses/"+EnvVariables.studentId;
 	public static final String endPoint_GetClassRecordingsClassID = "classRecordings/"+EnvVariables.csId;
 	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
+	public static final String endPoint_GetClassDetailsBatchID="classesbyBatch/"+EnvVariables.batchID;
+	public static final String endPoint_GetClassDetailsStaffID="classesByStaff/"+EnvVariables.staffId;
 	
 	
 }
