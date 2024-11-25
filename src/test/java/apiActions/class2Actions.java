@@ -10,14 +10,6 @@ import io.restassured.specification.RequestSpecification;
 
 public class class2Actions {
 
-//	private String loginServiceUrl = EnvConstants.endPoint_Login;
-//	private String getclassRecordingBatchIDServiceUrl = EnvConstants.endPoint_GetClassRecordingsBatchID;
-//	private String getclassRecordingsClassid2ServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID2;
-//	private String getUpcomingClassServiceUrl = EnvConstants.endPoint_GetUpcomingclasses;
-//	private String getClassRecordingsClassidServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID;
-//	private String getAllRecordingsServiceUrl = EnvConstants.endPoint_GetAllRecordings;
-//	private String updateClassRecordingServiceUrl = EnvConstants.endPoint_UpdateclassRecording;
-//	private String updateClass = EnvConstants.endPoint_Updateclass;
 
 	public static BaseRequest validLogin(BaseRequest login) {
 		login = RequestFactory.setAuthentication(login, "post", EnvConstants.userLoginId, EnvConstants.password,
