@@ -1,114 +1,98 @@
 {
-
-  "data": [
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a class with valid ClassID and all fields in requestBody",
-      "updateClassDetails": {
-        "batchId": "{{batchId}}",
-        "classNo": "1",
-        "classDate": "2024-12-23",
-        "classTopic": "Mathu Java topics updated",
-        "classDescription": "Mathu class description",
-        "classComments": "Mathu class comments",
-        "classNotes": "Mathu notes",
-        "classRecordingPath": "D://Downloads",
-        "classStaffId": "U49",
-        "classScheduledDates": [
-          "2024-11-29T15:11:08.750Z"
-        ]
-      }
-    },
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a Class with valid classID and mandatory fields in request body",
-      "updateClassMandatoryValidClassID": {
-        "batchId": "{{batchId}}",
-        "classNo": "1",
-        "classTopic": "Mathu Java topics updated",
-        "classDate": "2024-12-23",
-        "classStaffId": "U49",
-        "classStatus" : "Active"
-      }
-    },
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a Class with valid ClassID and missing mandatory fields request body",
-      "updateClassMissingMandatoryValidClassID": {
-        "batchId": "{{batchId}}",
-        "classNo": "1",
-        "classTopic": "",
-        "classDate": "2024-12-23",
-        "classStaffId": "U49",
-        "classStatus" : "Active"
-      }
-    },
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a Class with invalid data",
-      "updateClassInvalidDataValidClassID": {
-        "batchId": "{{batchId}}",
-        "classNo": "1",
-        "classTopic": "Java 123!!!",
-        "classDate": "2024-12-23",
-        "classStaffId": "U49",
-        "classStatus" : "Active"
-      }
-    },
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields",
-      "updateClassDeletedBatchIDValidClassID": {
-          "batchId": "8593",
-          "classNo": "1",
-          "classDate": "2024-12-23",
-          "classTopic": "Mathu Java topics updated aga",
-          "classDescription": "Mathu class description",
-          "classComments": "Mathu class comments",
-          "classNotes": "Mathu notes",
-          "classRecordingPath": "D://Downloads",
-          "classStaffId": "U49",
-          "classScheduledDates": [
-            "2024-11-29T15:11:08.750Z"
-          ]
-      }
-    },
-    {
-      "feature": "Update class",
-      "scenarioName": "Check if admin able to update a Class with a deleted classID in the endpoint",
-      "updateClassDeletedClassID": {
-          "batchId": "8594",
-          "classNo": "1",
-          "classDate": "2024-12-23",
-          "classTopic": "Mathu Java topics updated aga",
-          "classDescription": "Mathu class description",
-          "classComments": "Mathu class comments",
-          "classNotes": "Mathu notes",
-          "classRecordingPath": "D://Downloads",
-          "classStaffId": "U49",
-          "classScheduledDates": [
-            "2024-11-29T15:11:08.750Z"
-          ]
-      }
-    },
-    {
-      "feature": "Update class Recording",
-      "scenarioName": "Check if admin able to update a Class Recording with valid classID  in request body without authorization",
-      "updateClassRecording": {
-            "classRecordingPath": "E://Mathu",
-            "csId": 0
-      }
-    },
-    {
-      "feature": "Update class Recording",
-      "scenarioName": "Check if admin able to update a Class Recording with invalid data",
-      "updateClassRecordingInvalidData": {
-            "classRecordingPath": "132!!!",
-            "csId": 0
-      }
-      },
-{
-    "feature" : "ProgramModule_create valid program",
+  "data" : [ {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a class with valid ClassID and all fields in requestBody",
+    "updateClassDetails" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classDate" : "2024-12-23",
+      "classTopic" : "Mathu Java topics updated",
+      "classDescription" : "Mathu class description",
+      "classComments" : "Mathu class comments",
+      "classNotes" : "Mathu notes",
+      "classRecordingPath" : "D://Downloads",
+      "classStaffId" : "U49",
+      "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
+    }
+  }, {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a Class with valid classID and mandatory fields in request body",
+    "updateClassMandatoryValidClassID" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classTopic" : "Mathu Java topics updated",
+      "classDate" : "2024-12-23",
+      "classStaffId" : "U49",
+      "classStatus" : "Active"
+    }
+  }, {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a Class with valid ClassID and missing mandatory fields request body",
+    "updateClassMissingMandatoryValidClassID" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classTopic" : "",
+      "classDate" : "2024-12-23",
+      "classStaffId" : "U49",
+      "classStatus" : "Active"
+    }
+  }, {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a Class with invalid data",
+    "updateClassInvalidDataValidClassID" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classTopic" : "Java 123!!!",
+      "classDate" : "2024-12-23",
+      "classStaffId" : "U49",
+      "classStatus" : "Active"
+    }
+  }, {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields",
+    "updateClassDeletedBatchIDValidClassID" : {
+      "batchId" : "8593",
+      "classNo" : "1",
+      "classDate" : "2024-12-23",
+      "classTopic" : "Mathu Java topics updated aga",
+      "classDescription" : "Mathu class description",
+      "classComments" : "Mathu class comments",
+      "classNotes" : "Mathu notes",
+      "classRecordingPath" : "D://Downloads",
+      "classStaffId" : "U49",
+      "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
+    }
+  }, {
+    "feature" : "Update class",
+    "scenarioName" : "Check if admin able to update a Class with a deleted classID in the endpoint",
+    "updateClassDeletedClassID" : {
+      "batchId" : "8594",
+      "classNo" : "1",
+      "classDate" : "2024-12-23",
+      "classTopic" : "Mathu Java topics updated aga",
+      "classDescription" : "Mathu class description",
+      "classComments" : "Mathu class comments",
+      "classNotes" : "Mathu notes",
+      "classRecordingPath" : "D://Downloads",
+      "classStaffId" : "U49",
+      "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
+    }
+  }, {
+    "feature" : "Update class Recording",
+    "scenarioName" : "Check if admin able to update a Class Recording with valid classID  in request body without authorization",
+    "updateClassRecording" : {
+      "classRecordingPath" : "E://Mathu",
+      "csId" : 0
+    }
+  }, {
+    "feature" : "Update class Recording",
+    "scenarioName" : "Check if admin able to update a Class Recording with invalid data",
+    "updateClassRecordingInvalidData" : {
+      "classRecordingPath" : "132!!!",
+      "csId" : 0
+    }
+  }, {
+    "feature" : "ProgramModule",
     "scenarioName" : "Check if Admin able to create a ValidProgramWithAllValidFieldsPresentInRequestBody",
     "ValidProgramWithAllValidFieldsPresentInRequestBody" : {
       "programName" : "{{programName}}",
@@ -116,15 +100,15 @@
       "programStatus" : "Active"
     }
   }, {
-    "feature" : "ProgramModule_create valid program",
+    "feature" : "ProgramModule",
     "scenarioName" : "Check if Admin able to create a ValidProgramWithMissingOptionalFieldInRequestBody",
     "ValidProgramWithMissingOptionalFieldInRequestBody" : {
       "programName" : "{{programName}}",
       "programStatus" : "Active"
     }
   }, {
-    "feature" : "ProgramModule_create valid program",
-    "scenarioName" : "Check if Admin able to create a ValidProgramWithAllValidFieldsPresentInRequestBody",
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update a ValidProgramWithAllValidFieldsPresentInRequestBody",
     "UpdateProgramWithAllValidFieldsPresentInRequestBody" : {
       "programId" : "{{programID}}",
       "programName" : "{{programNameToUpdate}}",
@@ -132,6 +116,110 @@
       "programStatus" : "Active",
       "creationTime" : "2024-11-22T23:18:35.198+00:00",
       "lastModTime" : "2024-11-22T23:18:36.895+00:35"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to UpdateProgramRequest with NoAuth",
+    "UpdateProgramRequestBodyNoAuth" : {
+      "programId" : 16339,
+      "programName" : "TeamChangeMakers-APIPhaseTwo-aaaav",
+      "programDescription" : null,
+      "programStatus" : "Inactive",
+      "creationTime" : "2024-11-23T01:53:45.092+00:00",
+      "lastModTime" : "2024-11-23T01:53:46.794+00:00"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to create program with existing program name ",
+    "ExistingProgramName" : {
+      "programName" : "TeamChangeMakers-APIPhaseTwo-aaabi",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "Active"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to create program with special characters in program's mandatory fields",
+    "SpecialCharactersInProgramMandatoryFields" : {
+      "programName" : "5^^^@#!&^*()%",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "5^^^@#!&^*()%"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to create program with only numbers in program's mandatory fields",
+    "OnlyNumbersInProgramMandatoryFields" : {
+      "programName" : "454545",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "454545"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to create program with unnecessarily extra long programName",
+    "VeryLongProgramName" : {
+      "programName" : "A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "Active"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to create program with only numbers in program's mandatory fields",
+    "MissingMandatoryDetails" : {
+      "programName" : "",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : ""
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update program with existing program name ",
+    "ExistingProgramNameToUpdate" : {
+      "programId" : 16339,
+      "programName" : "TeamChangeMakers-APIPhaseTwo-aaabi",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "Active"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update program with special characters in program's mandatory fields",
+    "SpecialCharactersInProgramMandatoryFieldsToUpdateProgram" : {
+      "programId" : 16339,
+      "programName" : "5^^^@#!&^*()%",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "5^^^@#!&^*()%",
+      "creationTime" : "2024-11-23T01:53:45.092+00:00",
+      "lastModTime" : "2024-11-23T01:53:46.794+00:00"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update program with only numbers in program's mandatory fields",
+    "OnlyNumbersInProgramMandatoryFieldsToUpdateProgram" : {
+      "programId" : 16339,
+      "programName" : "454545",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "454545",
+      "creationTime" : "2024-11-23T01:53:45.092+00:00",
+      "lastModTime" : "2024-11-23T01:53:46.794+00:00"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update program with unnecessarily extra long programName",
+    "VeryLongProgramNameToUpdateProgram" : {
+      "programId" : 16339,
+      "programName" : "A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "Active",
+      "creationTime" : "2024-11-23T01:53:45.092+00:00",
+      "lastModTime" : "2024-11-23T01:53:46.794+00:00"
+    }
+  }, {
+    "feature" : "ProgramModule",
+    "scenarioName" : "Check if Admin able to update program with only numbers in program's mandatory fields",
+    "MissingMandatoryDetailsToUpdateProgram" : {
+      "programId" : 16339,
+      "programName" : "",
+      "programDescription" : "RestfulAPI_Java_Cucumber_BDD",
+      "programStatus" : "",
+      "creationTime" : "2024-11-23T01:53:45.092+00:00",
+      "lastModTime" : "2024-11-23T01:53:46.794+00:00"
     }
   } ]
 }
