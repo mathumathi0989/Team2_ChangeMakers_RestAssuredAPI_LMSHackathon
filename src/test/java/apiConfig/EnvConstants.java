@@ -43,6 +43,15 @@ public class EnvConstants {
 	public static final String endPoint_GetClassRecordingsClassID = "classRecordings/"+EnvVariables.csId;
 	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
 	
+	//Adding class constants-SUpriya
+	
+	public static final String endPoint_GetAllclasses="allClasses";
+	public static final String endPoint_GetClassDetailsClassTopic="classes/"+EnvVariables.classTopic;
+	public static final String endPoint_GetClassDetailsClassId="class/"+EnvVariables.csId;
+	public static final String endPoint_DeleteClassDetailsByClassId="deleteByClass/"+EnvVariables.csId;
+	
+	
+	
 	
 	
 	

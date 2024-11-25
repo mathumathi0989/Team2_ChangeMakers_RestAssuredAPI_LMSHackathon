@@ -11,4 +11,6 @@ public class EnvVariables {
 	public static String studentId = "U02";
 	
 	
+	public static String classTopic="sql";
+	
 }
