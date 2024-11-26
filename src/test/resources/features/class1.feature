@@ -9,12 +9,23 @@ Feature: Class1Module : Positive flow
   Scenario: Check if admin able to retrieve all classes  with valid Endpoint
   When Admin creates GET Request and Admin sends HTTPS Request with endpoint for class   
   Then Admin receives 200 "OK" Status with response body for class                                                                
-   #  for post request
+  
    
-  #@creatClass
-  #Scenario: Check if admin is able to create class with all valid details
-  #When Admin creates POST Request for the LMS with request body and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 201 created status for class
+  @createClass
+  Scenario: Check if admin is able to create class with all valid details
+  When Admin creates POST Request with request body for create class
+  Then Admin receive 201 "Created" Status for createClass
+  
+  @createclasswithonlymandatory
+  Scenario: Check if admin is able to create class with only mandatory 
+  When Admin creates POST Request with request body for mandatory createClass
+  Then Admin receive 201 "Created" Status for createClass
+  
+ 
+  @createclasswithonlyadditionalfieldvalues
+  Scenario: Check if admin is able to create class with only additional field values
+  When  Admin creates POST Request for only addditional field values createClass
+  Then  Admin receive 400 bad request for createClass
   
   
   @GetAllClasseswithinvalidendpoint
@@ -109,23 +120,8 @@ Feature: Class1Module : Positive flow
   Then Admin receives 401 Unauthorized Status  for class
   
   
-  #for post request
-  #@creatClass
-  #Scenario: Check if admin is able to create class with all valid details
-  #When Admin creates POST Request for the LMS with request body and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 201 created status for class
-  #
-  #
-  #@createclasswithonlymandatory
-  #Scenario: Check if admin is able to create class with only mandatory 
-  #When Admin creates POST Request for the LMS with mandatory data and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 201 created status  for class
-   #
-  #@createclasswithonlyadditionalfieldvalues
-  #Scenario: Check if admin is able to create class with only additional field values
-  #When  Admin creates POST Request for the LMS with only addditional field values and Admin calls "POST " request with endpoint for class
-  #Then  Admin receive 400 bad request for class
-  #
+
+ 
   #@createclasswithinvaliddata
   #Scenario: Check if admin is able to create class with invalid data
   #When Admin creates POST Request for the LMS with invalid data and Admin calls "POST " request with endpoint for class
@@ -157,9 +153,7 @@ Feature: Class1Module : Positive flow
   #Scenario: Check if admin is able to create class without auth
   #When Admin creates POST Request for the LMS with request body and Admin calls "POST" request with endpoint  for class
   #Then Admin receives 401 unauthorized for class
-  #
-  #
-  #
+ 
   
   
   

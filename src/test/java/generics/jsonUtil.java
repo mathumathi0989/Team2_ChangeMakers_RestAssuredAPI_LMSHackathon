@@ -21,16 +21,25 @@ public class jsonUtil {
            
             //Add variable for API data chaining 
             String batchId = EnvVariables.batchID;  
-            content = content.replace("{{batchId}}", batchId);
+            
+            if (batchId != null && content.contains("{{batchId}}")) {
+                content = content.replace("{{batchId}}", batchId);
+            }
             
             String programName_ToCreateProgram = EnvVariables.programNameToCreateProgram;  
-            content = content.replace("{{programName}}", programName_ToCreateProgram);
+            if (programName_ToCreateProgram  != null && content.contains("{{programName}}")) {
+                content = content.replace("{{programName}}", programName_ToCreateProgram);
+            }
             
             int programId = EnvVariables.programIDOne;
-            content = content.replace("{{programID}}", String.valueOf(programId));
+            if (content.contains("{{programID}}")) {
+                content = content.replace("{{programID}}", String.valueOf(programId));
+            }
             
             String programName_ToUpdateProgram = EnvVariables.programNameOne+"-Updated";
-            content = content.replace("{{programNameToUpdate}}", programName_ToUpdateProgram);
+            if (content.contains("{{programNameToUpdate}}")) {
+                content = content.replace("{{programNameToUpdate}}", programName_ToUpdateProgram);
+            }
             
             
             JSONObject jsonObject = new JSONObject(content);
