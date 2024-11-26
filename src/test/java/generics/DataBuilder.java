@@ -53,7 +53,7 @@ public class DataBuilder {
 		// Load the last generated string from a file
 		this.currentString = loadCurrentString(currentStringFilePath);
 		if (this.currentString == null) {
-			this.currentString = "aaaaaaa"; // Default starting string
+			this.currentString = "aaaaaaaa"; // Default starting string
 		}
 	}
 

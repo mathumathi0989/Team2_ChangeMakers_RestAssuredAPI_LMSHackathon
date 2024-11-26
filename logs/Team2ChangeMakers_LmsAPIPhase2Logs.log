@@ -1,0 +1,1176 @@
+[INFO ]2024-11-2614:08:29.255-Executing setup code...
+[INFO ]2024-11-2614:08:29.943-Executing setup code...
+[INFO ]2024-11-2614:08:30.589-Executing setup code...
+[INFO ]2024-11-2614:08:31.193-Executing setup code...
+[INFO ]2024-11-2614:08:31.784-Executing setup code...
+[INFO ]2024-11-2614:08:32.293-===============================================================================================
+[INFO ]2024-11-2614:08:32.294-[] : Admin creates request with valid credentials login
+[INFO ]2024-11-2614:08:32.294------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:32.304-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:32.304-User is authenticated!!!
+[INFO ]2024-11-2614:08:33.079-===============================================================================================
+[INFO ]2024-11-2614:08:33.079-[] : Check if Admin able to generate token with invalid endpoint login
+[INFO ]2024-11-2614:08:33.079------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:33.081-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:33.081-User is authenticated!!!
+[INFO ]2024-11-2614:08:33.783-===============================================================================================
+[INFO ]2024-11-2614:08:33.785-[] : Check if Admin able to generate token with invalid credentials login1
+[INFO ]2024-11-2614:08:33.786------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:33.789-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:33.789-User is authenticated!!!
+[INFO ]2024-11-2614:08:34.081-===============================================================================================
+[INFO ]2024-11-2614:08:34.082-[@GetAllPrograms] : Check if Admin able to retrieve all programs with valid Endpoint
+[INFO ]2024-11-2614:08:34.082------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:34.084-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:34.084-User is authenticated!!!
+[INFO ]2024-11-2614:08:34.087-Setting details[authentication, baseURI, endpoint ]to read all programs!!
+[INFO ]2024-11-2614:08:35.050-Actual status code : 200
+[INFO ]2024-11-2614:08:35.329-===============================================================================================
+[INFO ]2024-11-2614:08:35.330-[@GetAllProgramsWithAdmins] : Check if Admin able to retrieve all programs with Admins and valid Endpoint
+[INFO ]2024-11-2614:08:35.330------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:35.332-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:35.332-User is authenticated!!!
+[INFO ]2024-11-2614:08:35.333-Setting details[authentication, baseURI, endpoint ]to read all programs with admins!!
+[INFO ]2024-11-2614:08:36.009-Actual status code : 200
+[INFO ]2024-11-2614:08:36.266-===============================================================================================
+[INFO ]2024-11-2614:08:36.266-[@PostNewProgram] : Check if Admin able to create a program with valid endpoint and request body with Authorization
+[INFO ]2024-11-2614:08:36.266------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:36.268-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:36.268-User is authenticated!!!
+[INFO ]2024-11-2614:08:36.271-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaab
+[INFO ]2024-11-2614:08:36.271-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:36.296-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab","programStatus":"Active"}
+[INFO ]2024-11-2614:08:36.831-Actual status code : 201
+[INFO ]2024-11-2614:08:36.915-Setting programID in Env Variables
+[INFO ]2024-11-2614:08:36.915-programIDOne is 16928
+[INFO ]2024-11-2614:08:36.942-Setting programName in Env Variables
+[INFO ]2024-11-2614:08:36.942-programNameOne is TeamChangeMakers-APIPhaseTwo-aaaaaaab
+[INFO ]2024-11-2614:08:36.990-===============================================================================================
+[INFO ]2024-11-2614:08:36.991-[@PostNewProgram] : Check if Admin able to create a program with valid endpoint and request body with Authorization
+[INFO ]2024-11-2614:08:36.991------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:36.993-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:36.994-User is authenticated!!!
+[INFO ]2024-11-2614:08:36.996-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:36.996-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:37.008-RequestBody to create program : {"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaac","programStatus":"Active"}
+[INFO ]2024-11-2614:08:37.533-Actual status code : 201
+[INFO ]2024-11-2614:08:37.568-Setting programID in Env Variables
+[INFO ]2024-11-2614:08:37.570-programIDTwo is 16929
+[INFO ]2024-11-2614:08:37.593-Setting programName in Env Variables
+[INFO ]2024-11-2614:08:37.593-programNameTwo is TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:37.658-===============================================================================================
+[INFO ]2024-11-2614:08:37.658-[@GetProgramByID] : Check if Admin able to retrieve a program with valid program ID
+[INFO ]2024-11-2614:08:37.658------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:37.660-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:37.661-User is authenticated!!!
+[INFO ]2024-11-2614:08:37.663-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:37.663-Setting details[authentication, baseURI, path parameter, endpoint ]to read newly created program by programID!!
+[INFO ]2024-11-2614:08:38.151-Actual status code : 200
+[INFO ]2024-11-2614:08:38.299-===============================================================================================
+[INFO ]2024-11-2614:08:38.301-[@PutByProgramID] : Check if Admin able to update a program with valid programID endpoint and valid request body
+[INFO ]2024-11-2614:08:38.301------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:38.308-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:38.308-User is authenticated!!!
+[INFO ]2024-11-2614:08:38.312-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:38.312-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:38.316-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:08:38.924-Actual status code : 200
+[INFO ]2024-11-2614:08:39.031-Setting programName in Env Variables
+[INFO ]2024-11-2614:08:39.032-programNameOne is TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated
+[INFO ]2024-11-2614:08:39.032-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated
+[INFO ]2024-11-2614:08:39.076-===============================================================================================
+[INFO ]2024-11-2614:08:39.077-[@MethodNotAllowed] : Check if Admin able to create a program with invalid method
+[INFO ]2024-11-2614:08:39.077------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:39.080-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:39.080-User is authenticated!!!
+[INFO ]2024-11-2614:08:39.084-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaad
+[INFO ]2024-11-2614:08:39.084-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:39.091-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaad","programStatus":"Active"}
+[INFO ]2024-11-2614:08:39.578-Actual status code : 405
+[INFO ]2024-11-2614:08:39.623-===============================================================================================
+[INFO ]2024-11-2614:08:39.623-[@MethodNotAllowed] : Check if Admin able to retrieve all programs with invalid Method
+[INFO ]2024-11-2614:08:39.623------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:39.625-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:39.626-User is authenticated!!!
+[INFO ]2024-11-2614:08:39.628-Setting details[authentication, baseURI, endpoint ]to read all programs!!
+[INFO ]2024-11-2614:08:40.121-Actual status code : 405
+[INFO ]2024-11-2614:08:40.172-===============================================================================================
+[INFO ]2024-11-2614:08:40.172-[@MethodNotAllowed] : Check if Admin able to retrieve all programs with admins with invalid Method
+[INFO ]2024-11-2614:08:40.173------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:40.198-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:40.198-User is authenticated!!!
+[INFO ]2024-11-2614:08:40.200-Setting details[authentication, baseURI, endpoint ]to read all programs with admins!!
+[INFO ]2024-11-2614:08:40.700-Actual status code : 405
+[INFO ]2024-11-2614:08:40.753-===============================================================================================
+[INFO ]2024-11-2614:08:40.754-[@MethodNotAllowed] : Check if Admin able to update a program with invalid method
+[INFO ]2024-11-2614:08:40.754------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:40.756-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:40.756-User is authenticated!!!
+[INFO ]2024-11-2614:08:40.757-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:40.757-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:40.764-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:08:41.264-Actual status code : 405
+[INFO ]2024-11-2614:08:41.306-===============================================================================================
+[INFO ]2024-11-2614:08:41.307-[@NoAuth] : Check if Admin able to create a program with valid endpoint and request body without Authorization
+[INFO ]2024-11-2614:08:41.307------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:41.308-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:41.308-User is authenticated!!!
+[INFO ]2024-11-2614:08:41.310-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaae
+[INFO ]2024-11-2614:08:41.310-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:41.315-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaae","programStatus":"Active"}
+[INFO ]2024-11-2614:08:41.899-Actual status code : 401
+[INFO ]2024-11-2614:08:41.961-===============================================================================================
+[INFO ]2024-11-2614:08:41.961-[@NoAuth] : Check if Admin able to retrieve all programs without Authorization
+[INFO ]2024-11-2614:08:41.961------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:41.963-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:41.963-User is authenticated!!!
+[INFO ]2024-11-2614:08:41.965-Setting details[authentication, baseURI, endpoint ]to read all programs!!
+[INFO ]2024-11-2614:08:42.448-Actual status code : 401
+[INFO ]2024-11-2614:08:42.509-===============================================================================================
+[INFO ]2024-11-2614:08:42.512-[@NoAuth] : Check if Admin able to retrieve all programs with Admins without Authorization
+[INFO ]2024-11-2614:08:42.512------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:42.516-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:42.516-User is authenticated!!!
+[INFO ]2024-11-2614:08:42.517-Setting details[authentication, baseURI, endpoint ]to read all programs with admins!!
+[INFO ]2024-11-2614:08:42.990-Actual status code : 401
+[INFO ]2024-11-2614:08:43.052-===============================================================================================
+[INFO ]2024-11-2614:08:43.054-[@NoAuth] : Check if Admin able to retrieve a program by programID without Authorization
+[INFO ]2024-11-2614:08:43.054------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:43.056-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:43.056-User is authenticated!!!
+[INFO ]2024-11-2614:08:43.057-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:43.057-Setting details[authentication, baseURI, path parameter, endpoint ]to read newly created program by programID!!
+[INFO ]2024-11-2614:08:43.539-Actual status code : 401
+[INFO ]2024-11-2614:08:43.570-===============================================================================================
+[INFO ]2024-11-2614:08:43.570-[@NoAuth] : Check if Admin able to update a program by programID without Authorization
+[INFO ]2024-11-2614:08:43.570------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:43.572-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:43.572-User is authenticated!!!
+[INFO ]2024-11-2614:08:43.572-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:43.579-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":null,"creationTime":"2024-11-23T01:53:45.092+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaav","programId":16339,"programStatus":"Inactive"}
+[INFO ]2024-11-2614:08:44.070-Actual status code : 401
+[INFO ]2024-11-2614:08:44.147-===============================================================================================
+[INFO ]2024-11-2614:08:44.147-[@NoAuth] : Check if Admin able to update a program by programName without Authorization
+[INFO ]2024-11-2614:08:44.147------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:44.153-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:44.153-User is authenticated!!!
+[INFO ]2024-11-2614:08:44.157-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated
+[INFO ]2024-11-2614:08:44.157-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:44.162-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":null,"creationTime":"2024-11-23T01:53:45.092+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaav","programId":16339,"programStatus":"Inactive"}
+[INFO ]2024-11-2614:08:44.636-Actual status code : 401
+[INFO ]2024-11-2614:08:44.694-===============================================================================================
+[INFO ]2024-11-2614:08:44.694-[@NoAuth] : Check if Admin able to delete a program by programID without Authorization
+[INFO ]2024-11-2614:08:44.694------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:44.695-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:44.695-User is authenticated!!!
+[INFO ]2024-11-2614:08:44.697-Reading prgmIDTwo from env variables : 16929
+[INFO ]2024-11-2614:08:44.697-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programID!!
+[INFO ]2024-11-2614:08:45.195-Actual status code : 401
+[INFO ]2024-11-2614:08:45.228-===============================================================================================
+[INFO ]2024-11-2614:08:45.228-[@NoAuth] : Check if Admin able to delete a program by programName without Authorization
+[INFO ]2024-11-2614:08:45.228------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:45.231-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:45.231-User is authenticated!!!
+[INFO ]2024-11-2614:08:45.234-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated
+[INFO ]2024-11-2614:08:45.234-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programName!!
+[INFO ]2024-11-2614:08:45.739-Actual status code : 401
+[INFO ]2024-11-2614:08:45.822-===============================================================================================
+[INFO ]2024-11-2614:08:45.822-[@PostNewProgram] : Check if Admin able to create a program with invalid request body
+[INFO ]2024-11-2614:08:45.822------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:45.824-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:45.824-User is authenticated!!!
+[INFO ]2024-11-2614:08:45.825-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaaf
+[INFO ]2024-11-2614:08:45.825-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:45.830-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaabi","programStatus":"Active"}
+[INFO ]2024-11-2614:08:46.314-Actual status code : 400
+[INFO ]2024-11-2614:08:46.372-===============================================================================================
+[INFO ]2024-11-2614:08:46.372-[@PostNewProgram] : Check if Admin able to create a program with invalid request body
+[INFO ]2024-11-2614:08:46.373------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:46.374-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:46.374-User is authenticated!!!
+[INFO ]2024-11-2614:08:46.375-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaag
+[INFO ]2024-11-2614:08:46.376-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:46.381-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"","programStatus":""}
+[INFO ]2024-11-2614:08:46.841-Actual status code : 400
+[INFO ]2024-11-2614:08:46.893-===============================================================================================
+[INFO ]2024-11-2614:08:46.893-[@PostNewProgram] : Check if Admin able to create a program with invalid request body
+[INFO ]2024-11-2614:08:46.893------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:46.894-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:46.895-User is authenticated!!!
+[INFO ]2024-11-2614:08:46.899-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaah
+[INFO ]2024-11-2614:08:46.899-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:46.907-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"5^^^@#!&^*()%","programStatus":"5^^^@#!&^*()%"}
+[INFO ]2024-11-2614:08:47.378-Actual status code : 400
+[INFO ]2024-11-2614:08:47.430-===============================================================================================
+[INFO ]2024-11-2614:08:47.431-[@PostNewProgram] : Check if Admin able to create a program with invalid request body
+[INFO ]2024-11-2614:08:47.431------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:47.432-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:47.432-User is authenticated!!!
+[INFO ]2024-11-2614:08:47.435-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaai
+[INFO ]2024-11-2614:08:47.435-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:47.439-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"454545","programStatus":"454545"}
+[INFO ]2024-11-2614:08:47.929-Actual status code : 400
+[INFO ]2024-11-2614:08:47.970-===============================================================================================
+[INFO ]2024-11-2614:08:47.970-[@PostNewProgram] : Check if Admin able to create a program with invalid request body
+[INFO ]2024-11-2614:08:47.971------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:47.972-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:47.972-User is authenticated!!!
+[INFO ]2024-11-2614:08:47.973-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaaj
+[INFO ]2024-11-2614:08:47.973-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:47.978-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------","programStatus":"Active"}
+[INFO ]2024-11-2614:08:48.450-Actual status code : 400
+[INFO ]2024-11-2614:08:48.482-===============================================================================================
+[INFO ]2024-11-2614:08:48.482-[@PutByProgramID] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:48.483------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:48.484-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:48.484-User is authenticated!!!
+[INFO ]2024-11-2614:08:48.485-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:48.491-Request body to send along with update request : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaabi","programId":16339,"programStatus":"Active"}
+[INFO ]2024-11-2614:08:48.986-Actual status code : 401
+[INFO ]2024-11-2614:08:49.170-===============================================================================================
+[INFO ]2024-11-2614:08:49.171-[@PutByProgramID] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:49.171------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:49.173-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:49.173-User is authenticated!!!
+[INFO ]2024-11-2614:08:49.174-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:49.182-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"","programId":16339,"programStatus":""}
+[INFO ]2024-11-2614:08:49.795-Actual status code : 401
+[INFO ]2024-11-2614:08:49.871-===============================================================================================
+[INFO ]2024-11-2614:08:49.871-[@PutByProgramID] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:49.871------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:49.873-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:49.873-User is authenticated!!!
+[INFO ]2024-11-2614:08:49.875-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:49.881-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"5^^^@#!&^*()%","programId":16339,"programStatus":"5^^^@#!&^*()%"}
+[INFO ]2024-11-2614:08:50.389-Actual status code : 401
+[INFO ]2024-11-2614:08:50.428-===============================================================================================
+[INFO ]2024-11-2614:08:50.428-[@PutByProgramID] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:50.428------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:50.430-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:50.430-User is authenticated!!!
+[INFO ]2024-11-2614:08:50.431-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:50.442-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"454545","programId":16339,"programStatus":"454545"}
+[INFO ]2024-11-2614:08:50.912-Actual status code : 401
+[INFO ]2024-11-2614:08:50.940-===============================================================================================
+[INFO ]2024-11-2614:08:50.940-[@PutByProgramID] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:50.940------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:50.941-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:50.942-User is authenticated!!!
+[INFO ]2024-11-2614:08:50.944-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:50.949-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------","programId":16339,"programStatus":"Active"}
+[INFO ]2024-11-2614:08:51.398-Actual status code : 200
+[INFO ]2024-11-2614:08:51.446-===============================================================================================
+[INFO ]2024-11-2614:08:51.447-[@PutByProgramName] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:51.447------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:51.447-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:51.448-User is authenticated!!!
+[INFO ]2024-11-2614:08:51.448-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:51.449-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:51.455-Request body to send along with update request : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaabi","programId":16339,"programStatus":"Active"}
+[INFO ]2024-11-2614:08:51.891-Actual status code : 400
+[INFO ]2024-11-2614:08:51.926-===============================================================================================
+[INFO ]2024-11-2614:08:51.926-[@PutByProgramName] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:51.926------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:51.928-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:51.930-User is authenticated!!!
+[INFO ]2024-11-2614:08:51.934-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:51.935-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:51.940-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"","programId":16339,"programStatus":""}
+[INFO ]2024-11-2614:08:52.399-Actual status code : 400
+[INFO ]2024-11-2614:08:52.427-===============================================================================================
+[INFO ]2024-11-2614:08:52.427-[@PutByProgramName] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:52.427------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:52.429-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:52.429-User is authenticated!!!
+[INFO ]2024-11-2614:08:52.429-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:52.429-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:52.433-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"5^^^@#!&^*()%","programId":16339,"programStatus":"5^^^@#!&^*()%"}
+[INFO ]2024-11-2614:08:52.893-Actual status code : 400
+[INFO ]2024-11-2614:08:52.917-===============================================================================================
+[INFO ]2024-11-2614:08:52.917-[@PutByProgramName] : Check if Admin able to update a program with invalid request body
+[INFO ]2024-11-2614:08:52.917------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:52.918-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:52.918-User is authenticated!!!
+[INFO ]2024-11-2614:08:52.918-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:52.918-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:52.923-Request body to send along with update request : {"lastModTime":"2024-11-23T01:53:46.794+00:00","programDescription":"RestfulAPI_Java_Cucumber_BDD","creationTime":"2024-11-23T01:53:45.092+00:00","programName":"454545","programId":16339,"programStatus":"454545"}
+[INFO ]2024-11-2614:08:53.378-Actual status code : 400
+[INFO ]2024-11-2614:08:53.437-===============================================================================================
+[INFO ]2024-11-2614:08:53.438-[@PutByProgramName] : Check if Admin able to update a program with valid programName endpoint and valid request body
+[INFO ]2024-11-2614:08:53.438------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:53.440-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:53.440-User is authenticated!!!
+[INFO ]2024-11-2614:08:53.441-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaac
+[INFO ]2024-11-2614:08:53.441-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:53.448-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:08:53.991-Setting programName in Env Variables
+[INFO ]2024-11-2614:08:53.991-programNameTwo is TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:53.992-Actual status code : 200
+[INFO ]2024-11-2614:08:54.004-Setting programName in Env Variables
+[INFO ]2024-11-2614:08:54.004-programNameOne is TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:54.004-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:54.032-===============================================================================================
+[INFO ]2024-11-2614:08:54.032-[@PutByProgramName] : Check if Admin able to update a program status
+[INFO ]2024-11-2614:08:54.032------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:54.034-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:54.034-User is authenticated!!!
+[INFO ]2024-11-2614:08:54.034-Reading prgmIDTwo from env variables : 16929
+[INFO ]2024-11-2614:08:54.034-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:54.484-Retreived body from response by programID at runtime!!
+[INFO ]2024-11-2614:08:54.486-Here's retrieved body before updation : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:53.884+00:00"}
+[INFO ]2024-11-2614:08:54.487-Here's retrieved body before updation : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:53.884+00:00"}
+[INFO ]2024-11-2614:08:54.487-Updating programStatus to Active
+[INFO ]2024-11-2614:08:54.487-Updated requestbody : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:53.884+00:00"}
+[INFO ]2024-11-2614:08:54.949-Actual status code : 200
+[INFO ]2024-11-2614:08:54.993-===============================================================================================
+[INFO ]2024-11-2614:08:54.993-[@PutByProgramName] : Check if Admin able to update a program by programName with  invalid program Description
+[INFO ]2024-11-2614:08:54.993------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:54.994-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:54.994-User is authenticated!!!
+[INFO ]2024-11-2614:08:54.995-Reading prgmIDTwo from env variables : 16929
+[INFO ]2024-11-2614:08:54.995-Reading prgmNameTwo from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:55.478-Retreived body from response by programID at runtime!!
+[INFO ]2024-11-2614:08:55.479-Here's retrieved body before updation : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"----------","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:54.927+00:00"}
+[INFO ]2024-11-2614:08:55.479-Here's retrieved body before updation : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"----------","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:54.927+00:00"}
+[INFO ]2024-11-2614:08:55.479-Updating programDescription to ----------
+[INFO ]2024-11-2614:08:55.479-Updated requestbody : {"programId":16929,"programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated","programDescription":"----------","programStatus":"Active","creationTime":"2024-11-26T22:08:37.490+00:00","lastModTime":"2024-11-26T22:08:54.927+00:00"}
+[INFO ]2024-11-2614:08:55.923-Actual status code : 400
+[INFO ]2024-11-2614:08:55.962-===============================================================================================
+[INFO ]2024-11-2614:08:55.962-[@DeleteProgramByProgramID] : Check if Admin able to delete a program with valid program ID
+[INFO ]2024-11-2614:08:55.962------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:55.963-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:55.963-User is authenticated!!!
+[INFO ]2024-11-2614:08:55.963-Reading prgmIDTwo from env variables : 16929
+[INFO ]2024-11-2614:08:55.963-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programID!!
+[INFO ]2024-11-2614:08:56.454-Actual status code : 200
+[INFO ]2024-11-2614:08:56.510-===============================================================================================
+[INFO ]2024-11-2614:08:56.511-[@DeleteProgramByProgramName] : Check if Admin able to delete a program with valid programName
+[INFO ]2024-11-2614:08:56.511------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:56.512-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:56.512-User is authenticated!!!
+[INFO ]2024-11-2614:08:56.512-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:56.512-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programName!!
+[INFO ]2024-11-2614:08:56.968-Actual status code : 404
+[INFO ]2024-11-2614:08:57.006-===============================================================================================
+[INFO ]2024-11-2614:08:57.006-[@invalidEndPoint] : Check if Admin able to create a program with invalid endpoint
+[INFO ]2024-11-2614:08:57.006------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:57.007-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:57.007-User is authenticated!!!
+[INFO ]2024-11-2614:08:57.008-New Generated ProgramName is : TeamChangeMakers-APIPhaseTwo-aaaaaaak
+[INFO ]2024-11-2614:08:57.010-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to create new program!!
+[INFO ]2024-11-2614:08:57.015-RequestBody to create program : {"programDescription":"RestfulAPI_Java_Cucumber_BDD","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaak","programStatus":"Active"}
+[INFO ]2024-11-2614:08:57.482-Actual status code : 404
+[INFO ]2024-11-2614:08:57.510-===============================================================================================
+[INFO ]2024-11-2614:08:57.510-[@invalidEndPoint] : Check if Admin able to retrieve all programs with invalid Endpoint
+[INFO ]2024-11-2614:08:57.510------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:57.511-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:57.511-User is authenticated!!!
+[INFO ]2024-11-2614:08:57.511-Setting details[authentication, baseURI, endpoint ]to read all programs!!
+[INFO ]2024-11-2614:08:57.982-Actual status code : 404
+[INFO ]2024-11-2614:08:58.002-===============================================================================================
+[INFO ]2024-11-2614:08:58.002-[@invalidEndPoint] : Check if Admin able to retrieve a program by programID with invalid Endpoint
+[INFO ]2024-11-2614:08:58.002------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:58.003-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:58.003-User is authenticated!!!
+[INFO ]2024-11-2614:08:58.003-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:58.003-Setting details[authentication, baseURI, path parameter, endpoint ]to read newly created program by programID!!
+[INFO ]2024-11-2614:08:58.474-Actual status code : 404
+[INFO ]2024-11-2614:08:58.527-===============================================================================================
+[INFO ]2024-11-2614:08:58.528-[@invalidEndPoint] : Check if Admin able to retrieve all programs with admins and with invalid Endpoint
+[INFO ]2024-11-2614:08:58.528------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:58.529-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:58.529-User is authenticated!!!
+[INFO ]2024-11-2614:08:58.531-Setting details[authentication, baseURI, endpoint ]to read all programs with admins!!
+[INFO ]2024-11-2614:08:58.973-Actual status code : 404
+[INFO ]2024-11-2614:08:59.016-===============================================================================================
+[INFO ]2024-11-2614:08:59.021-[@invalidEndPoint] : Check if Admin able to update a program with invalid programID endpoint  and valid request body
+[INFO ]2024-11-2614:08:59.021------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:59.022-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:59.023-User is authenticated!!!
+[INFO ]2024-11-2614:08:59.023-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:08:59.023-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:08:59.039-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:08:59.494-Actual status code : 404
+[INFO ]2024-11-2614:08:59.530-===============================================================================================
+[INFO ]2024-11-2614:08:59.531-[@invalidEndPoint] : Check if Admin able to update a program with  invalid program Name and request body
+[INFO ]2024-11-2614:08:59.531------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:08:59.531-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:08:59.531-User is authenticated!!!
+[INFO ]2024-11-2614:08:59.531-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:08:59.531-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programName!!
+[INFO ]2024-11-2614:08:59.536-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:09:00.027-Actual status code : 404
+[INFO ]2024-11-2614:09:00.047-===============================================================================================
+[INFO ]2024-11-2614:09:00.047-[@invalidEndPoint] : Check if Admin able to delete a program with valid LMS API,invalid programName
+[INFO ]2024-11-2614:09:00.047------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:00.047-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:00.047-User is authenticated!!!
+[INFO ]2024-11-2614:09:00.048-Reading prgmNameOne from env variables : TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated
+[INFO ]2024-11-2614:09:00.048-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programName!!
+[INFO ]2024-11-2614:09:00.529-Actual status code : 404
+[INFO ]2024-11-2614:09:00.564-===============================================================================================
+[INFO ]2024-11-2614:09:00.564-[@invalidEndPoint] : Check if Admin able to delete a program with valid LMS API,invalid program ID
+[INFO ]2024-11-2614:09:00.564------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:00.565-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:00.565-User is authenticated!!!
+[INFO ]2024-11-2614:09:00.566-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:09:00.566-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programName!!
+[INFO ]2024-11-2614:09:01.060-Actual status code : 404
+[INFO ]2024-11-2614:09:01.148-===============================================================================================
+[INFO ]2024-11-2614:09:01.149-[@invalidPathParameter] : Check if Admin able to delete a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:01.149------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:01.150-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:01.150-User is authenticated!!!
+[INFO ]2024-11-2614:09:01.150-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programID!!
+[INFO ]2024-11-2614:09:01.599-Actual status code : 401
+[INFO ]2024-11-2614:09:01.651-===============================================================================================
+[INFO ]2024-11-2614:09:01.651-[@invalidPathParameter] : Check if Admin able to delete a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:01.651------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:01.652-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:01.652-User is authenticated!!!
+[INFO ]2024-11-2614:09:01.653-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programID!!
+[INFO ]2024-11-2614:09:02.130-Actual status code : 401
+[INFO ]2024-11-2614:09:02.169-===============================================================================================
+[INFO ]2024-11-2614:09:02.169-[@invalidPathParameter] : Check if Admin able to delete a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:02.169------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:02.170-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:02.170-User is authenticated!!!
+[INFO ]2024-11-2614:09:02.171-Setting details[authentication, baseURI, path parameter, endpoint ]to delete program by programID!!
+[INFO ]2024-11-2614:09:02.599-Actual status code : 404
+[INFO ]2024-11-2614:09:02.647-===============================================================================================
+[INFO ]2024-11-2614:09:02.647-[] : Check if Admin able to read a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:02.647------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:02.648-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:02.648-User is authenticated!!!
+[INFO ]2024-11-2614:09:03.082-Actual status code : 401
+[INFO ]2024-11-2614:09:03.135-===============================================================================================
+[INFO ]2024-11-2614:09:03.136-[] : Check if Admin able to read a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:03.136------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:03.137-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:03.137-User is authenticated!!!
+[INFO ]2024-11-2614:09:03.580-Actual status code : 401
+[INFO ]2024-11-2614:09:03.627-===============================================================================================
+[INFO ]2024-11-2614:09:03.627-[] : Check if Admin able to read a program with valid LMS API,invalid pathParameter ProgramID
+[INFO ]2024-11-2614:09:03.627------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:03.628-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:03.628-User is authenticated!!!
+[INFO ]2024-11-2614:09:04.066-Actual status code : 404
+[INFO ]2024-11-2614:09:04.102-===============================================================================================
+[INFO ]2024-11-2614:09:04.102-[@invalidBaseURI] : Check if Admin able to retrieve a program by programID with invalid baseURI
+[INFO ]2024-11-2614:09:04.102------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:04.103-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:04.103-User is authenticated!!!
+[INFO ]2024-11-2614:09:04.103-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:09:04.103-Setting details[authentication, baseURI, path parameter, endpoint ]to read newly created program by programID!!
+[INFO ]2024-11-2614:09:04.208-===============================================================================================
+[INFO ]2024-11-2614:09:04.209-[@invalidBaseURI] : Check if Admin able to update a program with invalid baseURI and valid programId
+[INFO ]2024-11-2614:09:04.209------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:04.210-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:04.210-User is authenticated!!!
+[INFO ]2024-11-2614:09:04.210-Reading prgmIDOne from env variables : 16928
+[INFO ]2024-11-2614:09:04.210-Setting details[authentication, baseURI, requestBody, path parameter, endpoint ]to update program by programID!!
+[INFO ]2024-11-2614:09:04.218-Request body to send along with update request : {"lastModTime":"2024-11-22T23:18:36.895+00:35","programDescription":"RestfulAPI_Java_Cucumber_BDDUpdated","creationTime":"2024-11-22T23:18:35.198+00:00","programName":"TeamChangeMakers-APIPhaseTwo-aaaaaaab-Updated-Updated-Updated","programId":"16928","programStatus":"Active"}
+[INFO ]2024-11-2614:09:04.376-===============================================================================================
+[INFO ]2024-11-2614:09:04.377-[@GetAllBatches-(Positive1)] : Check if Admin able to retrieve all batches with valid Endpoint
+[INFO ]2024-11-2614:09:04.377------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:04.388-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:04.389-User is authenticated!!!
+[INFO ]2024-11-2614:09:05.062-===============================================================================================
+[INFO ]2024-11-2614:09:05.063-[@GetAllBatches-(Positive2)] : Check if admin able to retrieve all batches with search string
+[INFO ]2024-11-2614:09:05.063------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:05.065-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:05.065-User is authenticated!!!
+[INFO ]2024-11-2614:09:05.903-===============================================================================================
+[INFO ]2024-11-2614:09:05.906-[@PostNewBatch] : Check if Admin able to create a batch with valid endpoint and request body (non-existing values)
+[INFO ]2024-11-2614:09:05.906------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:05.908-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:05.909-User is authenticated!!!
+[INFO ]2024-11-2614:09:06.488-Response body : {"message":"batchName Please provide a valid name and must begin with letter and can have letters,numbers and sometimes hyphens","success":false}
+[INFO ]2024-11-2614:09:06.735-===============================================================================================
+[INFO ]2024-11-2614:09:06.736-[@GetBatchByBatchID] : Check if admin able to retrieve a batch with valid batch ID
+[INFO ]2024-11-2614:09:06.736------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:06.736-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:06.736-User is authenticated!!!
+[INFO ]2024-11-2614:09:07.325-===============================================================================================
+[INFO ]2024-11-2614:09:07.325-[@GetBatchByBatchID-(Positive4)] : Check if admin able to retrieve a batch after deleting the batch
+[INFO ]2024-11-2614:09:07.325------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:07.333-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:07.334-User is authenticated!!!
+[INFO ]2024-11-2614:09:07.996-Response body : [{"batchId":8731,"batchName":"analytic2","batchDescription":"First Test","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16672,"programName":"binderb"},{"batchId":8736,"batchName":"analytic22","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16691,"programName":"analyticrtapaae"},{"batchId":8737,"batchName":"analytic23","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16692,"programName":"binxee"},{"batchId":8738,"batchName":"analytic24","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16693,"programName":"analyticrtapar"},{"batchId":8739,"batchName":"analytic26","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16695,"programName":"analyticrtaparu"},{"batchId":8740,"batchName":"analytic32","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16698,"programName":"analytaparu"},{"batchId":8741,"batchName":"analytic33","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16699,"programName":"binxeq"},{"batchId":8742,"batchName":"analytic34","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16702,"programName":"analytaparum"},{"batchId":8743,"batchName":"analytic35","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16703,"programName":"analytaparumu"},{"batchId":8744,"batchName":"analytic36","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16704,"programName":"analytaparumug"},{"batchId":8745,"batchName":"analytic38","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16705,"programName":"analytaparumuga"},{"batchId":8746,"batchName":"analytic39","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":15,"programId":16706,"programName":"analytaparumugam"},{"batchId":8734,"batchName":"analytic4","batchDescription":"First Test","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16685,"programName":"bindee"},{"batchId":8732,"batchName":"analytic4","batchDescription":"First Test","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16680,"programName":"binderk"},{"batchId":8747,"batchName":"analytic45","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16707,"programName":"analytaparfddffd"},{"batchId":8748,"batchName":"analytic47","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16708,"programName":"analytapyrrfddffd"},{"batchId":8749,"batchName":"analytic49","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16709,"programName":"analytapgfgdfdyrrfddffd"},{"batchId":8735,"batchName":"analytic9","batchDescription":"First Test","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16687,"programName":"bintee"},{"batchId":8775,"batchName":"anatic72","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16786,"programName":"bestaYlica"},{"batchId":8776,"batchName":"anatic74","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16787,"programName":"bestYbinuq"},{"batchId":8774,"batchName":"anatic82","batchDescription":"First Test","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16782,"programName":"bestTbinuq"},{"batchId":8755,"batchName":"anatic97","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16726,"programName":"bestTbinxq"},{"batchId":8754,"batchName":"anatic98","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16725,"programName":"bestanalica"},{"batchId":8799,"batchName":"anaticbbbb98","batchDescription":"Testing All Fields","batchStatus":"Active","batchNoOfClasses":24,"programId":16866,"programName":"Javajjac"},{"batchId":8800,"batchName":"anaticfff97","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16867,"programName":"bestTddbinxq"},{"batchId":8801,"batchName":"anatijhbb98","batchDescription":"Testing All Fields","batchStatus":"Active","batchNoOfClasses":24,"programId":16870,"programName":"Javajjactt"},{"batchId":8777,"batchName":"anatomyb98","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16800,"programName":"NeverHaveI"},{"batchId":8813,"batchName":"apiavgbatchteam04","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16911,"programName":"apiavputidone"},{"batchId":8818,"batchName":"apiavgbatchteam4","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16925,"programName":"apiavvengersteamputidd"},{"batchId":8817,"batchName":"apiavgbatchteam4","batchDescription":"Testing All Fields","batchStatus":"Inactive","batchNoOfClasses":24,"programId":16924,"programName":"apiavpputidonee"},{"batchId":8682,"batchName":"APICommandos001","batchDescription":"zcxvb","batchStatus":"Active","batchNoOfClasses":10,"programId":16208,"programName":"Updated"},{"batchId":8659,"batchName":"APINin013","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8639,"batchName":"APINin1","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8653,"batchName":"APINin10","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8642,"batchName":"APINin2","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8643,"batchName":"APINin3","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8660,"batchName":"APINin39","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8646,"batchName":"APINin4","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8647,"batchName":"APINin5","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8648,"batchName":"APINin6","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8650,"batchName":"APINin7","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8651,"batchName":"APINin8","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8652,"batchName":"APINin9","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8547,"batchName":"APINinja001","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8627,"batchName":"APINinja001-38846","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8550,"batchName":"APINinja002","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8552,"batchName":"APINinja003","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8553,"batchName":"APINinja004","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8554,"batchName":"APINinja005","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8555,"batchName":"APINinja006","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8556,"batchName":"APINinja007","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8557,"batchName":"APINinja008","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8558,"batchName":"APINinja009","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8559,"batchName":"APINinja010","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8561,"batchName":"APINinja011","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8563,"batchName":"APINinja012","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8565,"batchName":"APINinja013","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8566,"batchName":"APINinja014","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8568,"batchName":"APINinja015","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8571,"batchName":"APINinja016","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8573,"batchName":"APINinja017","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8575,"batchName":"APINinja018","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8577,"batchName":"APINinja019","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8581,"batchName":"APINinja020","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8583,"batchName":"APINinja021","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8585,"batchName":"APINinja022","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8587,"batchName":"APINinja023","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8589,"batchName":"APINinja024","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8591,"batchName":"APINinja025","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8597,"batchName":"APINinja026","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8599,"batchName":"APINinja027","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8601,"batchName":"APINinja028","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8617,"batchName":"APINinja029","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8618,"batchName":"APINinja030","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8620,"batchName":"APINinja031","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8621,"batchName":"APINinja032","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8622,"batchName":"APINinja033","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8623,"batchName":"APINinja034","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8624,"batchName":"APINinja035","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8626,"batchName":"APINinja035-85533","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8625,"batchName":"APINinja036","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8628,"batchName":"APINinja036-44182","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8630,"batchName":"APINinja037","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8632,"batchName":"APINinja038","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8654,"batchName":"APINinja39","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8656,"batchName":"APINinja40","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8661,"batchName":"APINinja41","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8724,"batchName":"APINinja42","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8726,"batchName":"APINinja43","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8761,"batchName":"APINinja53","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8764,"batchName":"APINinja54","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8769,"batchName":"APINinja55","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8789,"batchName":"APINinja64","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8791,"batchName":"APINinja65","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8794,"batchName":"APINinja66","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8797,"batchName":"APINinja67","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8542,"batchName":"APINinjas01","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8548,"batchName":"APINinjas02","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8560,"batchName":"APINinjas03","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8633,"batchName":"APINinjas038","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8655,"batchName":"APINinjas039","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8562,"batchName":"APINinjas04","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8725,"batchName":"APINinjas042","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8727,"batchName":"APINinjas043","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8564,"batchName":"APINinjas05","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8762,"batchName":"APINinjas053","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8765,"batchName":"APINinjas054","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8770,"batchName":"APINinjas055","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8790,"batchName":"APINinjas064","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8792,"batchName":"APINinjas065","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8795,"batchName":"APINinjas066","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8798,"batchName":"APINinjas067","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8567,"batchName":"APINinjas07","batchDescription":"Java Developer","batchStatus":"Active","batchNoOfClasses":9,"programId":16220,"programName":"Core Java Program"},{"batchId":8569,"batchName":"APINinjas08","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8572,"batchName":"APINinjas09","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8574,"batchName":"APINinjas10","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8576,"batchName":"APINinjas11","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8578,"batchName":"APINinjas12","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8582,"batchName":"APINinjas13","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8584,"batchName":"APINinjas14","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8586,"batchName":"APINinjas15","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8588,"batchName":"APINinjas16","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8590,"batchName":"APINinjas17","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8592,"batchName":"APINinjas18","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8598,"batchName":"APINinjas19","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8600,"batchName":"APINinjas20","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8602,"batchName":"APINinjas21","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8619,"batchName":"APINinjas31","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8631,"batchName":"APINinjas37","batchDescription":"","batchStatus":"Active","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8717,"batchName":"APINinjas39","batchDescription":"","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8657,"batchName":"APINinjas40","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8662,"batchName":"APINinjas41","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16220,"programName":"Core Java Program"},{"batchId":8730,"batchName":"APINinjas42","batchDescription":"","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8733,"batchName":"APINinjas43","batchDescription":"","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8768,"batchName":"APINinjas54","batchDescription":"","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8793,"batchName":"APINinjas65","batchDescription":"","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16220,"programName":"Core Java Program"},{"batchId":8641,"batchName":"Apiwarriers-001","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8645,"batchName":"Apiwarriers-002","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8649,"batchName":"Apiwarriers-003","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8663,"batchName":"Apiwarriers-004","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8687,"batchName":"Apiwarriers-005","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8750,"batchName":"Apiwarriers-007","batchDescription":"SDET","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16393,"programName":"Team-three-Apiwarriers"},{"batchId":8603,"batchName":"APIWarrw","batchDescription":"                                                                     ","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8604,"batchName":"APIWarrwq","batchDescription":"                                                                     ","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8605,"batchName":"APIWarrwqswr","batchDescription":"                                                                     ","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8606,"batchName":"APIWarrwqswrs","batchDescription":"team","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8607,"batchName":"APIWarrwqswrsa","batchDescription":"","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8608,"batchName":"APIWarrwqswrsaa","batchDescription":"","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8609,"batchName":"APIWarrwqswrsaaa","batchDescription":"three","batchStatus":"Active","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8610,"batchName":"APIWarrwqswrsaaaw","batchDescription":"three","batchStatus":"Inactive","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8611,"batchName":"APIWarrwqswrsaaawa","batchDescription":"three","batchStatus":"Inactive","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8635,"batchName":"Batch10Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8637,"batchName":"Batch11Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8638,"batchName":"Batch12Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8640,"batchName":"Batch13Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8644,"batchName":"Batch14Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8665,"batchName":"Batch15Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8668,"batchName":"Batch20Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8669,"batchName":"Batch21Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8670,"batchName":"Batch22Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8671,"batchName":"Batch23Test","batchDescription":"Testing","batchStatus":"Active","batchNoOfClasses":23,"programId":16334,"programName":"TestingBUGs"},{"batchId":8672,"batchName":"Batch24Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8673,"batchName":"Batch25Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8674,"batchName":"Batch26Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8675,"batchName":"Batch26Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8676,"batchName":"Batch27Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8677,"batchName":"Batch28Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8678,"batchName":"Batch29Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8614,"batchName":"Batch2Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8679,"batchName":"Batch30Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8680,"batchName":"Batch31Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8681,"batchName":"Batch32Test","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8683,"batchName":"Batch33Test","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8684,"batchName":"Batch34Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8615,"batchName":"Batch3Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8616,"batchName":"Batch4Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8629,"batchName":"Batch7Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8634,"batchName":"Batch9Test","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8815,"batchName":"batchapiavengerrsteam04h","batchDescription":"APIAvengers Team4 testing","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16914,"programName":"apiaveengersteamfourputname"},{"batchId":8814,"batchName":"batchapiavengersteam04h","batchDescription":"APIAvengers Team4 testing","batchStatus":"Active","batchNoOfClasses":15,"programId":16912,"programName":"apiavengersteamprogmandatory"},{"batchId":8812,"batchName":"batchapiavengersteam04h","batchDescription":"APIAvengers Team4 testing","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16908,"programName":"apiavengersteamfourputname"},{"batchId":8816,"batchName":"batchapiavengersteam4","batchDescription":"APIAvengers Team4 testing","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16918,"programName":"apiiavengersteamfourputname"},{"batchId":8691,"batchName":"BatTest10","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8692,"batchName":"BatTest10","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8693,"batchName":"BatTest11","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8694,"batchName":"BatTest12","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8695,"batchName":"BatTest13","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8696,"batchName":"BatTest14","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8697,"batchName":"BatTest15","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8667,"batchName":"BatTest1555","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8698,"batchName":"BatTest16","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8685,"batchName":"BatTest2","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8699,"batchName":"BatTest20","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8700,"batchName":"BatTest21","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8701,"batchName":"BatTest22","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8702,"batchName":"BatTest24","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8703,"batchName":"BatTest25","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8704,"batchName":"BatTest29","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8705,"batchName":"BatTest30","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8722,"batchName":"BatTest34","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8723,"batchName":"BatTest35","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8686,"batchName":"BatTest4","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8720,"batchName":"BatTest49","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8688,"batchName":"BatTest5","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8721,"batchName":"BatTest50","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8718,"batchName":"BatTest52","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8719,"batchName":"BatTest53","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8716,"batchName":"BatTest64","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8715,"batchName":"BatTest66","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8714,"batchName":"BatTest67","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8689,"batchName":"BatTest7","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8713,"batchName":"BatTest78","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8690,"batchName":"BatTest8","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8708,"batchName":"BatTest80","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8710,"batchName":"BatTest81","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"},{"batchId":8709,"batchName":"BatTest82","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8711,"batchName":"BatTest83","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8706,"batchName":"BatTest90","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8707,"batchName":"BatTest91","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16401,"programName":"TestingBUGGG"},{"batchId":8807,"batchName":"CaeMe","batchDescription":"ChnMe Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8806,"batchName":"CageMe","batchDescription":"ChneMe Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8810,"batchName":"Ce","batchDescription":"Ce Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8811,"batchName":"Cemathu","batchDescription":"Cemathu Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8805,"batchName":"ChageMe","batchDescription":"ChaneMe Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8803,"batchName":"ChangeMake","batchDescription":"ChangeMake Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8788,"batchName":"ChangeMakersBatch","batchDescription":"ChangeMakersBatch batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8804,"batchName":"ChangeMe","batchDescription":"ChangeMe Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8506,"batchName":"chat","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8809,"batchName":"CMe","batchDescription":"CMe Desc","batchStatus":"Active","batchNoOfClasses":1,"programId":16833,"programName":"ChangeMakersProgram-Updated"},{"batchId":8449,"batchName":"DA01","batchDescription":"Basic","batchStatus":"Inactive","batchNoOfClasses":15,"programId":16223,"programName":"DAA"},{"batchId":8450,"batchName":"DA 05","batchDescription":"DA desc","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16223,"programName":"DAA"},{"batchId":8778,"batchName":"dissectns97","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16801,"programName":"Amaran"},{"batchId":8432,"batchName":"DVLPR-0001","batchDescription":"Java Developer","batchStatus":"Inactive","batchNoOfClasses":10,"programId":16208,"programName":"Updated"},{"batchId":8451,"batchName":"DVLPR02","batchDescription":"Full Stack Developer","batchStatus":"Inactive","batchNoOfClasses":3,"programId":16208,"programName":"Updated"},{"batchId":8507,"batchName":"DVLPR06","batchDescription":"DataScience BATCH 01","batchStatus":"Inactive","batchNoOfClasses":5,"programId":16208,"programName":"Updated"},{"batchId":8499,"batchName":"Grading01","batchDescription":"TestingGrading","batchStatus":"Active","batchNoOfClasses":4,"programId":16238,"programName":"Grading"},{"batchId":8579,"batchName":"hello","batchDescription":"                                                                                           ","batchStatus":"Active","batchNoOfClasses":99,"programId":16282,"programName":"star"},{"batchId":8580,"batchName":"hello2","batchDescription":"","batchStatus":"Active","batchNoOfClasses":99,"programId":16282,"programName":"star"},{"batchId":8541,"batchName":"Hello24","batchDescription":"Game","batchStatus":"Active","batchNoOfClasses":1,"programId":16243,"programName":"Canada"},{"batchId":8497,"batchName":"Java-008","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8498,"batchName":"Java-009","batchDescription":" ","batchStatus":"Active","batchNoOfClasses":12,"programId":16210,"programName":"SMPO"},{"batchId":8504,"batchName":"java-198","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8503,"batchName":"java-199","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8502,"batchName":"java-200","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8500,"batchName":"Java-201","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8501,"batchName":"Java-202","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8505,"batchName":"Java2562","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":11,"programId":16210,"programName":"SMPO"},{"batchId":8444,"batchName":"Java Batch 01","batchDescription":"Java Batch","batchStatus":"Inactive","batchNoOfClasses":12,"programId":16208,"programName":"Updated"},{"batchId":8595,"batchName":"JavaBatch02","batchDescription":"tbzyOJtuBKkTQagEqxuZC0pAJM.2E4xIvg.RjW6tSK0Gt6mXQ7geBbCKmeeqYE68uy8Yz9f.sLg8Q2FsvyvqtfY:H.Tb7G","batchStatus":"Inactive","batchNoOfClasses":4,"programId":16260,"programName":"JavaProgramathuma"},{"batchId":8570,"batchName":"JavaBatchAnuma","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16277,"programName":"JavaProgramAnumat"},{"batchId":8751,"batchName":"JavaBatchGraphics","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16715,"programName":"JavaProgramgurudev"},{"batchId":8636,"batchName":"JavaBatchGraphics","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16352,"programName":"JavaProgramyara"},{"batchId":8544,"batchName":"JavaBatchMathu","batchDescription":"Mathu batch","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16260,"programName":"JavaProgramathuma"},{"batchId":8545,"batchName":"JavaBatchMathum","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16260,"programName":"JavaProgramathuma"},{"batchId":8551,"batchName":"JavaBatchMathuma","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16272,"programName":"JavaProgramathumat"},{"batchId":8593,"batchName":"JavaBatchMathumat","batchDescription":"Mathu batch","batchStatus":"Inactive","batchNoOfClasses":1,"programId":16272,"programName":"JavaProgramathumat"},{"batchId":8594,"batchName":"JavaBatchMathumath","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16272,"programName":"JavaProgramathumat"},{"batchId":8613,"batchName":"JavaBatchyara","batchDescription":"Mathu batch","batchStatus":"Active","batchNoOfClasses":1,"programId":16352,"programName":"JavaProgramyara"},{"batchId":8489,"batchName":"Jul-SDET","batchDescription":"SDET jul has 5 member.","batchStatus":"Inactive","batchNoOfClasses":9,"programId":16230,"programName":"OOPS-Java"},{"batchId":8729,"batchName":"KidsDanceEighteen","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16627,"programName":"DanceTwentyOne"},{"batchId":8546,"batchName":"KidsDanceFifteen","batchDescription":"TeenDanceKids","batchStatus":"Inactive","batchNoOfClasses":3,"programId":16261,"programName":"DanceFifteen"},{"batchId":8802,"batchName":"KidsDanceFourty","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16873,"programName":"DanceFortyFive"},{"batchId":8752,"batchName":"KidsDanceNineteen","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16716,"programName":"DanceTwentyTwo"},{"batchId":8728,"batchName":"KidsDanceSeventeen","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16626,"programName":"DanceTwenty"},{"batchId":8596,"batchName":"KidsDanceSixteen","batchDescription":"TeenDanceKids","batchStatus":"Inactive","batchNoOfClasses":3,"programId":16320,"programName":"DanceSixteen"},{"batchId":8772,"batchName":"KidsDanceThirty","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16772,"programName":"DanceThirtyFour"},{"batchId":8786,"batchName":"KidsDanceThirtyEight","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16828,"programName":"DanceFortyThree"},{"batchId":8782,"batchName":"KidsDanceThirtyFive","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16824,"programName":"DanceThirtyNine"},{"batchId":8781,"batchName":"KidsDanceThirtyFour","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16823,"programName":"DanceThirtyEight"},{"batchId":8787,"batchName":"KidsDanceThirtyNine","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16829,"programName":"DanceFortyFour"},{"batchId":8773,"batchName":"KidsDanceThirtyOne","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16773,"programName":"DanceThirtyFive"},{"batchId":8785,"batchName":"KidsDanceThirtySeven","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16827,"programName":"DanceFortyTwo"},{"batchId":8784,"batchName":"KidsDanceThirtySix","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16826,"programName":"DanceFortyOne"},{"batchId":8783,"batchName":"KidsDanceThirtySix","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16825,"programName":"DanceFourty"},{"batchId":8780,"batchName":"KidsDanceThirtyThree","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16822,"programName":"DanceThirtySeven"},{"batchId":8779,"batchName":"KidsDanceThirtyTwo","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16811,"programName":"DanceThirtySix"},{"batchId":8767,"batchName":"KidsDanceTwentyEight","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16749,"programName":"DanceThirtyTwo"},{"batchId":8760,"batchName":"KidsDanceTwentyFive","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16739,"programName":"DanceTwentyNine"},{"batchId":8759,"batchName":"KidsDanceTwentyFour","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16738,"programName":"DanceTwentySeven"},{"batchId":8758,"batchName":"KidsDanceTwentyFour","batchDescription":"TeenDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16736,"programName":"DanceTwentyEight"},{"batchId":8771,"batchName":"KidsDanceTwentyNine","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16771,"programName":"DanceThirtyThree"},{"batchId":8753,"batchName":"KidsDanceTwentyOne","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16720,"programName":"DanceTwentyFour"},{"batchId":8766,"batchName":"KidsDanceTwentySeven","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16748,"programName":"DanceThirtyOne"},{"batchId":8763,"batchName":"KidsDanceTwentySix","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16744,"programName":"DanceThirty"},{"batchId":8757,"batchName":"KidsDanceTwentyThree","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16734,"programName":"DanceTwentySix"},{"batchId":8756,"batchName":"KidsDanceTwentyTwo","batchDescription":"YoungDanceKids","batchStatus":"Active","batchNoOfClasses":3,"programId":16731,"programName":"DanceTwentyFive"},{"batchId":8666,"batchName":"MandatoryField","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16334,"programName":"TestingBUGs"},{"batchId":8452,"batchName":"Micro service-01","batchDescription":"Micro service - For developers","batchStatus":"ACTIVE","batchNoOfClasses":5,"programId":16224,"programName":"Micro services"},{"batchId":8453,"batchName":"Micro service -02","batchDescription":"Micro service - For developers","batchStatus":"INACTIVE","batchNoOfClasses":5,"programId":16224,"programName":"Micro services"},{"batchId":8454,"batchName":"Micro service -03","batchDescription":"Micro service - For Dvlp","batchStatus":"ACTIVE","batchNoOfClasses":5,"programId":16224,"programName":"Micro services"},{"batchId":8658,"batchName":"nyo0lqFJiKsBE-Z36-JHMwLs","batchDescription":"I28rjerI7kTcYnT-c2xpzKMxfhT,DJw. sPU60SOv5gYkZx88czjosjHVS6Dr:nd4ux,XMmPie","batchStatus":"Inactive","batchNoOfClasses":99,"programId":16331,"programName":"TeamthreeWar"},{"batchId":8540,"batchName":"Olympics1001","batchDescription":null,"batchStatus":"Inactive","batchNoOfClasses":1,"programId":16243,"programName":"Canada"},{"batchId":8448,"batchName":"Python101","batchDescription":"Basic","batchStatus":"ACTIVE","batchNoOfClasses":10,"programId":16213,"programName":"Java-Program"},{"batchId":8494,"batchName":"SAP01","batchDescription":"Basic ","batchStatus":"Active","batchNoOfClasses":10,"programId":16235,"programName":"SAP"},{"batchId":8495,"batchName":"ScrumMasterProductOwner01","batchDescription":"First training","batchStatus":"Active","batchNoOfClasses":5,"programId":16236,"programName":"ScrumMasterProductOwner"},{"batchId":8496,"batchName":"ScrumMasterProductOwner26","batchDescription":"New Batch from Sep","batchStatus":"Active","batchNoOfClasses":6,"programId":16236,"programName":"ScrumMasterProductOwner"},{"batchId":8543,"batchName":"SDET","batchDescription":"Batch1","batchStatus":"Active","batchNoOfClasses":10,"programId":16244,"programName":"Program-a"},{"batchId":8796,"batchName":"SDET6","batchDescription":"created by saranya ","batchStatus":"Active","batchNoOfClasses":11,"programId":16326,"programName":"ApiNinjas-YVJJ"},{"batchId":8492,"batchName":"SDET-Jul","batchDescription":"SDET jul has 5 member.","batchStatus":"Active","batchNoOfClasses":9,"programId":16233,"programName":"Inheritance-JavaOOPS"},{"batchId":8491,"batchName":"SDET-Jun","batchDescription":"SDET jul has 5 member.","batchStatus":"Active","batchNoOfClasses":9,"programId":16233,"programName":"Inheritance-JavaOOPS"},{"batchId":8490,"batchName":"SDET-Jun","batchDescription":"SDET jul has 5 member.","batchStatus":"Active","batchNoOfClasses":9,"programId":16230,"programName":"OOPS-Java"},{"batchId":8808,"batchName":"sdettestingbatch","batchDescription":"sdetbatch","batchStatus":"Active","batchNoOfClasses":10,"programId":16904,"programName":"JavaBasicThree"},{"batchId":8433,"batchName":"SMPO-0001","batchDescription":"Scrum Master Product Owner","batchStatus":"ACTIVE","batchNoOfClasses":10,"programId":16210,"programName":"SMPO"},{"batchId":8456,"batchName":"SMPO10","batchDescription":"SMPO10","batchStatus":"ACTIVE","batchNoOfClasses":4,"programId":16210,"programName":"SMPO"},{"batchId":8493,"batchName":"SMPO16","batchDescription":"NewBatch","batchStatus":"Active","batchNoOfClasses":5,"programId":16210,"programName":"SMPO"},{"batchId":8455,"batchName":"SMPO33","batchDescription":"DataScience BATCH 01","batchStatus":"ACTIVE","batchNoOfClasses":3,"programId":16210,"programName":"SMPO"},{"batchId":8664,"batchName":"Team5PostmanBugBustersbatch01","batchDescription":"created by saranya ","batchStatus":"Active","batchNoOfClasses":10,"programId":16426,"programName":"TestingAppium"},{"batchId":8549,"batchName":"Test1","batchDescription":"RestAssured Testing","batchStatus":"Active","batchNoOfClasses":10,"programId":16262,"programName":"TestingBUG"},{"batchId":8712,"batchName":"Test5","batchDescription":null,"batchStatus":"Active","batchNoOfClasses":10,"programId":16594,"programName":"TestUPTC"},{"batchId":8612,"batchName":"TestingCreate","batchDescription":"First Test","batchStatus":"Active","batchNoOfClasses":15,"programId":16334,"programName":"TestingBUGs"}]
+[INFO ]2024-11-2614:09:07.999-Actual Status Code: 200
+[INFO ]2024-11-2614:09:08.000-Mapped Status Text: OK
+[INFO ]2024-11-2614:09:08.063-===============================================================================================
+[INFO ]2024-11-2614:09:08.063-[@GetBatchByBatchName-(Positive5)] : Check if Admin able to retrieve a batch with valid batch Name
+[INFO ]2024-11-2614:09:08.063------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:08.065-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:08.065-User is authenticated!!!
+[INFO ]2024-11-2614:09:08.749-===============================================================================================
+[INFO ]2024-11-2614:09:08.751-[@GetBatchByBatchName-(Positive6)] : Check if admin able to retrieve a deleted batch using batch name
+[INFO ]2024-11-2614:09:08.751------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:08.752-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:08.752-User is authenticated!!!
+[INFO ]2024-11-2614:09:09.478-===============================================================================================
+[INFO ]2024-11-2614:09:09.480-[@GetBatchByProgramID-(Positive7)] : Check if Admin able to retrieve a batch with valid Program ID
+[INFO ]2024-11-2614:09:09.481------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:09.483-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:09.485-User is authenticated!!!
+[INFO ]2024-11-2614:09:10.080-===============================================================================================
+[INFO ]2024-11-2614:09:10.080-[@PostNewBatch-(Positive9)] : Check if admin able to create a batch with missing additional fields
+[INFO ]2024-11-2614:09:10.080------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:10.081-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:10.081-User is authenticated!!!
+[INFO ]2024-11-2614:09:10.508-Response body : {"message":"Required request body is missing: public org.springframework.http.ResponseEntity<com.numpyninja.lms.dto.BatchDTO> com.numpyninja.lms.controller.ProgBatchController.createBatch(com.numpyninja.lms.dto.BatchDTO)","success":false}
+[INFO ]2024-11-2614:09:10.535-===============================================================================================
+[INFO ]2024-11-2614:09:10.535-[@Put(UpdateBatchByBatchID)-(Positive10)] : Check if admin able to update a Batch with valid batchID and mandatory fields in request body
+[INFO ]2024-11-2614:09:10.535------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:10.536-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:10.536-User is authenticated!!!
+[INFO ]2024-11-2614:09:10.968-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:10.992-===============================================================================================
+[INFO ]2024-11-2614:09:10.992-[@Put(UpdateBatchByBatchID)-(Positive11)] : Check if admin able to update a Batch with a deleted batchID in the endpoint
+[INFO ]2024-11-2614:09:10.992------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:10.993-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:10.993-User is authenticated!!!
+[INFO ]2024-11-2614:09:11.430-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:11.474-===============================================================================================
+[INFO ]2024-11-2614:09:11.474-[@DeleteBatchByBatchID-(Positive12)] : Check if Admin able to delete a batch with valid Batch ID
+[INFO ]2024-11-2614:09:11.474------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:11.475-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:11.475-User is authenticated!!!
+[INFO ]2024-11-2614:09:11.963-===============================================================================================
+[INFO ]2024-11-2614:09:11.963-[@GetAllBatches-(Negative1)] : Check if admin able to retrieve all batches with invalid Endpoint
+[INFO ]2024-11-2614:09:11.963------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:11.964-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:11.964-User is authenticated!!!
+[INFO ]2024-11-2614:09:12.454-===============================================================================================
+[INFO ]2024-11-2614:09:12.454-[@GetAllBatches-(Negative2)] : Check if admin able to retrieve all batches without Authorization
+[INFO ]2024-11-2614:09:12.454------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:12.460-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:12.460-User is authenticated!!!
+[INFO ]2024-11-2614:09:12.957-===============================================================================================
+[INFO ]2024-11-2614:09:12.957-[@GetBatchByBatchID-(Negative3)] : Check if admin able to retrieve a batch with batch ID without authorization
+[INFO ]2024-11-2614:09:12.957------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:12.960-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:12.960-User is authenticated!!!
+[INFO ]2024-11-2614:09:13.494-===============================================================================================
+[INFO ]2024-11-2614:09:13.497-[@GetBatchByBatchID-(Negative4)] : Check if admin able to retrieve a batch with invalid BATCH ID
+[INFO ]2024-11-2614:09:13.497------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:13.502-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:13.502-User is authenticated!!!
+[INFO ]2024-11-2614:09:13.980-===============================================================================================
+[INFO ]2024-11-2614:09:13.980-[@GetBatchByBatchID-(Negative5)] : Check if admin able to retrieve a batch with invalid endpoint
+[INFO ]2024-11-2614:09:13.980------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:13.980-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:13.981-User is authenticated!!!
+[INFO ]2024-11-2614:09:14.472-===============================================================================================
+[INFO ]2024-11-2614:09:14.473-[@GetBatchByBatchName-(Negative6)] : Check if admin able to retrieve a batch without authorization
+[INFO ]2024-11-2614:09:14.473------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:14.474-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:14.474-User is authenticated!!!
+[INFO ]2024-11-2614:09:15.125-===============================================================================================
+[INFO ]2024-11-2614:09:15.126-[@GetBatchByBatchName-(Negative7)] : Check if admin able to retrieve a batch with invalid BATCH NAME
+[INFO ]2024-11-2614:09:15.126------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:15.127-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:15.127-User is authenticated!!!
+[INFO ]2024-11-2614:09:15.763-===============================================================================================
+[INFO ]2024-11-2614:09:15.764-[@GetBatchByBatchName-(Negative8)] : Check if admin able to retrieve a batch with invalid endpoint1
+[INFO ]2024-11-2614:09:15.764------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:15.764-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:15.764-User is authenticated!!!
+[INFO ]2024-11-2614:09:16.374-===============================================================================================
+[INFO ]2024-11-2614:09:16.375-[@GetBatchByProgramID-(Negative9)] : Check if admin able to retrieve a batch with program ID without authorization
+[INFO ]2024-11-2614:09:16.375------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:16.376-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:16.376-User is authenticated!!!
+[INFO ]2024-11-2614:09:17.201-===============================================================================================
+[INFO ]2024-11-2614:09:17.205-[@GetBatchByProgramID-(Negative10)] : Check if admin able to retrieve a batch with invalid Program Id
+[INFO ]2024-11-2614:09:17.205------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:17.209-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:17.210-User is authenticated!!!
+[INFO ]2024-11-2614:09:18.070-===============================================================================================
+[INFO ]2024-11-2614:09:18.073-[@GetBatchByProgramID-(Negative10)] : Check if admin able to retrieve a batch with invalid endpoint
+[INFO ]2024-11-2614:09:18.073------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:18.074-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:18.074-User is authenticated!!!
+[INFO ]2024-11-2614:09:18.756-===============================================================================================
+[INFO ]2024-11-2614:09:18.756-[@GetBatchByProgramID-(Negative11)] : Check if admin able to retrieve a batch after the programID is deleted
+[INFO ]2024-11-2614:09:18.756------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:18.757-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:18.757-User is authenticated!!!
+[INFO ]2024-11-2614:09:19.407-===============================================================================================
+[INFO ]2024-11-2614:09:19.409-[@PostNewBatch-(Negative12)] : Check if admin able to create a Batch with valid endpoint and request body without authorization
+[INFO ]2024-11-2614:09:19.409------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:19.414-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:19.414-User is authenticated!!!
+[INFO ]2024-11-2614:09:19.921-===============================================================================================
+[INFO ]2024-11-2614:09:19.922-[@PostNewBatch-(Negative13)] : Check if admin able to create a Batch with valid endpoint and request body (existing value in Batch Name)
+[INFO ]2024-11-2614:09:19.922------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:19.930-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:19.931-User is authenticated!!!
+[INFO ]2024-11-2614:09:20.430-===============================================================================================
+[INFO ]2024-11-2614:09:20.430-[@PostNewBatch-(Negative14)] : Check if admin able to create a Batch missing mandatory fields in request body
+[INFO ]2024-11-2614:09:20.430------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:20.432-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:20.432-User is authenticated!!!
+[INFO ]2024-11-2614:09:20.929-===============================================================================================
+[INFO ]2024-11-2614:09:20.929-[@PostNewBatch-(Negative15)] : Check if admin able to create a batch with invalid endpoint
+[INFO ]2024-11-2614:09:20.929------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:20.930-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:20.930-User is authenticated!!!
+[INFO ]2024-11-2614:09:21.431-===============================================================================================
+[INFO ]2024-11-2614:09:21.431-[@PostNewBatch-(Negative16)] : Check if admin able to create a batch with invalid data in request body
+[INFO ]2024-11-2614:09:21.431------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:21.433-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:21.433-User is authenticated!!!
+[INFO ]2024-11-2614:09:21.917-===============================================================================================
+[INFO ]2024-11-2614:09:21.917-[@PostNewBatch-(Negative17)] : Check if admin able to create a batch  with inactive program ID
+[INFO ]2024-11-2614:09:21.917------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:21.918-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:21.918-User is authenticated!!!
+[INFO ]2024-11-2614:09:22.406-===============================================================================================
+[INFO ]2024-11-2614:09:22.406-[@Put(UpdateBatchByBatchID)-(Negative18)] : Check if admin able to update a Batch with valid batchID and mandatory fields in request body without authorization
+[INFO ]2024-11-2614:09:22.406------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:22.409-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:22.409-User is authenticated!!!
+[INFO ]2024-11-2614:09:22.880-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:22.924-===============================================================================================
+[INFO ]2024-11-2614:09:22.924-[@Put(UpdateBatchByBatchID)-(Negative19)] : Check if admin able to update a Batch with invalid batchID and mandatory fields in request body without authorization
+[INFO ]2024-11-2614:09:22.924------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:22.926-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:22.926-User is authenticated!!!
+[INFO ]2024-11-2614:09:23.367-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:23.406-===============================================================================================
+[INFO ]2024-11-2614:09:23.408-[@Put(UpdateBatchByBatchID)-(Negative20)] : Check if admin able to update a Batch with valid batchID and missing mandatory fields request body
+[INFO ]2024-11-2614:09:23.408------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:23.409-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:23.409-User is authenticated!!!
+[INFO ]2024-11-2614:09:23.870-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:23.914-===============================================================================================
+[INFO ]2024-11-2614:09:23.914-[@Put(UpdateBatchByBatchID)-(Negative21)] : Check if admin able to update a batch with invalid data
+[INFO ]2024-11-2614:09:23.914------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:23.915-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:23.915-User is authenticated!!!
+[INFO ]2024-11-2614:09:24.354-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:24.389-===============================================================================================
+[INFO ]2024-11-2614:09:24.389-[@Put(UpdateBatchByBatchID)-(Negative22)] : Check if admin able to update a Batch with invalid endpoint
+[INFO ]2024-11-2614:09:24.389------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:24.390-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:24.390-User is authenticated!!!
+[INFO ]2024-11-2614:09:24.823-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:24.856-===============================================================================================
+[INFO ]2024-11-2614:09:24.856-[@Put(UpdateBatchByBatchID)-(Negative23)] : Check if admin able to update a Batch with a valid batchID and deleted programID field in the request body with other mandatory fields
+[INFO ]2024-11-2614:09:24.856------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:24.857-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:24.857-User is authenticated!!!
+[INFO ]2024-11-2614:09:25.305-Response body : {"message":"Request method 'PUT' is not supported","success":false}
+[INFO ]2024-11-2614:09:25.339-===============================================================================================
+[INFO ]2024-11-2614:09:25.339-[@DeleteBatchByBatchID-(Negative24)] : Check if admin able to delete a Batch with invalid endpoint
+[INFO ]2024-11-2614:09:25.339------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:25.340-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:25.340-User is authenticated!!!
+[INFO ]2024-11-2614:09:25.841-===============================================================================================
+[INFO ]2024-11-2614:09:25.841-[@DeleteBatchByBatchID-(Negative26)] : Check if admin able to delete a Batch without authorization
+[INFO ]2024-11-2614:09:25.841------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:25.842-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:25.842-User is authenticated!!!
+[INFO ]2024-11-2614:09:26.382-===============================================================================================
+[INFO ]2024-11-2614:09:26.382-[@GetAllClasses] : Check if admin able to retrieve all classes  with valid Endpoint
+[INFO ]2024-11-2614:09:26.382------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:26.383-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:26.383-User is authenticated!!!
+[INFO ]2024-11-2614:09:27.042-===============================================================================================
+[INFO ]2024-11-2614:09:27.042-[@createClass] : Check if admin is able to create class with all valid details
+[INFO ]2024-11-2614:09:27.042------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:27.043-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:27.043-User is authenticated!!!
+[INFO ]2024-11-2614:09:27.508-Response body : {"message":"Batch not found with Id : 0 ","success":false}
+[INFO ]2024-11-2614:09:27.606-===============================================================================================
+[INFO ]2024-11-2614:09:27.606-[@createclasswithonlymandatory] : Check if admin is able to create class with only mandatory
+[INFO ]2024-11-2614:09:27.606------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:27.607-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:27.607-User is authenticated!!!
+[INFO ]2024-11-2614:09:28.057-Response body : {"message":"Batch not found with Id : 0 ","success":false}
+[INFO ]2024-11-2614:09:28.090-===============================================================================================
+[INFO ]2024-11-2614:09:28.090-[@createclasswithonlyadditionalfieldvalues] : Check if admin is able to create class with only additional field values
+[INFO ]2024-11-2614:09:28.090------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:28.091-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:28.091-User is authenticated!!!
+[INFO ]2024-11-2614:09:28.548-Response body : {"message":"Class date cannot be null or empty","success":false}
+[INFO ]2024-11-2614:09:28.578-===============================================================================================
+[INFO ]2024-11-2614:09:28.578-[@GetAllClasseswithinvalidendpoint] : Check if admin able to retrieve all  classes with invalid Endpoint
+[INFO ]2024-11-2614:09:28.578------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:28.579-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:28.579-User is authenticated!!!
+[INFO ]2024-11-2614:09:29.006-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:29.047-===============================================================================================
+[INFO ]2024-11-2614:09:29.047-[@Getallclasseswithinvalidmethod] : Check if admin able to retrieve all  classes with invalid method
+[INFO ]2024-11-2614:09:29.047------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:29.048-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:29.048-User is authenticated!!!
+[INFO ]2024-11-2614:09:29.488-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:29.509-===============================================================================================
+[INFO ]2024-11-2614:09:29.510-[@Getallclasseswithoutauthorization] : Check if admin able to retrieve all classes without Authorization
+[INFO ]2024-11-2614:09:29.510------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:29.510-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:29.510-User is authenticated!!!
+[INFO ]2024-11-2614:09:29.941-Response body : 
+[INFO ]2024-11-2614:09:29.961-===============================================================================================
+[INFO ]2024-11-2614:09:29.961-[@GetClassdetailswithvalidclasstopic] : Check if admin able to retrieve Class details  with valid classtopic
+[INFO ]2024-11-2614:09:29.961------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:29.962-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:29.962-User is authenticated!!!
+[INFO ]2024-11-2614:09:30.410-Response body : {"message":"classes with class topic Name: null not found","success":false}
+[INFO ]2024-11-2614:09:30.445-===============================================================================================
+[INFO ]2024-11-2614:09:30.445-[@Getalclasseswithinvalidclasstopic] : Check if admin able to retrieve all classes with invalid classtopic
+[INFO ]2024-11-2614:09:30.446------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:30.447-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:30.447-User is authenticated!!!
+[INFO ]2024-11-2614:09:30.874-Response body : {"message":"classes with class topic Name: abcdef not found","success":false}
+[INFO ]2024-11-2614:09:30.906-===============================================================================================
+[INFO ]2024-11-2614:09:30.907-[@GetallclasseswithinvalidEndpoint] : Check if admin able to retrieve all  classes with invalid Endpoint
+[INFO ]2024-11-2614:09:30.907------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:30.907-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:30.907-User is authenticated!!!
+[INFO ]2024-11-2614:09:31.377-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:31.377-Actual Status Code: 404
+[INFO ]2024-11-2614:09:31.378-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:31.410-===============================================================================================
+[INFO ]2024-11-2614:09:31.410-[@Getallclasseswithinvalidmethod] : Check if admin able to retrieve all  classes with invalid method
+[INFO ]2024-11-2614:09:31.410------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:31.411-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:31.411-User is authenticated!!!
+[INFO ]2024-11-2614:09:31.846-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:31.847-Actual Status Code: 405
+[INFO ]2024-11-2614:09:31.847-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:31.878-===============================================================================================
+[INFO ]2024-11-2614:09:31.878-[@GetClassdetailswithoutAuthorization] : Check if admin able to retrieve Class details without Authorization
+[INFO ]2024-11-2614:09:31.878------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:31.879-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:31.879-User is authenticated!!!
+[INFO ]2024-11-2614:09:32.324-Response body : 
+[INFO ]2024-11-2614:09:32.324-Actual Status Code: 401
+[INFO ]2024-11-2614:09:32.324-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:32.351-===============================================================================================
+[INFO ]2024-11-2614:09:32.351-[@GetClassdetailswithvalidclassId] : Check if admin able to retrieve Class details  with valid classId
+[INFO ]2024-11-2614:09:32.351------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:32.352-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:32.352-User is authenticated!!!
+[INFO ]2024-11-2614:09:32.783-Response body : 
+[INFO ]2024-11-2614:09:32.835-===============================================================================================
+[INFO ]2024-11-2614:09:32.835-[@GetClassdetailswithinvalidclassId] : Check if admin able to retrieve Class details with invalid classId
+[INFO ]2024-11-2614:09:32.835------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:32.837-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:32.837-User is authenticated!!!
+[INFO ]2024-11-2614:09:33.275-Response body : {"message":"ClassSchedule is not found for classId :100001","success":false}
+[INFO ]2024-11-2614:09:33.275-Actual Status Code: 404
+[INFO ]2024-11-2614:09:33.275-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:33.321-===============================================================================================
+[INFO ]2024-11-2614:09:33.321-[@GetClassdetailswithinvalidEndpoint] : Check if admin able to retrieve Class details with invalid Endpoint
+[INFO ]2024-11-2614:09:33.321------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:33.322-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:33.322-User is authenticated!!!
+[INFO ]2024-11-2614:09:33.757-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:33.763-Actual Status Code: 404
+[INFO ]2024-11-2614:09:33.765-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:33.792-===============================================================================================
+[INFO ]2024-11-2614:09:33.792-[@GetClassdetailswithinvalidmethod] : Check if admin able to retrieve Class details with invalid method
+[INFO ]2024-11-2614:09:33.792------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:33.795-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:33.795-User is authenticated!!!
+[INFO ]2024-11-2614:09:34.228-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:34.229-Actual Status Code: 405
+[INFO ]2024-11-2614:09:34.229-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:34.264-===============================================================================================
+[INFO ]2024-11-2614:09:34.264-[@GetClassdetailswithclassidwithoutAuthorization] : Check if admin able to retrieve Class details without Authorization
+[INFO ]2024-11-2614:09:34.264------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:34.264-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:34.264-User is authenticated!!!
+[INFO ]2024-11-2614:09:34.687-Response body : 
+[INFO ]2024-11-2614:09:34.687-Actual Status Code: 401
+[INFO ]2024-11-2614:09:34.687-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:34.718-===============================================================================================
+[INFO ]2024-11-2614:09:34.718-[@DeleteaclasswithvalidclassID] : Check if admin able to delete a class with valid class ID
+[INFO ]2024-11-2614:09:34.718------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:34.719-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:34.719-User is authenticated!!!
+[INFO ]2024-11-2614:09:35.197-===============================================================================================
+[INFO ]2024-11-2614:09:35.197-[@Deleteaclasswithinvalidendpoint] : Check if admin able to delete a class with invalid endpoint
+[INFO ]2024-11-2614:09:35.198------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:35.198-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:35.198-User is authenticated!!!
+[INFO ]2024-11-2614:09:35.636-===============================================================================================
+[INFO ]2024-11-2614:09:35.636-[@DeleteaclasswithinvalidclassID] : Check if admin able to delete a class with invalid class ID
+[INFO ]2024-11-2614:09:35.636------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:35.637-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:35.637-User is authenticated!!!
+[INFO ]2024-11-2614:09:36.098-===============================================================================================
+[INFO ]2024-11-2614:09:36.098-[@deleteaclasswithoutauthorization] : Check if admin able to delete a class without authorization
+[INFO ]2024-11-2614:09:36.098------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:36.099-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:36.099-User is authenticated!!!
+[INFO ]2024-11-2614:09:36.650-===============================================================================================
+[INFO ]2024-11-2614:09:36.650-[@GetAllRecordings] : Check if admin able to retrieve all class recording
+[INFO ]2024-11-2614:09:36.650------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:36.651-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:36.651-User is authenticated!!!
+[INFO ]2024-11-2614:09:37.134-Response body : [{"csId":38,"classRecordingPath":null},{"csId":48,"classRecordingPath":null},{"csId":52,"classRecordingPath":"/Users/akshatakanaje/Downloads/video1334142932.mp4"},{"csId":53,"classRecordingPath":"/Users/SamaS/Downloads/video1334142932.mp4"},{"csId":42,"classRecordingPath":null},{"csId":55,"classRecordingPath":"C://Recording"},{"csId":56,"classRecordingPath":"https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"},{"csId":57,"classRecordingPath":"https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"},{"csId":58,"classRecordingPath":"https://transcripts.gotomeeting.com/#/s/d1d1254168e0562a7eafbdebe201dacd88e2a5be33dc1db045972c7808099475"},{"csId":59,"classRecordingPath":"https://transcripts.gotomeeting.com/?utm_source=recordingReadyNotification&utm_medium=email#/s/3340bd05252ea34272a4245c70a14f8392d1bda9790d28ae37df98636e9c6451"},{"csId":60,"classRecordingPath":"https://transcripts.gotomeeting.com/?utm_source=recordingReadyNotification&utm_medium=email#/s/3340bd05252ea34272a4245c70a14f8392d1bda9790d28ae37df98636e9c6451"},{"csId":36,"classRecordingPath":"C:\\Recordings"},{"csId":50,"classRecordingPath":"https://www.youtube.com/watch?v=YyB2NGV69xE&list=PLFGoYjJG_fqo4oVsa6l_V-_7-tzBnlulT&index=1"},{"csId":61,"classRecordingPath":"C:\\Recordings"},{"csId":35,"classRecordingPath":"C:\\Recordings"},{"csId":62,"classRecordingPath":"RecordingPath"},{"csId":63,"classRecordingPath":"C:\\Recordings"},{"csId":64,"classRecordingPath":null},{"csId":95,"classRecordingPath":"Rec"},{"csId":96,"classRecordingPath":null},{"csId":97,"classRecordingPath":null},{"csId":104,"classRecordingPath":"D://Downloads"},{"csId":98,"classRecordingPath":"D:\\ClassRecording"},{"csId":99,"classRecordingPath":"D://Downloads"},{"csId":100,"classRecordingPath":"E://Mathu"},{"csId":101,"classRecordingPath":"C:\\DanceRecordings"},{"csId":103,"classRecordingPath":"D://Downloads"},{"csId":109,"classRecordingPath":"D://Downloads"},{"csId":107,"classRecordingPath":"C:\\DanceRecordings"},{"csId":105,"classRecordingPath":"D://Downloads"},{"csId":51,"classRecordingPath":"Inactive"},{"csId":111,"classRecordingPath":"my recording path"},{"csId":110,"classRecordingPath":"D://Downloads"},{"csId":112,"classRecordingPath":"D://Downloads"},{"csId":54,"classRecordingPath":""},{"csId":113,"classRecordingPath":"D://Downloads"},{"csId":108,"classRecordingPath":"D://Downloads"},{"csId":114,"classRecordingPath":"C:\\Recordings"},{"csId":115,"classRecordingPath":"D://Downloads"},{"csId":116,"classRecordingPath":"D://Downloads"},{"csId":117,"classRecordingPath":"D://Downloads"},{"csId":118,"classRecordingPath":"D://Downloads"},{"csId":119,"classRecordingPath":"D://Downloads"},{"csId":120,"classRecordingPath":"D://Downloads"},{"csId":121,"classRecordingPath":"D://Downloads"},{"csId":122,"classRecordingPath":"D://Downloads"},{"csId":123,"classRecordingPath":"D://Downloads"},{"csId":124,"classRecordingPath":"D://Downloads"},{"csId":125,"classRecordingPath":"D://Downloads"},{"csId":126,"classRecordingPath":"D://Downloads"},{"csId":127,"classRecordingPath":"D://Downloads"},{"csId":128,"classRecordingPath":"D://Downloads"},{"csId":129,"classRecordingPath":"D://Downloads"},{"csId":130,"classRecordingPath":"D://Downloads"},{"csId":131,"classRecordingPath":"D://Downloads"},{"csId":132,"classRecordingPath":"D://Downloads"},{"csId":133,"classRecordingPath":"D://Downloads"},{"csId":134,"classRecordingPath":"D://Downloads"},{"csId":135,"classRecordingPath":"D://Downloads"},{"csId":136,"classRecordingPath":"D://Downloads"},{"csId":137,"classRecordingPath":"D://Downloads"},{"csId":138,"classRecordingPath":"D://Downloads"},{"csId":139,"classRecordingPath":"D://Downloads"},{"csId":140,"classRecordingPath":"D://Downloads"},{"csId":141,"classRecordingPath":"D://Downloads"},{"csId":142,"classRecordingPath":"D://Downloads"},{"csId":143,"classRecordingPath":"D://Downloads"},{"csId":144,"classRecordingPath":"D://Downloads"},{"csId":145,"classRecordingPath":"D://Downloads"},{"csId":146,"classRecordingPath":"D://Downloads"},{"csId":147,"classRecordingPath":"C:\\Recordings"},{"csId":148,"classRecordingPath":"D://Downloads"},{"csId":149,"classRecordingPath":"D://Downloads"},{"csId":150,"classRecordingPath":"D://Downloads"},{"csId":151,"classRecordingPath":"D://Downloads"},{"csId":152,"classRecordingPath":"D://Downloads"},{"csId":153,"classRecordingPath":"D://Downloads"},{"csId":154,"classRecordingPath":"D://Downloads"},{"csId":155,"classRecordingPath":"D://Downloads"},{"csId":156,"classRecordingPath":null},{"csId":158,"classRecordingPath":"C:\\Recordings"},{"csId":187,"classRecordingPath":"D://Downloads"},{"csId":159,"classRecordingPath":"my recording path"},{"csId":160,"classRecordingPath":"my recording path"},{"csId":161,"classRecordingPath":"D://Downloads"},{"csId":162,"classRecordingPath":"D://Downloads"},{"csId":163,"classRecordingPath":"D://Downloads"},{"csId":164,"classRecordingPath":null},{"csId":165,"classRecordingPath":null},{"csId":166,"classRecordingPath":"D://Downloads"},{"csId":167,"classRecordingPath":null},{"csId":174,"classRecordingPath":"D://Downloads"},{"csId":177,"classRecordingPath":"D://Downloads"},{"csId":178,"classRecordingPath":"D://Downloads"},{"csId":102,"classRecordingPath":"132!!!"},{"csId":179,"classRecordingPath":"D://Downloads"},{"csId":180,"classRecordingPath":"D://Downloads"},{"csId":181,"classRecordingPath":"D://Downloads"},{"csId":175,"classRecordingPath":"C:\\\\Recordings"},{"csId":182,"classRecordingPath":"D://Downloads"},{"csId":183,"classRecordingPath":"D://Downloads"},{"csId":184,"classRecordingPath":"D://Downloads"},{"csId":168,"classRecordingPath":"my recording path"},{"csId":169,"classRecordingPath":"D://Downloads"},{"csId":170,"classRecordingPath":null},{"csId":171,"classRecordingPath":"D://Downloads"},{"csId":172,"classRecordingPath":null},{"csId":173,"classRecordingPath":"C:\\Recordings"},{"csId":185,"classRecordingPath":"D://Downloads"},{"csId":191,"classRecordingPath":"132!!!"},{"csId":189,"classRecordingPath":"C:\\Recordings"},{"csId":176,"classRecordingPath":"132!!!"},{"csId":190,"classRecordingPath":"C:\\Recordings"},{"csId":186,"classRecordingPath":"132!!!"},{"csId":188,"classRecordingPath":"132!!!"},{"csId":193,"classRecordingPath":"D://Downloads"},{"csId":192,"classRecordingPath":"132!!!"},{"csId":106,"classRecordingPath":"D://Downloads"},{"csId":194,"classRecordingPath":"my recording path"},{"csId":195,"classRecordingPath":"my recording path"},{"csId":196,"classRecordingPath":"my recording path"},{"csId":216,"classRecordingPath":"C:\\\\Recordings"},{"csId":217,"classRecordingPath":"C:\\\\Recordings"},{"csId":197,"classRecordingPath":"132!!!"},{"csId":210,"classRecordingPath":"D://Downloads"},{"csId":211,"classRecordingPath":"D://Downloads"},{"csId":198,"classRecordingPath":"132!!!"},{"csId":218,"classRecordingPath":"D://Downloads"},{"csId":199,"classRecordingPath":"132!!!"},{"csId":200,"classRecordingPath":""},{"csId":201,"classRecordingPath":"D://Downloads"},{"csId":202,"classRecordingPath":"my recording path"},{"csId":203,"classRecordingPath":"my recording path"},{"csId":157,"classRecordingPath":"*&^%$#*)*^^RTV"},{"csId":212,"classRecordingPath":"D://Downloads"},{"csId":204,"classRecordingPath":"my demo"},{"csId":205,"classRecordingPath":"my demo"},{"csId":206,"classRecordingPath":"my demo"},{"csId":207,"classRecordingPath":"my recording path"},{"csId":208,"classRecordingPath":"D://Downloads"},{"csId":209,"classRecordingPath":"my recording path"},{"csId":213,"classRecordingPath":"132!!!"},{"csId":214,"classRecordingPath":"D://Downloads"},{"csId":215,"classRecordingPath":"D://Downloads"}]
+[INFO ]2024-11-2614:09:37.136-Actual Status Code: 200
+[INFO ]2024-11-2614:09:37.137-Mapped Status Text: OK
+[INFO ]2024-11-2614:09:37.203-===============================================================================================
+[INFO ]2024-11-2614:09:37.203-[@GetAllRecordings] : Check if admin able to retrieve all class recording with invalid Endpoint
+[INFO ]2024-11-2614:09:37.203------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:37.205-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:37.205-User is authenticated!!!
+[INFO ]2024-11-2614:09:37.640-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:37.640-Actual Status Code: 404
+[INFO ]2024-11-2614:09:37.640-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:37.669-===============================================================================================
+[INFO ]2024-11-2614:09:37.670-[@GetAllRecordings] : Check if admin able to retrieve all class recording with invalid method
+[INFO ]2024-11-2614:09:37.670------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:37.673-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:37.673-User is authenticated!!!
+[INFO ]2024-11-2614:09:38.114-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:38.115-Actual Status Code: 405
+[INFO ]2024-11-2614:09:38.115-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:38.148-===============================================================================================
+[INFO ]2024-11-2614:09:38.148-[@GetAllRecordings] : Check if admin able to retrieve all class recording without Authorization
+[INFO ]2024-11-2614:09:38.148------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:38.149-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:38.149-User is authenticated!!!
+[INFO ]2024-11-2614:09:38.579-Response body : 
+[INFO ]2024-11-2614:09:38.579-Actual Status Code: 401
+[INFO ]2024-11-2614:09:38.579-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:38.615-===============================================================================================
+[INFO ]2024-11-2614:09:38.615-[@GetClassRecordingsbyBatchId] : Check if admin able to retrieve class recording  with valid Batchid
+[INFO ]2024-11-2614:09:38.615------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:38.617-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:38.617-User is authenticated!!!
+[INFO ]2024-11-2614:09:39.080-Response body : 
+[INFO ]2024-11-2614:09:39.156-===============================================================================================
+[INFO ]2024-11-2614:09:39.156-[@GetClassRecordingsbyBatchId] : Check if admin able to retrieve  class recording with invalid Batchid
+[INFO ]2024-11-2614:09:39.156------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:39.157-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:39.157-User is authenticated!!!
+[INFO ]2024-11-2614:09:39.607-Response body : {"message":"Class Recording not found with batchId :100001","success":false}
+[INFO ]2024-11-2614:09:39.607-Actual Status Code: 404
+[INFO ]2024-11-2614:09:39.607-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:39.645-===============================================================================================
+[INFO ]2024-11-2614:09:39.645-[@GetClassRecordingsbyBatchId] : Check if admin able to retrieve class recording with invalid Endpoint
+[INFO ]2024-11-2614:09:39.645------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:39.646-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:39.646-User is authenticated!!!
+[INFO ]2024-11-2614:09:40.103-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:40.103-Actual Status Code: 404
+[INFO ]2024-11-2614:09:40.103-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:40.129-===============================================================================================
+[INFO ]2024-11-2614:09:40.129-[@GetClassRecordingsbyBatchId] : Check if admin able to retrieve class recording with invalid method
+[INFO ]2024-11-2614:09:40.129------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:40.130-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:40.130-User is authenticated!!!
+[INFO ]2024-11-2614:09:40.576-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:40.577-Actual Status Code: 405
+[INFO ]2024-11-2614:09:40.577-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:40.619-===============================================================================================
+[INFO ]2024-11-2614:09:40.619-[@GetClassRecordingsbyBatchId] : Check if admin able to retrieve  class recording without Authorization
+[INFO ]2024-11-2614:09:40.619------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:40.620-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:40.620-User is authenticated!!!
+[INFO ]2024-11-2614:09:41.062-Response body : 
+[INFO ]2024-11-2614:09:41.062-Actual Status Code: 401
+[INFO ]2024-11-2614:09:41.062-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:41.090-===============================================================================================
+[INFO ]2024-11-2614:09:41.090-[@GetClassRecordingsbyClassId] : Check if admin able to retrieve class recording  with valid ClassID
+[INFO ]2024-11-2614:09:41.090------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:41.091-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:41.091-User is authenticated!!!
+[INFO ]2024-11-2614:09:41.581-Response body : 
+[INFO ]2024-11-2614:09:41.622-===============================================================================================
+[INFO ]2024-11-2614:09:41.622-[@GetClassRecordingsbyClassId] : Check if admin able to retrieve  class recording with invalid ClassID
+[INFO ]2024-11-2614:09:41.622------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:41.623-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:41.623-User is authenticated!!!
+[INFO ]2024-11-2614:09:42.061-Response body : {"message":"Class not found with Id : 100001 ","success":false}
+[INFO ]2024-11-2614:09:42.062-Actual Status Code: 404
+[INFO ]2024-11-2614:09:42.062-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:42.114-===============================================================================================
+[INFO ]2024-11-2614:09:42.115-[@GetClassRecordingsbyClassId] : Check if admin able to retrieve class recording with invalid Endpoint
+[INFO ]2024-11-2614:09:42.115------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:42.116-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:42.116-User is authenticated!!!
+[INFO ]2024-11-2614:09:42.557-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:42.561-Actual Status Code: 404
+[INFO ]2024-11-2614:09:42.562-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:42.614-===============================================================================================
+[INFO ]2024-11-2614:09:42.615-[@GetClassRecordingsbyClassId] : Check if admin able to retrieve class recording with invalid method
+[INFO ]2024-11-2614:09:42.615------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:42.619-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:42.619-User is authenticated!!!
+[INFO ]2024-11-2614:09:43.069-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:43.070-Actual Status Code: 405
+[INFO ]2024-11-2614:09:43.070-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:43.154-===============================================================================================
+[INFO ]2024-11-2614:09:43.155-[@GetClassRecordingsbyClassId] : Check if admin able to retrieve  class recording without Authorization
+[INFO ]2024-11-2614:09:43.155------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:43.157-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:43.157-User is authenticated!!!
+[INFO ]2024-11-2614:09:43.865-Response body : 
+[INFO ]2024-11-2614:09:43.871-Actual Status Code: 401
+[INFO ]2024-11-2614:09:43.871-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:43.951-===============================================================================================
+[INFO ]2024-11-2614:09:43.951-[@GetClassRecordingsbyClassId2] : Check if admin able to retrieve class recording  with valid ClassID
+[INFO ]2024-11-2614:09:43.951------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:43.952-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:43.953-User is authenticated!!!
+[INFO ]2024-11-2614:09:44.453-Response body : {"message":"Class not found with Id : 0 ","success":false}
+[INFO ]2024-11-2614:09:44.501-===============================================================================================
+[INFO ]2024-11-2614:09:44.501-[@GetClassRecordingsbyClassId2] : Check if admin able to retrieve  class recording with invalid ClassID
+[INFO ]2024-11-2614:09:44.501------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:44.513-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:44.513-User is authenticated!!!
+[INFO ]2024-11-2614:09:44.960-Response body : {"message":"Class not found with Id : 100001 ","success":false}
+[INFO ]2024-11-2614:09:44.961-Actual Status Code: 404
+[INFO ]2024-11-2614:09:44.961-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:44.993-===============================================================================================
+[INFO ]2024-11-2614:09:44.993-[@GetClassRecordingsbyClassId2] : Check if admin able to retrieve class recording with invalid Endpoint
+[INFO ]2024-11-2614:09:44.993------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:44.995-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:44.995-User is authenticated!!!
+[INFO ]2024-11-2614:09:45.434-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:45.435-Actual Status Code: 404
+[INFO ]2024-11-2614:09:45.435-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:45.478-===============================================================================================
+[INFO ]2024-11-2614:09:45.478-[@GetClassRecordingsbyClassId2] : Check if admin able to retrieve class recording with invalid method
+[INFO ]2024-11-2614:09:45.478------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:45.479-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:45.479-User is authenticated!!!
+[INFO ]2024-11-2614:09:45.919-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:45.920-Actual Status Code: 405
+[INFO ]2024-11-2614:09:45.920-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:45.943-===============================================================================================
+[INFO ]2024-11-2614:09:45.943-[@GetClassRecordingsbyClassId2] : Check if admin able to retrieve  class recording without Authorization
+[INFO ]2024-11-2614:09:45.943------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:45.943-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:45.943-User is authenticated!!!
+[INFO ]2024-11-2614:09:46.389-Response body : 
+[INFO ]2024-11-2614:09:46.390-Actual Status Code: 401
+[INFO ]2024-11-2614:09:46.390-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:46.417-===============================================================================================
+[INFO ]2024-11-2614:09:46.417-[@GetUpcomingClasses] : Check if admin able to retrieve upcoming classes with valid studentID
+[INFO ]2024-11-2614:09:46.417------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:46.418-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:46.418-User is authenticated!!!
+[INFO ]2024-11-2614:09:46.912-Response body : [{"csId":63,"batchId":8432,"classNo":6,"classDate":"2024-12-01T00:00:00.000+00:00","classTopic":"Basics of AWS","classStatus":"Inactive","classStaffId":"U49","classDescription":"class desc","classComments":"comments","classNotes":"C:\\Classnotes","classRecordingPath":"C:\\Recordings","batchName":"DVLPR-0001","classScheduledDates":["2024-12-01T00:00:00.000+00:00","2024-12-02T00:00:00.000+00:00","2024-12-03T00:00:00.000+00:00","2024-12-04T00:00:00.000+00:00","2024-12-05T00:00:00.000+00:00","2024-12-06T00:00:00.000+00:00"]}]
+[INFO ]2024-11-2614:09:46.912-Actual Status Code: 200
+[INFO ]2024-11-2614:09:46.912-Mapped Status Text: OK
+[INFO ]2024-11-2614:09:46.946-===============================================================================================
+[INFO ]2024-11-2614:09:46.946-[@GetUpcomingClasses] : Check if admin able to retrieve upcoming classes with invalid studentID
+[INFO ]2024-11-2614:09:46.946------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:46.948-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:46.948-User is authenticated!!!
+[INFO ]2024-11-2614:09:47.421-Response body : []
+[INFO ]2024-11-2614:09:47.477-===============================================================================================
+[INFO ]2024-11-2614:09:47.477-[@GetUpcomingClasses] : Check if admin able to retrieve upcoming classes with invalid Endpoint
+[INFO ]2024-11-2614:09:47.477------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:47.478-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:47.478-User is authenticated!!!
+[INFO ]2024-11-2614:09:48.038-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:48.042-Actual Status Code: 404
+[INFO ]2024-11-2614:09:48.042-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:48.101-===============================================================================================
+[INFO ]2024-11-2614:09:48.101-[@GetUpcomingClasses] : Check if admin able to retrieve upcoming classes with invalid method
+[INFO ]2024-11-2614:09:48.101------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:48.102-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:48.102-User is authenticated!!!
+[INFO ]2024-11-2614:09:48.584-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:48.584-Actual Status Code: 405
+[INFO ]2024-11-2614:09:48.584-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:48.612-===============================================================================================
+[INFO ]2024-11-2614:09:48.612-[@GetUpcomingClasses] : Check if admin able to retrieve upcoming classes without Authorization
+[INFO ]2024-11-2614:09:48.612------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:48.613-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:48.613-User is authenticated!!!
+[INFO ]2024-11-2614:09:49.077-Response body : 
+[INFO ]2024-11-2614:09:49.077-Actual Status Code: 401
+[INFO ]2024-11-2614:09:49.077-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:49.142-===============================================================================================
+[INFO ]2024-11-2614:09:49.142-[@UpdateNewClass] : Check if admin able to update a class with valid ClassID and all fields in requestBody
+[INFO ]2024-11-2614:09:49.142------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:49.143-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:49.143-User is authenticated!!!
+[INFO ]2024-11-2614:09:49.594-Response body : 
+[INFO ]2024-11-2614:09:49.640-===============================================================================================
+[INFO ]2024-11-2614:09:49.640-[@UpdateNewClass] : Check if admin able to update a class with valid classID and mandatory fields in request body without authorization
+[INFO ]2024-11-2614:09:49.640------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:49.641-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:49.641-User is authenticated!!!
+[INFO ]2024-11-2614:09:50.117-Response body : 
+[INFO ]2024-11-2614:09:50.118-Actual Status Code: 401
+[INFO ]2024-11-2614:09:50.118-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:50.151-===============================================================================================
+[INFO ]2024-11-2614:09:50.151-[@UpdateNewClass] : Check if admin able to update a Class with valid classID and mandatory fields in request body
+[INFO ]2024-11-2614:09:50.151------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:50.152-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:50.152-User is authenticated!!!
+[INFO ]2024-11-2614:09:50.599-Response body : 
+[INFO ]2024-11-2614:09:50.629-===============================================================================================
+[INFO ]2024-11-2614:09:50.630-[@UpdateNewClass] : Check if admin able to update a Class with invalid ClassID and mandatory fields in request body
+[INFO ]2024-11-2614:09:50.630------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:50.630-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:50.630-User is authenticated!!!
+[INFO ]2024-11-2614:09:51.078-Response body : {"message":"Class not found with Id : 100001 ","success":false}
+[INFO ]2024-11-2614:09:51.078-Actual Status Code: 404
+[INFO ]2024-11-2614:09:51.079-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:51.106-===============================================================================================
+[INFO ]2024-11-2614:09:51.106-[@UpdateNewClass] : Check if admin able to update a Class with valid ClassID and missing mandatory fields request body
+[INFO ]2024-11-2614:09:51.106------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:51.109-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:51.109-User is authenticated!!!
+[INFO ]2024-11-2614:09:51.581-Response body : 
+[INFO ]2024-11-2614:09:51.632-===============================================================================================
+[INFO ]2024-11-2614:09:51.632-[@UpdateNewClass] : Check if admin able to update a Class with invalid data
+[INFO ]2024-11-2614:09:51.632------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:51.638-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:51.638-User is authenticated!!!
+[INFO ]2024-11-2614:09:52.300-Response body : 
+[INFO ]2024-11-2614:09:52.404-===============================================================================================
+[INFO ]2024-11-2614:09:52.404-[@UpdateNewClass] : Check if admin able to update a Class with invalid enpoint
+[INFO ]2024-11-2614:09:52.404------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:52.405-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:52.405-User is authenticated!!!
+[INFO ]2024-11-2614:09:52.851-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:52.851-Actual Status Code: 404
+[INFO ]2024-11-2614:09:52.851-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:52.868-===============================================================================================
+[INFO ]2024-11-2614:09:52.868-[@UpdateNewClass] : Check if admin able to update a Class with a deleted batchID  field  in the request body with other mandatory fields
+[INFO ]2024-11-2614:09:52.868------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:52.869-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:52.870-User is authenticated!!!
+[INFO ]2024-11-2614:09:53.310-Response body : {"csId":105,"batchId":8593,"classNo":1,"classDate":"2024-12-23T00:00:00.000+00:00","classTopic":"Mathu Java topics updated aga","classStatus":null,"classStaffId":"U49","classDescription":"Mathu class description","classComments":"Mathu class comments","classNotes":"Mathu notes","classRecordingPath":"D://Downloads","batchName":"JavaBatchMathumat","classScheduledDates":["2024-11-29T15:11:08.750+00:00"]}
+[INFO ]2024-11-2614:09:53.354-===============================================================================================
+[INFO ]2024-11-2614:09:53.354-[@UpdateNewClass] : Check if admin able to update a Class with a deleted classID in the endpoint
+[INFO ]2024-11-2614:09:53.354------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:53.355-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:53.355-User is authenticated!!!
+[INFO ]2024-11-2614:09:53.808-Response body : {"csId":106,"batchId":8594,"classNo":1,"classDate":"2024-12-23T00:00:00.000+00:00","classTopic":"Mathu Java topics updated aga","classStatus":"Inactive","classStaffId":"U49","classDescription":"Mathu class description","classComments":"Mathu class comments","classNotes":"Mathu notes","classRecordingPath":"D://Downloads","batchName":"JavaBatchMathumath","classScheduledDates":["2024-11-29T15:11:08.750+00:00"]}
+[INFO ]2024-11-2614:09:53.876-===============================================================================================
+[INFO ]2024-11-2614:09:53.876-[@UpdateClassRecording] : Check if admin able to update a Class Recording with valid classID  in request body without authorization
+[INFO ]2024-11-2614:09:53.876------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:53.879-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:53.879-User is authenticated!!!
+[INFO ]2024-11-2614:09:54.311-Response body : 
+[INFO ]2024-11-2614:09:54.312-Actual Status Code: 401
+[INFO ]2024-11-2614:09:54.312-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:54.364-===============================================================================================
+[INFO ]2024-11-2614:09:54.364-[@UpdateClassRecording] : Check if admin able to update a Class Recording with valid classID  in request body
+[INFO ]2024-11-2614:09:54.364------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:54.365-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:54.365-User is authenticated!!!
+[INFO ]2024-11-2614:09:54.817-Response body : 
+[INFO ]2024-11-2614:09:54.869-===============================================================================================
+[INFO ]2024-11-2614:09:54.869-[@UpdateClassRecording] : Check if admin able to update a Class Recording with invalid ClassID  in request body
+[INFO ]2024-11-2614:09:54.869------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:54.870-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:54.870-User is authenticated!!!
+[INFO ]2024-11-2614:09:55.324-Response body : {"message":"no record found with 100001","success":false}
+[INFO ]2024-11-2614:09:55.324-Actual Status Code: 404
+[INFO ]2024-11-2614:09:55.324-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:55.361-===============================================================================================
+[INFO ]2024-11-2614:09:55.361-[@UpdateClassRecording] : Check if admin able to update a Class Recording with invalid data
+[INFO ]2024-11-2614:09:55.361------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:55.363-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:55.363-User is authenticated!!!
+[INFO ]2024-11-2614:09:55.792-Response body : 
+[INFO ]2024-11-2614:09:55.850-===============================================================================================
+[INFO ]2024-11-2614:09:55.850-[@UpdateClassRecording] : Check if admin able to retrieve class recording with invalid method
+[INFO ]2024-11-2614:09:55.850------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:55.851-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:55.851-User is authenticated!!!
+[INFO ]2024-11-2614:09:56.424-Response body : {"message":"Request method 'GET' is not supported","success":false}
+[INFO ]2024-11-2614:09:56.431-Actual Status Code: 405
+[INFO ]2024-11-2614:09:56.431-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:56.498-===============================================================================================
+[INFO ]2024-11-2614:09:56.498-[@UpdateClassRecording] : Check if admin able to update a Class Recording with invalid enpoint
+[INFO ]2024-11-2614:09:56.499------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:56.501-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:56.501-User is authenticated!!!
+[INFO ]2024-11-2614:09:56.977-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:56.978-Actual Status Code: 404
+[INFO ]2024-11-2614:09:56.978-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:57.009-===============================================================================================
+[INFO ]2024-11-2614:09:57.009-[@GetClassDetailsbyBatchId] : Check if admin able to retrieve all Classes  with valid Batchid
+[INFO ]2024-11-2614:09:57.009------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:57.009-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:57.009-User is authenticated!!!
+[INFO ]2024-11-2614:09:57.469-Response body : 
+[INFO ]2024-11-2614:09:57.509-===============================================================================================
+[INFO ]2024-11-2614:09:57.509-[@GetClassDetailsbyBatchId] : Check if admin able to retrieve  all Classes with invalid Batchid
+[INFO ]2024-11-2614:09:57.509------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:57.510-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:57.511-User is authenticated!!!
+[INFO ]2024-11-2614:09:57.963-Response body : {"message":"classes with this batchId 100001not found","success":false}
+[INFO ]2024-11-2614:09:57.964-Actual Status Code: 404
+[INFO ]2024-11-2614:09:57.964-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:58.003-===============================================================================================
+[INFO ]2024-11-2614:09:58.003-[@GetClassDetailsbyBatchId] : Check if admin able to retrieve all Classes with invalid Endpoint
+[INFO ]2024-11-2614:09:58.003------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:58.005-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:58.005-User is authenticated!!!
+[INFO ]2024-11-2614:09:58.476-Response body : Invalid endpoint
+[INFO ]2024-11-2614:09:58.477-Actual Status Code: 404
+[INFO ]2024-11-2614:09:58.477-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:09:58.513-===============================================================================================
+[INFO ]2024-11-2614:09:58.513-[@GetClassDetailsbyBatchId] : Check if admin able to retrieve all Classes with invalid method
+[INFO ]2024-11-2614:09:58.513------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:58.517-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:58.518-User is authenticated!!!
+[INFO ]2024-11-2614:09:58.949-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:09:58.949-Actual Status Code: 405
+[INFO ]2024-11-2614:09:58.949-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:09:58.988-===============================================================================================
+[INFO ]2024-11-2614:09:58.988-[@GetClassDetailsbyBatchId] : Check if admin able to retrieve all Classes without Authorization
+[INFO ]2024-11-2614:09:58.988------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:58.989-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:58.989-User is authenticated!!!
+[INFO ]2024-11-2614:09:59.411-Response body : 
+[INFO ]2024-11-2614:09:59.412-Actual Status Code: 401
+[INFO ]2024-11-2614:09:59.412-Mapped Status Text: Unauthorized
+[INFO ]2024-11-2614:09:59.488-===============================================================================================
+[INFO ]2024-11-2614:09:59.488-[@GetClassDetailsbyStaffId] : Check if admin able to retrieve all Classes  with valid Staffid
+[INFO ]2024-11-2614:09:59.488------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:09:59.494-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:09:59.495-User is authenticated!!!
+[INFO ]2024-11-2614:10:00.092-Response body : [{"csId":48,"batchId":8449,"classNo":1,"classDate":"2024-01-26T00:00:00.000+00:00","classTopic":"asd","classStatus":null,"classStaffId":"U25","classDescription":"Hiiii hello","classComments":null,"classNotes":null,"classRecordingPath":null,"batchName":"DA01","classScheduledDates":null},{"csId":53,"batchId":8433,"classNo":2,"classDate":"2024-05-17T00:00:00.000+00:00","classTopic":"JAVA basics","classStatus":null,"classStaffId":"U25","classDescription":"JAVA class","classComments":"java basics class","classNotes":"C:\\ClassNotes","classRecordingPath":"/Users/SamaS/Downloads/video1334142932.mp4","batchName":"SMPO-0001","classScheduledDates":null},{"csId":42,"batchId":8432,"classNo":11,"classDate":"2024-01-17T00:00:00.000+00:00","classTopic":"Java","classStatus":"Active","classStaffId":"U25","classDescription":"Java Description","classComments":null,"classNotes":null,"classRecordingPath":null,"batchName":"DVLPR-0001","classScheduledDates":null}]
+[INFO ]2024-11-2614:10:00.097-Actual Status Code: 200
+[INFO ]2024-11-2614:10:00.097-Mapped Status Text: OK
+[INFO ]2024-11-2614:10:00.157-===============================================================================================
+[INFO ]2024-11-2614:10:00.157-[@GetClassDetailsbyStaffId] : Check if admin able to retrieve  all Classes with invalid Staffid
+[INFO ]2024-11-2614:10:00.157------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:10:00.159-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:10:00.159-User is authenticated!!!
+[INFO ]2024-11-2614:10:00.623-Response body : {"message":"classes with this staffId 100001 not found","success":false}
+[INFO ]2024-11-2614:10:00.623-Actual Status Code: 404
+[INFO ]2024-11-2614:10:00.623-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:10:00.654-===============================================================================================
+[INFO ]2024-11-2614:10:00.655-[@GetClassDetailsbyStaffId] : Check if admin able to retrieve all Classes with invalid Endpoint
+[INFO ]2024-11-2614:10:00.655------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:10:00.655-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:10:00.655-User is authenticated!!!
+[INFO ]2024-11-2614:10:01.079-Response body : {"message":"classes with this staffId invalid not found","success":false}
+[INFO ]2024-11-2614:10:01.079-Actual Status Code: 404
+[INFO ]2024-11-2614:10:01.079-Mapped Status Text: Not Found
+[INFO ]2024-11-2614:10:01.118-===============================================================================================
+[INFO ]2024-11-2614:10:01.118-[@GetClassDetailsbyStaffId] : Check if admin able to retrieve all Classes with invalid method
+[INFO ]2024-11-2614:10:01.118------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:10:01.119-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:10:01.119-User is authenticated!!!
+[INFO ]2024-11-2614:10:01.573-Response body : {"message":"Request method 'POST' is not supported","success":false}
+[INFO ]2024-11-2614:10:01.573-Actual Status Code: 405
+[INFO ]2024-11-2614:10:01.573-Mapped Status Text: Method Not Allowed
+[INFO ]2024-11-2614:10:01.612-===============================================================================================
+[INFO ]2024-11-2614:10:01.613-[@GetClassDetailsbyStaffId] : Check if admin able to retrieve all Classes without Authorization
+[INFO ]2024-11-2614:10:01.613------------------------------------------------------------------------------------------------
+[INFO ]2024-11-2614:10:01.613-Executing some precondition step => Check authentication details
+[INFO ]2024-11-2614:10:01.613-User is authenticated!!!
+[INFO ]2024-11-2614:10:02.036-Response body : 
+[INFO ]2024-11-2614:10:02.036-Actual Status Code: 401
+[INFO ]2024-11-2614:10:02.036-Mapped Status Text: Unauthorized
