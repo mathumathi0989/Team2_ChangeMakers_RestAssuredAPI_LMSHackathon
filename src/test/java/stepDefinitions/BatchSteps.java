@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import apiConfig.EnvConstants;
 import generics.ApiUtils;
 import apiActions.BatchActions;
+import apiActions.class1Actions;
 import generics.LoggerLoad;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
@@ -22,9 +23,9 @@ public class BatchSteps {
     static Response response;
     private String loginServiceUrl = EnvConstants.endPoint_Login;
     private String getAllBatchesServiceUrl = EnvConstants.endPoint_GetAllBatches;
-    private String getBatchByBatchIDServiceUrl = EnvConstants.endPoint_GetBatchByBatchID;
-    private String getBatchByBatchNameServiceUrl = EnvConstants.endPoint_GetBatchByBatchName;
-    private String getBatchByProgramIDServiceUrl = EnvConstants.endPoint_GetBatchByProgramID;
+    private String getBatchByBatchIDServiceUrl = EnvConstants.endPoint_GetBatchByBatchID();
+    private String getBatchByBatchNameServiceUrl = EnvConstants.endPoint_GetBatchByBatchName();
+    private String getBatchByProgramIDServiceUrl = EnvConstants.endPoint_GetBatchByProgramID();
     private String postBatchServiceUrl = EnvConstants.endPoint_CreateBatch;
     private String putUpdateBatchByiDServiceUrl = EnvConstants.endPoint_UpdateBatchByBatchID;
     private String deleteBatchByBatchIDeleteBatchByBatchIDServiceUrl = EnvConstants.endPoint_DeleteBatchByBatchID;
@@ -104,10 +105,10 @@ public class BatchSteps {
         restUtil.validateStatusCode(response, int1);
     }
 
-//    @GetBatchByBatchID-(Positive3)
+//    @GetBatchByBatchID
     @When("Admin creates and executes GET batch with valid batch ID Request for the LMS API")
     public void admin_creates_and_executes_get_batch_with_valid_batch_id_request_for_the_lms_api() {
-        getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+        getBatch = BatchActions.setDetailsToReadBatchID(getBatch);
         requestSpecs = getBatch.buildRequest();
         response = requestSpecs.get(getBatch.getServiceUrl());
     }
@@ -167,18 +168,22 @@ public class BatchSteps {
         restUtil.validateStatusCode(response, int1);
     }
 
-//    @PostNewBatch-(Positive8)
+//    @PostNewBatch
     @When("Admin creates POST Request with valid data in request body")
     public void admin_creates_post_request_with_valid_data_in_request_body() {
-        postBatch = BatchActions.setDetailsToReadBatch(postBatch);
+        postBatch = BatchActions.setDetailsToAddBatch(postBatch);
         requestSpecs = postBatch.buildRequest();
         response = requestSpecs.post(postBatch.getServiceUrl());
     }
     @Then("Admin receives Created Status for post new batch with status code {int} and response message {string}")
-    public void admin_receives_created_status_for_post_new_batch_with_status_code_and_response_message(Integer int1, String string) {
+    public void admin_receives_created_status_for_post_new_batch_with_status_code_and_response_message(Integer statusCode, String statusMessage) {
         restUtil.extractRes(response);
-        restUtil.validateStatusCode(response, int1);
-        restUtil.validateStatusMessage(response, string);
+    	BatchActions.setBatchID(response);
+    	BatchActions.getBatchIDOne();
+    	BatchActions.setBatchName(response);
+    	BatchActions.getBatchNameOne();
+    	restUtil.validateStatusCode(response, statusCode);
+    	restUtil.validateStatusMessage(response, statusMessage);
     }
 
 //      @PostNewBatch-(Positive9)
@@ -238,7 +243,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
 //@GetAllBatches-(Negative1)
    @When("Admin creates GET Request \\(Negative1)")
    public void admin_creates_get_request_negative1() {
-    getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+    getBatch = BatchActions.setDetailsToReadAllBatchInvalid(getBatch);
     requestSpecs = getBatch.buildRequest();
     response = requestSpecs.get(getBatch.getServiceUrl());
     }
@@ -250,7 +255,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
 // @GetAllBatches-(Negative2)
     @When("Admin creates GET Request \\(Negative2)")
     public void admin_creates_get_request_negative2() {
-        getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+        getBatch = BatchActions.setDetailsToReadBatchWithoutAuth(getBatch);
         requestSpecs = getBatch.buildRequest();
         response = requestSpecs.get(getBatch.getServiceUrl());
     }
@@ -263,7 +268,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
 //    @GetBatchByBatchID-(Negative3)
     @When("Admin creates GET Request with valid Batch ID \\(Negative3)")
     public void admin_creates_get_request_with_valid_batch_id_negative3() {
-    getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+    getBatch = BatchActions.setDetailsToReadBatchIDWithoutAuth(getBatch);
     requestSpecs = getBatch.buildRequest();
     response = requestSpecs.get(getBatch.getServiceUrl());
     }
@@ -275,7 +280,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
 //    @GetBatchByBatchID-(Negative4)
     @When("Admin creates GET Request with invalid Batch ID \\(Negative4)")
     public void admin_creates_get_request_with_invalid_batch_id_negative4() {
-        getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+        getBatch = BatchActions.setDetailsToReadBatchIDInvalidBatchID(getBatch);
         requestSpecs = getBatch.buildRequest();
         response = requestSpecs.get(getBatch.getServiceUrl());
     }
@@ -287,7 +292,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
 //    @GetBatchByBatchID-(Negative5)
     @When("Admin creates GET Request with valid Batch ID \\(Negative5)")
     public void admin_creates_get_request_with_valid_batch_id_negative5() {
-        getBatch = BatchActions.setDetailsToReadBatch(getBatch);
+        getBatch = BatchActions.setDetailsToReadBatchIDInvalidEndpoint(getBatch);
         requestSpecs = getBatch.buildRequest();
         response = requestSpecs.get(getBatch.getServiceUrl());
     }

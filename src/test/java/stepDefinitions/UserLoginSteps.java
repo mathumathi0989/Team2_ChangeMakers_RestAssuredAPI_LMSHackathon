@@ -93,9 +93,9 @@ public class UserLoginSteps {
 	
 
 	//for invalid endpoint
+
 	
-	
-	@When("Admin calls Post Https method  with invalid endpoint login")
+	@When("Admin calls Post Https method with invalid endpoint login")
 	public void admin_calls_post_https_method_with_invalid_endpoint_login() {
 		getlogin= UserLoginActions.invalidLogin(getlogin);
 		requestSpecs=getlogin.buildRequest();

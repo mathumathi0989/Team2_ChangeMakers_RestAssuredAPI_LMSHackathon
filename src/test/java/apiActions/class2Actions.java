@@ -5,8 +5,6 @@ import apiConfig.EnvVariables;
 import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 public class class2Actions {
 

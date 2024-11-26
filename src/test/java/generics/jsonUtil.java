@@ -20,10 +20,10 @@ public class jsonUtil {
             String content = new String(Files.readAllBytes(Paths.get(filePath)));
            
             //Add variable for API data chaining 
-            String batchId = EnvVariables.batchID;  
+            int batchId = EnvVariables.batchID;  
             
-            if (batchId != null && content.contains("{{batchId}}")) {
-                content = content.replace("{{batchId}}", batchId);
+            if (content.contains("{{batchId}}")) {
+                content = content.replace("{{batchId}}", String.valueOf(batchId));
             }
             
             String programName_ToCreateProgram = EnvVariables.programNameToCreateProgram;  
@@ -35,6 +35,12 @@ public class jsonUtil {
             if (content.contains("{{programID}}")) {
                 content = content.replace("{{programID}}", String.valueOf(programId));
             }
+            
+            String programNames = EnvVariables.programNameOne;
+            if (content.contains("{{programName}}")) {
+                content = content.replace("{{programName}}", programNames);
+            }
+            
             
             String programName_ToUpdateProgram = EnvVariables.programNameOne+"-Updated";
             if (content.contains("{{programNameToUpdate}}")) {
