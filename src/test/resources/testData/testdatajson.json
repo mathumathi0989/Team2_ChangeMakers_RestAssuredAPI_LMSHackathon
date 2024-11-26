@@ -229,7 +229,7 @@
       "batchId" : "{{batchId}}",
       "classNo" : "1",
       "classDate" : "2024-12-30",
-      "classTopic" : "ChangeMakers Topic New",
+      "classTopic" : "ChangeMakers Topic New ted",
       "classDescription" : "Mathu class description",
       "classComments" : "Mathu class comments",
       "classNotes" : "Mathu notes",
@@ -244,7 +244,7 @@
     "addClassAllDetailsMandatory" : {
       "batchId" : "{{batchId}}",
       "classNo" : "1",
-      "classTopic" : "Mathu Java topics updated",
+      "classTopic" : "ChangeMakers Java tocs ne ",
       "classDate" : "2024-12-23",
       "classStaffId" : "U49",
       "classStatus" : "Active"

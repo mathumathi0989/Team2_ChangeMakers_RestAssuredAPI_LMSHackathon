@@ -392,10 +392,12 @@ public void admin_receive_status_for_createClass(Integer statusCode, String stat
 }
 
 
-@Then("Admin receive {int} bad request for createClass")
-public void admin_receive_bad_request_for_createclass(Integer statusCode) {
+@Then("Admin receive {int} status for createClass")
+public void admin_receive_status_for_createclass(Integer statusCode) {
+	restUtil.extractRes(response);
 	restUtil.validateStatusCode(response, statusCode);
 }
 	
+
 	
 }
