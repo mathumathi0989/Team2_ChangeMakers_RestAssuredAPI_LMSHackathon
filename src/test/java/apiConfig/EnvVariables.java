@@ -12,7 +12,8 @@ public class EnvVariables {
 	public static int bugProgramIDTwo;
 	public static String bugProgramNameOne;
 	
-	public static String batchID = "8788";
+	public static int batchID;
+	public static String batchName;
 	public static String studentId = "U02";
 	public static String staffId = "U25";
 	

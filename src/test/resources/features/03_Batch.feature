@@ -13,7 +13,13 @@ Feature: BatchModule : positive flow
     When Admin creates and executes GET all batches Request with search string for the LMS API
     Then Admin receives 200 OK Status for getALLBatches2
 
-  @GetBatchByBatchID-(Positive3)
+  @PostNewBatch
+  Scenario: Check if Admin able to create a batch with valid endpoint and request body (non-existing values)
+    When Admin creates POST Request with valid data in request body
+    Then Admin receives Created Status for post new batch with status code 201 and response message "Created"
+
+
+  @GetBatchByBatchID
   Scenario: Check if admin able to retrieve a batch with valid batch ID
     When Admin creates and executes GET batch with valid batch ID Request for the LMS API
     Then Admin receives 200 OK Status for getBatchByBatchID
@@ -38,10 +44,6 @@ Feature: BatchModule : positive flow
     When Admin creates and executes GET batch with valid program ID
     Then Admin receives 200 OK Status with response body for GetBatchByProgramId
 
-  @PostNewBatch-(Positive8)
-  Scenario: Check if Admin able to create a batch with valid endpoint and request body (non-existing values)
-    When Admin creates POST Request  with valid data in request body
-    Then Admin receives Created Status for post new batch with status code 201 and response message "Created"
 
   @PostNewBatch-(Positive9)
   Scenario: Check if admin able to create a batch with missing additional fields
@@ -91,7 +93,7 @@ Feature: BatchModule : positive flow
   @GetBatchByBatchName-(Negative6)
   Scenario: Check if admin able to retrieve a batch without authorization
     When  Admin creates GET Request with batch Name(Negative6)
-    Then Admin receives 401  Status with error message unauthorized
+    Then Admin receives 401 Status with error message unauthorized for GetAllBatches
 
   @GetBatchByBatchName-(Negative7)
   Scenario: Check if admin able to retrieve a batch with invalid BATCH NAME

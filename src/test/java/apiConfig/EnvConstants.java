@@ -103,8 +103,15 @@ public class EnvConstants {
 		public static final String endPoint_UpdateBatchByBatchID = " batches/{batchId}";
 		public static final String endPoint_DeleteBatchByBatchID = " /batches/{id}";
 		public static final String endPoint_GetAllBatches = "/batches";
-		public static final String endPoint_GetBatchByBatchID = "/batches/batchId/{batchId}";
-		public static final String endPoint_GetBatchByBatchName = "batches/batchName/{batchName}";
-		public static final String endPoint_GetBatchByProgramID = "/batches/program/{programId}";
 
+		public static String endPoint_GetBatchByBatchID() {
+			return "batches/batchId/" + EnvVariables.batchID;
+		}
+		public static String endPoint_GetBatchByBatchName() {
+			return "batches/batchName/" + EnvVariables.batchName;
+		}
+		public static String endPoint_GetBatchByProgramID() {
+			return "/batches/program/" + EnvVariables.programIDOne;
+		}
+		
 }

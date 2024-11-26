@@ -229,7 +229,7 @@
       "batchId" : "{{batchId}}",
       "classNo" : "1",
       "classDate" : "2024-12-30",
-      "classTopic" : "ChangeMakers Topic New ted",
+      "classTopic" : "ChangeMake LMS New ted",
       "classDescription" : "Mathu class description",
       "classComments" : "Mathu class comments",
       "classNotes" : "Mathu notes",
@@ -275,14 +275,13 @@
     },{
       "feature": "Create Batch",
       "scenarioName": "Check if Admin is able to create a batch with valid endpoint and request body (non-existing values)",
-      "updateBatchDetails": {
-        "batchId": "{{batchId}}",
-        "batchDescription": "JavaSDET_BatchDescription",
-        "batchName": "BatchName5",
-        "batchNoOfClasses": 7,
+      "createBatchDetailsValid": {
+        "batchDescription": "change makers new Desc",
+        "batchName": "change makers lms",
+        "batchNoOfClasses": 1,
         "batchStatus": "Active",
-        "programId": 16233,
-        "programName": "TestingBatch05"
+        "programId": "{{programID}}",
+        "programName": "{{programName}}"
       }
       }, {
       "feature": "Create Batch",
