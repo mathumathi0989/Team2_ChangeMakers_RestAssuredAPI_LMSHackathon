@@ -34,49 +34,60 @@ public class EnvConstants {
 	public static final int http_NotFound = 404;
 	public static final int http_MethodNotAllowed = 405;
 
-	
-	//Adding class constants - Mathumathi
-	public static final String endPoint_GetAllRecordings="classrecordings";
-	public static String endPoint_GetClassRecordingsBatchID="batchRecordings/"+EnvVariables.batchID;
-	public static final String endPoint_GetUpcomingclasses="upcomingClasses/"+EnvVariables.studentId;
-	public static final String TestDatajsonPath ="src/test/resources/testData/testdatajson.json";
-	public static String endPoint_GetClassDetailsBatchID="classesbyBatch/"+EnvVariables.batchID;
-	public static final String endPoint_GetClassDetailsStaffID="classesByStaff/"+EnvVariables.staffId;
-	 public static String endPoint_GetClassRecordingsClassID() {
-	        return "classRecordings/" + EnvVariables.csId;
-	    }
-	 public static String endPoint_Updateclass() {
-	        return "updateClass/" + EnvVariables.csId;
-	    }
-	 public static String endPoint_UpdateclassRecording() {
-	        return "updateClassrecording/" + EnvVariables.csId;
-	    }
-	 public static String endPoint_GetClassRecordingsClassID2() {
-	        return "download/" + EnvVariables.csId;
-	    }
-	 
-	 
-	
-	//Adding class constants-SUpriya
-	
-		public static final String endPoint_GetAllclasses="allClasses";
+	// Adding class constants - Mathumathi
+	public static final String endPoint_GetAllRecordings = "classrecordings";
+	public static final String endPoint_GetUpcomingclasses = "upcomingClasses/" + EnvVariables.studentId;
+	public static final String TestDatajsonPath = "src/test/resources/testData/testdatajson.json";
+	public static final String endPoint_GetClassDetailsStaffID = "classesByStaff/" + EnvVariables.staffId;
 
-		public static final String endPoint_addClass="CreateClassSchedule";
-		 public static String endPoint_GetClassDetailsClassTopic() {
-		        return "classes/" + EnvVariables.classTopic;
-		    }
-		 public static String endPoint_GetClassDetailsClassId() {
-		        return "class/" + EnvVariables.csId;
-		    }
-		 public static String endPoint_DeleteClassDetailsByClassId() {
-		        return "deleteByClass/" + EnvVariables.csId;
-		    }
-		
-		// LoginConstants
-			public static final String userLoginwrongId = "sdetwrong@gmail.com";
-			public static final String loginRequestBodyWrong = "{ \"userLoginEmailId\" : \"sdetwrong@gmail.com\",\n"
-					+ "  \"password\" : \"LmsHackathonApi@2023\"}";
-			public static final String Wrongpassword = "LmsHackathonApi@2023";
-			public static final String endPoint_invalidLogin = "invalidlogin";	
+	public static String endPoint_GetClassRecordingsBatchID() {
+		return "batchRecordings/" + EnvVariables.batchID;
+	}
+
+	public static String endPoint_GetClassDetailsBatchID() {
+		return "classesbyBatch/" + EnvVariables.batchID;
+	}
+
+	public static String endPoint_GetClassRecordingsClassID() {
+		return "classRecordings/" + EnvVariables.csId;
+	}
+
+	public static String endPoint_Updateclass() {
+		return "updateClass/" + EnvVariables.csId;
+	}
+
+	public static String endPoint_UpdateclassRecording() {
+		return "updateClassrecording/" + EnvVariables.csId;
+	}
+
+	public static String endPoint_GetClassRecordingsClassID2() {
+		return "download/" + EnvVariables.csId;
+	}
+
+	// Adding class constants-SUpriya
+
+	public static final String endPoint_GetAllclasses = "allClasses";
+
+	public static final String endPoint_addClass = "CreateClassSchedule";
+
+	public static String endPoint_GetClassDetailsClassTopic() {
+		return "classes/" + EnvVariables.classTopic;
+	}
+
+	public static String endPoint_GetClassDetailsClassId() {
+		return "class/" + EnvVariables.csId;
+	}
+
+	public static String endPoint_DeleteClassDetailsByClassId() {
+		return "deleteByClass/" + EnvVariables.csId;
+	}
+
+	// LoginConstants
+
+	public static final String userLoginwrongId = "sdetwrong@gmail.com";
+	public static final String loginRequestBodyWrong = "{ \"userLoginEmailId\" : \"sdetwrong@gmail.com\",\n"
+			+ "  \"password\" : \"LmsHackathonApi@2023\"}";
+	public static final String Wrongpassword = "LmsHackathonApi@2023";
+	public static final String endPoint_invalidLogin = "invalidlogin";
 
 }

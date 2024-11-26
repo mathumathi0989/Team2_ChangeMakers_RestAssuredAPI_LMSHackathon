@@ -416,99 +416,97 @@ public class class2Steps {
 		restUtil.validateStatusCode(response, statusCode);
 		restUtil.validateStatusMessage(response, statusMessage);
 	}
-	
-	
+
 	// GetClassDetailsbyBatchId step definition
 
-		@When("Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByBatchID")
-		public void admin_creates_get_request_and_sends_https_request_with_endpoint_for_getClassDetailsByBatchID() {
-			getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDValid(getClass2);
-			requestSpecs = getClass2.buildRequest();
-			response = requestSpecs.get(getClass2.getServiceUrl());
-		}
+	@When("Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByBatchID")
+	public void admin_creates_get_request_and_sends_https_request_with_endpoint_for_getClassDetailsByBatchID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDValid(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-		@When("Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassDetailsByBatchID")
-		public void admin_creates_get_request_and_sends_https_request_with_invalid_batchID_for_getClassDetailsByBatchID() {
-			getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidBatchID(getClass2);
-			requestSpecs = getClass2.buildRequest();
-			response = requestSpecs.get(getClass2.getServiceUrl());
-		}
+	@When("Admin creates GET Request and sends HTTPS Request with invalid batchID for getClassDetailsByBatchID")
+	public void admin_creates_get_request_and_sends_https_request_with_invalid_batchID_for_getClassDetailsByBatchID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidBatchID(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-		@When("Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByBatchID")
-		public void admin_creates_get_request_and_sends_https_request_with_invalid_endpoint_for_getClassDetailsByBatchID() {
-			getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidEndpoint(getClass2);
-			requestSpecs = getClass2.buildRequest();
-			response = requestSpecs.get(getClass2.getServiceUrl());
-		}
+	@When("Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByBatchID")
+	public void admin_creates_get_request_and_sends_https_request_with_invalid_endpoint_for_getClassDetailsByBatchID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidEndpoint(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-		@When("Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByBatchID")
-		public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassDetailsByBatchID() {
-			getClass2 = class2Actions.setDetailsToCreateClass2DetailsByBatchIDforGet(getClass2);
-			requestSpecs = getClass2.buildRequest();
-			response = requestSpecs.post(getClass2.getServiceUrl());
+	@When("Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByBatchID")
+	public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassDetailsByBatchID() {
+		getClass2 = class2Actions.setDetailsToCreateClass2DetailsByBatchIDforGet(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.post(getClass2.getServiceUrl());
 
-		}
+	}
 
-		@When("Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByBatchID")
-		public void admin_creates_get_request_and_sends_https_request_with_valid_endpoint_but_without_auth_for_getClassDetailsByBatchID() {
-			getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidAuth(getClass2);
-			requestSpecs = getClass2.buildRequest();
-			response = requestSpecs.get(getClass2.getServiceUrl());
+	@When("Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByBatchID")
+	public void admin_creates_get_request_and_sends_https_request_with_valid_endpoint_but_without_auth_for_getClassDetailsByBatchID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByBatchIDInvalidAuth(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
 
-		}
+	}
 
-		@Then("Admin receives {int} {string} Status for getClassDetailsByBatchID")
-		public void admin_receives_status_for_getClassDetailsByBatchID(Integer statusCode, String statusMessage) {
-			restUtil.extractRes(response);
-			restUtil.validateStatusCode(response, statusCode);
-			restUtil.validateStatusMessage(response, statusMessage);
-		}
+	@Then("Admin receives {int} {string} Status for getClassDetailsByBatchID")
+	public void admin_receives_status_for_getClassDetailsByBatchID(Integer statusCode, String statusMessage) {
+		restUtil.extractRes(response);
+		restUtil.validateStatusCode(response, statusCode);
+		restUtil.validateStatusMessage(response, statusMessage);
+	}
 
-		// GetClassDetailsbyStaffId step definition
+	// GetClassDetailsbyStaffId step definition
 
-				@When("Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByStaffID")
-				public void admin_creates_get_request_and_sends_https_request_with_endpoint_for_getClassDetailsByStaffID() {
-					getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDValid(getClass2);
-					requestSpecs = getClass2.buildRequest();
-					response = requestSpecs.get(getClass2.getServiceUrl());
-				}
+	@When("Admin creates GET Request and sends HTTPS Request with endpoint for getClassDetailsByStaffID")
+	public void admin_creates_get_request_and_sends_https_request_with_endpoint_for_getClassDetailsByStaffID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDValid(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-				@When("Admin creates GET Request and sends HTTPS Request with invalid staffID for getClassDetailsByStaffID")
-				public void admin_creates_get_request_and_sends_https_request_with_invalid_staffID_for_getClassDetailsByStaffID() {
-					getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidBatchID(getClass2);
-					requestSpecs = getClass2.buildRequest();
-					response = requestSpecs.get(getClass2.getServiceUrl());
-				}
+	@When("Admin creates GET Request and sends HTTPS Request with invalid staffID for getClassDetailsByStaffID")
+	public void admin_creates_get_request_and_sends_https_request_with_invalid_staffID_for_getClassDetailsByStaffID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidBatchID(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-				@When("Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByStaffID")
-				public void admin_creates_get_request_and_sends_https_request_with_invalid_endpoint_for_getClassDetailsByStaffID() {
-					getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidEndpoint(getClass2);
-					requestSpecs = getClass2.buildRequest();
-					response = requestSpecs.get(getClass2.getServiceUrl());
-				}
+	@When("Admin creates GET Request and sends HTTPS Request with invalid endpoint for getClassDetailsByStaffID")
+	public void admin_creates_get_request_and_sends_https_request_with_invalid_endpoint_for_getClassDetailsByStaffID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidEndpoint(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
+	}
 
-				@When("Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByStaffID")
-				public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassDetailsByStaffID() {
-					getClass2 = class2Actions.setDetailsToCreateClass2DetailsByStaffIDforGet(getClass2);
-					requestSpecs = getClass2.buildRequest();
-					response = requestSpecs.post(getClass2.getServiceUrl());
+	@When("Admin creates Other Request and sends HTTPS Request with valid endpoint for getClassDetailsByStaffID")
+	public void admin_creates_other_request_and_sends_https_request_with_valid_endpoint_for_getClassDetailsByStaffID() {
+		getClass2 = class2Actions.setDetailsToCreateClass2DetailsByStaffIDforGet(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.post(getClass2.getServiceUrl());
 
-				}
+	}
 
-				@When("Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByStaffID")
-				public void admin_creates_get_request_and_sends_https_request_with_valid_endpoint_but_without_auth_for_getClassDetailsByStaffID() {
-					getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidAuth(getClass2);
-					requestSpecs = getClass2.buildRequest();
-					response = requestSpecs.get(getClass2.getServiceUrl());
+	@When("Admin creates GET Request and sends HTTPS Request with valid endpoint but without Auth for getClassDetailsByStaffID")
+	public void admin_creates_get_request_and_sends_https_request_with_valid_endpoint_but_without_auth_for_getClassDetailsByStaffID() {
+		getClass2 = class2Actions.setDetailsToReadClass2DetailsByStaffIDInvalidAuth(getClass2);
+		requestSpecs = getClass2.buildRequest();
+		response = requestSpecs.get(getClass2.getServiceUrl());
 
-				}
+	}
 
-				@Then("Admin receives {int} {string} Status for getClassDetailsByStaffID")
-				public void admin_receives_status_for_getClassDetailsByStaffID(Integer statusCode, String statusMessage) {
-					restUtil.extractRes(response);
-					restUtil.validateStatusCode(response, statusCode);
-					restUtil.validateStatusMessage(response, statusMessage);
-				}		
-		
+	@Then("Admin receives {int} {string} Status for getClassDetailsByStaffID")
+	public void admin_receives_status_for_getClassDetailsByStaffID(Integer statusCode, String statusMessage) {
+		restUtil.extractRes(response);
+		restUtil.validateStatusCode(response, statusCode);
+		restUtil.validateStatusMessage(response, statusMessage);
+	}
 
 }

@@ -144,7 +144,7 @@ Then Admin receives 401 "Unauthorized" Status for updateClass
 @UpdateNewClass
 Scenario: Check if admin able to update a Class with valid classID and mandatory fields in request body
 When Admin creates PUT Request and sends HTTPS Request with valid classId and mandatory fields for updateClass
-Then Admin receives 401 "Unauthorized" Status for updateClass
+Then Admin receives 200 "OK" Status for updateClass
 
 @UpdateNewClass
 Scenario: Check if admin able to update a Class with invalid ClassID and mandatory fields in request body
