@@ -19,7 +19,7 @@ public class DataDrivenTestingUsingJsonFile {
             String content = new String(Files.readAllBytes(Paths.get(filePath)));
            
             //Add variable for API data chaining 
-            String batchId = EnvVariables.batchID;  
+            String batchId = EnvVariables.batchID;
             content = content.replace("{{batchId}}", batchId);
             
             
@@ -36,7 +36,7 @@ public class DataDrivenTestingUsingJsonFile {
 	
 	
 	public static String run_all_test_scenarios_from_json_data(String reqBodyFieldName) {
-        JSONArray testDataArray = getTestData("src/test/resources/testdatajson.json");
+        JSONArray testDataArray = getTestData("src/test/resources/TestDataBatch.json");
         JSONObject reqBody = null ;
         for (int i = 0; i < testDataArray.length(); i++) {
             JSONObject testData = testDataArray.getJSONObject(i);
