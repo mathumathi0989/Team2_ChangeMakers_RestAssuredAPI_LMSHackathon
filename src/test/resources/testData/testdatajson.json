@@ -260,9 +260,211 @@
         "classRecordingPath" : "D://Downloads",
         "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
     }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with missing additional fields",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "",
+        "batchName": "BatchName6",
+        "batchNoOfClasses": 16,
+        "batchStatus": "Active",
+        "programId": 16235,
+        "programName": ""
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if Admin is able to create a batch with valid endpoint and request body (non-existing values)",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "JavaSDET_BatchDescription",
+        "batchName": "BatchName5",
+        "batchNoOfClasses": 7,
+        "batchStatus": "Active",
+        "programId": 16233,
+        "programName": "TestingBatch05"
+      }
+      }, {
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with valid endpoint and request body without authorization",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "First_BatchDescription",
+        "batchName": "BatchName1",
+        "batchNoOfClasses": 11,
+        "batchStatus": "Active",
+        "programId": 16334,
+        "programName": "TestingBatch"
+      }
+    }, {
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with valid endpoint and request body (existing value in Batch Name)",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "First_Batch",
+        "batchName": "BatchName2",
+        "batchNoOfClasses": 10,
+        "batchStatus": "Active",
+        "programId": 16426,
+        "programName": "TestingBatch01"
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with valid endpoint and request body (existing value in Batch Name)",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "First_Batch",
+        "batchName": "BatchName2",
+        "batchNoOfClasses": 10,
+        "batchStatus": "Active",
+        "programId": 16426,
+        "programName": "TestingBatch01"
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch missing mandatory fields in the request body",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "First_Batch",
+        "batchName": "",
+        "batchNoOfClasses": null,
+        "batchStatus": "",
+        "programId": null,
+        "programName": "TestingBatch01"
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with invalid endpoint",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "Second_Batch",
+        "batchName": "BatchName4",
+        "batchNoOfClasses": 14,
+        "batchStatus": "Active",
+        "programId": 16401,
+        "programName": "TestingBatch02"
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with invalid data in the request body",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": 6,
+        "batchName": 9,
+        "batchNoOfClasses": "Java",
+        "batchStatus": 9,
+        "programId": 16401,
+        "programName": "TestingBatch02"
+      }
+    },{
+      "feature": "Create Batch",
+      "scenarioName": "Check if admin is able to create a batch with inactive program ID",
+      "updateBatchDetails": {
+        "batchId": "{{batchId}}",
+        "batchDescription": "SdetPython_FirstBatch",
+        "batchName": "BatchName5",
+        "batchNoOfClasses": 5,
+        "batchStatus": "Active",
+        "programId": 16231,
+        "programName": "TestingBatch10"
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with valid batchID and mandatory fields in the request body",
+      "updateBatchDetails": {
+        "batchId": 8545,
+        "batchName": "Java Batch 02",
+        "batchDescription": "Java Batch",
+        "batchStatus": "Active",
+        "batchNoOfClasses": 11,
+        "programId": 16260,
+        "programName": "JavaSdet_Program"
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with a deleted batchID in the endpoint",
+      "updateBatchDetails": {
+        "batchId": 8544,
+        "batchDescription": "Java Batch Description",
+        "batchName": "Java Batch 03",
+        "batchNoOfClasses": 9,
+        "batchStatus": "Inactive",
+        "programId": 16260,
+        "programName": "JavaSdet1_Program"
+      	}
+      },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with valid batchID and mandatory fields in the request body without authorization",
+      "updateBatchDetails": {
+        "batchId": 8551,
+        "batchDescription": "Sravz_BatchDescription",
+        "batchName": "SDET Batch",
+        "batchNoOfClasses": 3,
+        "batchStatus": "Active",
+        "programId": 16272,
+        "programName": "JavaSdet_Program"
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with invalid batchID and mandatory fields in the request body without authorization",
+      "updateBatchDetails": {
+        "batchId": 8511,
+        "batchDescription": "Sravs_BatchDescription",
+        "batchName": "SDET JAVA Batch",
+        "batchNoOfClasses": 4,
+        "batchStatus": "Active",
+        "programId": 16277,
+        "programName": "SdetJava_Program"
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with valid batchID and missing mandatory fields in the request body",
+      "updateBatchDetails": {
+        "batchId": 8511,
+        "batchDescription": "Sravs_BatchDescription",
+        "batchName": "SDET JAVA Batch",
+        "batchNoOfClasses": null,
+        "batchStatus": "",
+        "programId": 16277,
+        "programName": ""
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with invalid data",
+      "updateBatchDetails": {
+        "batchId": 8511,
+        "batchDescription": 11,
+        "batchName": "SDET JAVA Batch",
+        "batchNoOfClasses": "10",
+        "batchStatus": "9",
+        "programId": 16277,
+        "programName": 12
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with invalid endpoint",
+      "updateBatchDetails": {
+        "batchId": 8594,
+        "batchDescription": 16,
+        "batchName": "SDET JAVA Batch",
+        "batchNoOfClasses": 13,
+        "batchStatus": "Active",
+        "programId": 16272,
+        "programName": "Java_SDET_Program"
+      }
+    },{
+      "feature": "Update Batch",
+      "scenarioName": "Check if admin is able to update a batch with a valid batchID and deleted programID field in the request body with other mandatory fields",
+      "updateBatchDetails": {
+        "batchId": 8616,
+        "batchDescription": "Sravzz_BatchDescription",
+        "batchName": "SDET Python Batch",
+        "batchNoOfClasses": 3,
+        "batchStatus": "Active",
+        "programId": 16225,
+        "programName": "Python_SDET_Program"
+      }
     }
-  
-  
-    ]
+   ]
 }
 
