@@ -172,7 +172,7 @@ public class BatchSteps {
     public void admin_creates_post_request_with_valid_data_in_request_body() {
         postBatch = BatchActions.setDetailsToReadBatch(postBatch);
         requestSpecs = postBatch.buildRequest();
-        response = requestSpecs.get(postBatch.getServiceUrl());
+        response = requestSpecs.post(postBatch.getServiceUrl());
     }
     @Then("Admin receives Created Status for post new batch with status code {int} and response message {string}")
     public void admin_receives_created_status_for_post_new_batch_with_status_code_and_response_message(Integer int1, String string) {
@@ -186,7 +186,7 @@ public class BatchSteps {
 public void admin_creates_post_request_with_missing_additional_fields() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives Created Status for post2 new batch with status code {int} and response message {string}")
     public void admin_receives_created_status_for_post2_new_batch_with_status_code_and_response_message(Integer int1, String string) {
@@ -200,7 +200,7 @@ public void admin_creates_post_request_with_missing_additional_fields() {
     public void admin_creates_put_request_with_valid_batch_id_and_data() {
         putBatch = BatchActions.setDetailsToReadBatch(putBatch);
         requestSpecs = putBatch.buildRequest();
-        response = requestSpecs.get(putBatch.getServiceUrl());
+        response = requestSpecs.put(putBatch.getServiceUrl());
     }
     @Then("Admin receives updated Status for put with status code {int} and response message {string}")
     public void admin_receives_updated_status_for_put_with_status_code_and_response_message(Integer int1, String string) {
@@ -214,7 +214,7 @@ public void admin_creates_post_request_with_missing_additional_fields() {
 public void admin_creates_put_request_with_deleted_batch_id() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives updated Status for put2 with status code {int} and response message {string}")
     public void admin_receives_updated_status_for_put2_with_status_code_and_response_message(Integer int1, String string) {
@@ -228,7 +228,7 @@ public void admin_creates_put_request_with_deleted_batch_id() {
     public void admin_creates_delete_request_with_valid_batch_id() {
         deleteBatch = BatchActions.setDetailsToReadBatch(deleteBatch);
         requestSpecs = deleteBatch.buildRequest();
-        response = requestSpecs.get(deleteBatch.getServiceUrl());
+        response = requestSpecs.delete(deleteBatch.getServiceUrl());
     }
     @Then("Admin receives {int} OK Status with message for DeleteBatchByBatchID")
     public void admin_receives_ok_status_with_message_for_delete_batch_by_batch_id(Integer int1) {
@@ -297,8 +297,8 @@ public void admin_creates_put_request_with_deleted_batch_id() {
     }
 
 //    @GetBatchByBatchName-(Negative6)
-@When("Admin creates GET Request with batch Name\\(Negative6)")
-public void admin_creates_get_request_with_batch_name_negative6() {
+    @When("Admin creates GET Request with batch Name\\(Negative6)")
+    public void admin_creates_get_request_with_batch_name_negative6() {
     getBatch = BatchActions.setDetailsToReadBatch(getBatch);
     requestSpecs = getBatch.buildRequest();
     response = requestSpecs.get(getBatch.getServiceUrl());
@@ -385,7 +385,7 @@ public void admin_creates_get_request_with_program_id_negative11() {
 public void admin_creates_post_request_with_valid_data_in_request_body_negative12() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Unauthorized for post new batch")
     public void admin_receives_unauthorized_for_post_new_batch(Integer int1,String string) {
@@ -400,7 +400,7 @@ public void admin_creates_post_request_with_existing_value_in_request_body_negat
 
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details(Integer int1,String string) {
@@ -414,7 +414,7 @@ public void admin_creates_post_request_with_existing_value_in_request_body_negat
 public void admin_creates_post_request_with_invalid_data_in_request_body_negative14() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details\\(Negative14)")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_negative14(Integer int1,String string) {
@@ -428,7 +428,7 @@ public void admin_creates_post_request_with_invalid_data_in_request_body_negativ
 public void admin_creates_post_request_body_negative15() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} not found  Status\\(Negative15)")
     public void admin_receives_not_found_status_negative15(Integer int1,String string) {
@@ -442,7 +442,7 @@ public void admin_creates_post_request_body_negative15() {
 public void admin_creates_post_request_with_invalid_data_in_request_body_negative16() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details\\(Negative16)")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_negative16(Integer int1,String string) {
@@ -456,7 +456,7 @@ public void admin_creates_post_request_with_invalid_data_in_request_body_negativ
 public void admin_creates_post_request_with_inactive_program_id_negative17() {
     postBatch = BatchActions.setDetailsToReadBatch(postBatch);
     requestSpecs = postBatch.buildRequest();
-    response = requestSpecs.get(postBatch.getServiceUrl());
+    response = requestSpecs.post(postBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details\\(Negative17)")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_negative17(Integer int1,String string) {
@@ -470,7 +470,7 @@ public void admin_creates_post_request_with_inactive_program_id_negative17() {
 public void admin_creates_put_request_with_valid_batch_id_and_data_negative18() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} unauthorized status for UpdateBatchByBatchID")
     public void admin_receives_unauthorized_status_for_update_batch_by_batch_id(Integer int1) {
@@ -484,7 +484,7 @@ public void admin_creates_put_request_with_valid_batch_id_and_data_negative18() 
 public void admin_creates_put_request_with_invalid_batch_id_and_valid_data_negative19() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Not Found Status with message and boolean success details for UpdateBatchByBatchID")
     public void admin_receives_not_found_status_with_message_and_boolean_success_details_for_update_batch_by_batch_id(Integer int1) {
@@ -498,7 +498,7 @@ public void admin_creates_put_request_with_invalid_batch_id_and_valid_data_negat
 public void admin_creates_put_request_with_valid_batch_id_and_missing_mandatory_fields_negative20() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details for UpdateBatchByBatchID")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_for_update_batch_by_batch_id(Integer int1) {
@@ -512,7 +512,7 @@ public void admin_creates_put_request_with_valid_batch_id_and_missing_mandatory_
 public void admin_creates_put_request_with_invalid_data_negative21() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details for UpdateBatchByBatchID1")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_for_update_batch_by_batch_id1(Integer int1) {
@@ -526,7 +526,7 @@ public void admin_creates_put_request_with_invalid_data_negative21() {
 public void admin_creates_put_request_with_valid_batch_id_negative22() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} not found for UpdateBatchByBatchID")
     public void admin_receives_not_found_for_update_batch_by_batch_id(Integer int1) {
@@ -540,7 +540,7 @@ public void admin_creates_put_request_with_valid_batch_id_negative22() {
 public void admin_creates_put_request_with_valid_batch_id_negative23() {
     putBatch = BatchActions.setDetailsToReadBatch(putBatch);
     requestSpecs = putBatch.buildRequest();
-    response = requestSpecs.get(putBatch.getServiceUrl());
+    response = requestSpecs.put(putBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Bad Request Status with message and boolean success details for UpdateBatchByBatchID2")
     public void admin_receives_bad_request_status_with_message_and_boolean_success_details_for_update_batch_by_batch_id2(Integer int1) {
@@ -554,7 +554,7 @@ public void admin_creates_put_request_with_valid_batch_id_negative23() {
     public void admin_creates_delete_request_with_valid_batch_id_negative24() {
         deleteBatch = BatchActions.setDetailsToReadBatch(deleteBatch);
         requestSpecs = deleteBatch.buildRequest();
-        response = requestSpecs.get(deleteBatch.getServiceUrl());
+        response = requestSpecs.delete(deleteBatch.getServiceUrl());
     }
     @Then("Admin receives {int} not found for DeleteBatchByBatchID")
     public void admin_receives_not_found_for_delete_batch_by_batch_id(Integer int1) {
@@ -566,7 +566,7 @@ public void admin_creates_put_request_with_valid_batch_id_negative23() {
 public void admin_creates_delete_request_with_valid_batch_id_negative26() {
     deleteBatch = BatchActions.setDetailsToReadBatch(deleteBatch);
     requestSpecs = deleteBatch.buildRequest();
-    response = requestSpecs.get(deleteBatch.getServiceUrl());
+    response = requestSpecs.delete(deleteBatch.getServiceUrl());
 }
     @Then("Admin receives {int} Unauthorized Status for DeleteBatchByBatchID")
     public void admin_receives_unauthorized_status_for_delete_batch_by_batch_id(Integer int1) {
