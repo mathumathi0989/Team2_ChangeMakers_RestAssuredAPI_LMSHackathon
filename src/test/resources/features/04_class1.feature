@@ -120,38 +120,6 @@ Feature: Class1Module : Positive flow
   
 
  
-  #@createclasswithinvaliddata
-  #Scenario: Check if admin is able to create class with invalid data
-  #When Admin creates POST Request for the LMS with invalid data and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 400 with error message for class
-  #
-  #@createclasswithexistingclasstopic
-  #Scenario: Check if admin is able to create class with existing class topic
-  #When  Admin creates POST request for the LMS with existing class topic and Admin calls "POST " request with endpoint for class
-  #Then  Admin receive 400 with error message for class
-  
-  #@createclasswithoutrequestbody
-  #Scenario: Check if admin is able to create class without request body
-  #When Admin create POST request for the LMS without request body and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 400 / 415 status code for class
-  
-  #@createclasswithinvalidendpoint
-  #Scenario: Check if admin is able to create class with invalid endpoint
-  #When  Admin create POST request for the LMS with valid request and Admin calls "POST " request with invalid endpoint for class
-  #Then  Admin receive 404 Not found for class
-  
-  #@createclasswithinvalidbaseURL
-  #Scenario: Check if admin is able to create class with invalid baseURL
-  #When Admin create POST request for the LMS with invalid baseURL and Admin calls "POST " request with endpoint for class
-  #Then Admin receive 404 Not found  for class  
-  
-  #@createclasswithoutauth
-  #Scenario: Check if admin is able to create class without auth
-  #When Admin creates POST Request for the LMS with request body and Admin calls "POST" request with endpoint  for class
-  #Then Admin receives 401 unauthorized for class
- 
-  
-  
   
   
   

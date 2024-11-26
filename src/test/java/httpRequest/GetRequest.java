@@ -25,7 +25,6 @@ public class GetRequest extends BaseRequest {
                                new ResponseLoggingFilter(LogDetail.BODY, getLogPrintStream())) // Log response body                      
                        .header("Content-Type",acceptHeader)
                        .header("Authorization","Bearer "+token);
-                       
-                  
+                                      
  }
 }

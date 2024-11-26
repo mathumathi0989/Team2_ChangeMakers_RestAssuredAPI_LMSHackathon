@@ -13,13 +13,10 @@ public abstract class BaseRequest {
 	protected String password;
 	protected String baseUrl;
 	protected String serviceUrl;
-	// protected Map<String, String> headers;
 	protected String contentTypeHeader;
 	protected String acceptHeader;
 	protected String requestBody;
-	// protected Map<String, String> requestParams;
 	protected Object pathparam;
-	// protected Map<String, Object> pathparam;
 	protected String method;
 	protected String token;
 
@@ -27,20 +24,6 @@ public abstract class BaseRequest {
 
 	static boolean init = false;
 	static PrintStream log;
-
-//	public static PrintStream getLogPrintStream() {
-//		if (init == false) {
-//			try {
-//				log = new PrintStream(new FileOutputStream("Team2RestAssuredLogs.txt"), true);
-//			} catch (FileNotFoundException e) {
-//				System.out.println("LogPrintStreaam File not found!!");
-//				e.printStackTrace();
-//			}
-//			init = true;
-//		}
-//
-//		return log;
-//	}
 	
 	public static PrintStream getLogPrintStream() {
 	    if (!init) {
@@ -97,12 +80,6 @@ public abstract class BaseRequest {
 		this.serviceUrl = serviceUrl;
 	}
 
-//public Map<String, String> getHeaders() {
-//	return headers;
-//}
-//public void setHeaders(Map<String, String> headers) {
-//	this.headers = headers;
-//}
 	public String getRequestBody() {
 		return requestBody;
 	}
@@ -110,13 +87,7 @@ public abstract class BaseRequest {
 	public void setRequestBody(String requestBody) {
 		this.requestBody = requestBody;
 	}
-
-//public Map<String, String> getRequestParams() {
-//	return requestParams;
-//}
-//public void setRequestParams(Map<String, String> requestParams) {
-//	this.requestParams = requestParams;
-//}
+	
 	public String getMethod() {
 		return method;
 	}

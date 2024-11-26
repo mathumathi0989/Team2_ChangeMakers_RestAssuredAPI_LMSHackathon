@@ -1,7 +1,6 @@
 package httpRequest;
 
 import io.restassured.RestAssured;
-import io.restassured.authentication.BasicAuthScheme;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;

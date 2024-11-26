@@ -29,16 +29,10 @@ public class ProgramSteps {
 	private static String deleteByProgramNameServiceUrl = EnvConstants.endPoint_DeleteProgramByName;
 	private static int programID_updateNegativeScenarios = EnvConstants.programID_negativeTesting;
 	private static String programActiveStatus = EnvConstants.programActiveStatus;
-	private static String programInactiveStatus = EnvConstants.programInactiveStatus;
-	private static String programDescription = EnvConstants.programDescription;
 	private static String invalidProgramDescription = EnvConstants.invalidProgramDescription;
 
 	private int http_Created = EnvConstants.http_Created;
-	private int http_OK = EnvConstants.http_OK;
-	private int http_NotFound = EnvConstants.http_NotFound;
-	private int http_BadRequest = EnvConstants.http_BadRequest;
-	private int http_Unauthorized = EnvConstants.http_UnAuthorized;
-	private int http_MethodNotAllowed = EnvConstants.http_MethodNotAllowed;
+	
 	private static BaseRequest login;
 	private static BaseRequest getProgram;
 	private static BaseRequest postProgram;

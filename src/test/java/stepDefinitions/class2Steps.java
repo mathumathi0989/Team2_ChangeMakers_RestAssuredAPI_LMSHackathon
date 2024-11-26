@@ -1,13 +1,11 @@
 package stepDefinitions;
 
 import org.testng.annotations.BeforeMethod;
-import apiActions.ProgramActions;
+
 import apiActions.class2Actions;
-import apiConfig.EnvConstants;
 import generics.ApiUtils;
 import generics.LoggerLoad;
 import httpRequest.BaseRequest;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
@@ -20,13 +18,7 @@ public class class2Steps {
 
 	public static RequestSpecification requestSpecs;
 	static Response response;
-	private String loginServiceUrl = EnvConstants.endPoint_Login;
-	private int http_Created = EnvConstants.http_Created;
-	private int http_OK = EnvConstants.http_OK;
-	private int http_NotFound = EnvConstants.http_NotFound;
-	private int http_BadRequest = EnvConstants.http_BadRequest;
-	private int http_Unauthorized = EnvConstants.http_UnAuthorized;
-	private int http_MethodNotAllowed = EnvConstants.http_MethodNotAllowed;
+	
 	private static BaseRequest login;
 	private static BaseRequest getClass2;
 	private static BaseRequest updateClass2;

@@ -2,15 +2,12 @@ package stepDefinitions;
 
 import org.testng.annotations.BeforeMethod;
 
-import apiActions.ProgramActions;
 import apiActions.class1Actions;
-import apiActions.class2Actions;
 //import apiActions.ProgramActions;
 import apiConfig.EnvConstants;
 import generics.ApiUtils;
 import generics.LoggerLoad;
 import httpRequest.BaseRequest;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
@@ -22,21 +19,14 @@ import io.restassured.specification.RequestSpecification;
 public class class1Steps {
 	public static RequestSpecification requestSpecs ;
 	static Response response;
-	private String loginServiceUrl = EnvConstants.endPoint_Login;
-	private int http_Created = EnvConstants.http_Created;
-	private int http_OK = EnvConstants.http_OK;
-	private int http_NotFound = EnvConstants.http_NotFound;
-	private int http_BadRequest = EnvConstants.http_BadRequest;
-	private int http_Unauthorized = EnvConstants.http_UnAuthorized;
-	private int http_MethodNotAllowed = EnvConstants.http_MethodNotAllowed;
 	private static BaseRequest login;
 	private static BaseRequest getClass1;
-	private static BaseRequest getProgram;
 	private static BaseRequest getClass1AllClass;
 	private static BaseRequest getClass1DeleteClass;
 	private static BaseRequest addClass1;
 	ApiUtils restUtil = new ApiUtils();
 	class1Actions class1 = new class1Actions();
+	
 	static String requestBody="";
 	private static boolean isAuthTokenGenerated = false;
 	public static String token;
@@ -78,9 +68,6 @@ public class class1Steps {
 
 	@When("Admin creates GET Request and Admin sends HTTPS Request with endpoint for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_endpoint_for_class() {
-		// Write code here that turns the phrase above into concrete actions
-		// throw new io.cucumber.java.PendingException();
-		//restUtil.validateStatusCode(response, int1);
 		getClass1AllClass = class1Actions.setDetailsToReadClass1(getClass1AllClass);
 		requestSpecs = getClass1AllClass.buildRequest();
 		response = requestSpecs.get(getClass1AllClass.getServiceUrl());
@@ -90,19 +77,12 @@ public class class1Steps {
 
 	@Then("Admin receives {int} {string} Status with response body for class")
 	public void admin_receives_status_with_response_body_for_class(Integer statusCode, String statusMessage) {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
-
-		//restUtil.validateStatusCode(response, statusCode);
-		//restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
-		//restUtil.validateStatusMessage(response, statusMessage);
 	}
 
 	@When("Admin creates GET Request and Admin sends HTTPS Request with invalid endpoint for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_invalid_endpoint_for_class() {
-		// Write code here that turns the phrase above into concrete actions
-		// throw new io.cucumber.java.PendingException();
+		
 		getClass1 = class1Actions.setDetailsToReadClass1GetAllclasswithInvalidEndpoint(getClass1);
 		requestSpecs = getClass1.buildRequest();
 		response = requestSpecs.get(getClass1.getServiceUrl());
@@ -112,11 +92,10 @@ public class class1Steps {
 
 	@Then("Admin receives {int} status with error message Not Found for class")
 	public void admin_receives_status_with_error_message_not_found_for_class(Integer statusCode) {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
-		//restUtil.validateStatusMessage(response, statusMessage);
+		
 	}
 
 
@@ -135,8 +114,7 @@ public class class1Steps {
 
 	@When("Admin creates GET Request and admin sends HTTPS Request  without Authorization for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_without_authorization_for_class() {
-		// Write code here that turns the phrase above into concrete actions
-		// throw new io.cucumber.java.PendingException();
+		
 		getClass1 = class1Actions.setDetailsToReadClass1GetAllClassInvalidAuth(getClass1);
 		requestSpecs = getClass1.buildRequest();
 		response = requestSpecs.get(getClass1.getServiceUrl());	 
@@ -146,7 +124,7 @@ public class class1Steps {
 	public void admin_receives_status_with_error_message_unauthorized_for_class(Integer statusCode) {
 		restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
-		//restUtil.validateStatusMessage(response, statusMessage);
+	
 	}
 	@When("Admin creates GET Request and Admin sends HTTPS Request with endpoint for a class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_endpoint_for_a_class() {
@@ -159,7 +137,7 @@ public class class1Steps {
 	public void admin_receives_ok_status_with_response_body_for_class(Integer statusCode) {
 		restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
-		//restUtil.validateStatusMessage(response, statusMessage);
+	
 
 	}
 
@@ -173,7 +151,6 @@ public class class1Steps {
 	@Then("Admin receives {int} Not Found Status with message visible for class")
 	public void admin_receives_not_found_status_with_message_visible_for_class(Integer statusCode) {
 		restUtil.extractRes(response);
-		//restUtil.validateStatusCode(response, statusCode);
 	}
 
 	@When("Admin creates GET Request and Admin sends HTTPS Request with invalid endpoint")
@@ -190,24 +167,21 @@ public class class1Steps {
 	}
 	@When("Admin creates GET Request and Admin sends HTTPS Request without Authorization for classtopic")
 	public void admin_creates_get_request_and_admin_sends_https_request_without_authorization_for_classtopic() {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		getClass1 = class1Actions.setDetailsToReadClass1GetAllClasswithInvalidAuth(getClass1);
 		requestSpecs = getClass1.buildRequest();
 		response = requestSpecs.get(getClass1.getServiceUrl());	
 	}
 	@When("Admin creates GET Request and Admin sends HTTPS Request with not valid  method endpoint for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_not_valid_method_endpoint_for_class() {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		getClass1 = class1Actions.setDetailsToReadClass1GetClassByClassWithInvalidMethod(getClass1);
 		requestSpecs = getClass1.buildRequest();
 		response = requestSpecs.post(getClass1.getServiceUrl());
 	}
 	@Then("Admin receives {int} and {string} status visible for class")
 	public void admin_receives_and_status_visible_for_class(Integer statusCode,String statusMessage) {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
 		restUtil.validateStatusMessage(response, statusMessage);
@@ -215,8 +189,7 @@ public class class1Steps {
 
 	@When("Admin creates GET Request and Admin sends HTTPS Request with endpoint Unauthorized for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_endpoint_Unauthorized_for_class() {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		getClass1 = class1Actions.setDetailsToReadClass1GetAllClasswithInvalidAuth(getClass1);
 		requestSpecs = getClass1.buildRequest();
 		response = requestSpecs.get(getClass1.getServiceUrl());	
@@ -225,8 +198,7 @@ public class class1Steps {
 
 	@Then("Admin receives {int} status with error message of {string} for class")
 	public void admin_receives_status_with_error_message_of_for_calss(Integer statusCode,String statusMessage ) {
-		// Write code here that turns the phrase above into concrete actions
-		//throw new io.cucumber.java.PendingException();
+		
 		restUtil.extractRes(response);
 		restUtil.validateStatusCode(response, statusCode);
 		restUtil.validateStatusMessage(response, statusMessage);
@@ -248,16 +220,14 @@ public class class1Steps {
 	
 	@When("Admin creates GET Request  and Admin sends HTTPS Request with invalid classid endpoint for class")
 	public void admin_creates_get_request_and_admin_sends_https_request_with_invalid_classid_endpoint_for_class() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+	   
 		 getClass1 = class1Actions.setDetailsToReadClass1allclassesByInvalidClassID(getClass1);
 	    	requestSpecs = getClass1.buildRequest();
 	    response = requestSpecs.get(getClass1.getServiceUrl());	
 	}
 	@Then("Admin receives {int} {string} Status with message visible for class")
 	public void admin_receives_status_with_message_visible_for_class(Integer statusCode, String statusMessage) {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+	  
 		restUtil.extractRes(response);
     	restUtil.validateStatusCode(response, statusCode);
     	restUtil.validateStatusMessage(response, statusMessage);
@@ -272,8 +242,7 @@ public class class1Steps {
 	}
 	@Then("Admin receives {int} {string} Status with message for invalid endpoint  visible for class")
 	public void admin_receives_status_with_message_for_invalid_endpoint_visible_for_class(Integer statusCode, String statusMessage) {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
+	    
 		restUtil.extractRes(response);
     	restUtil.validateStatusCode(response, statusCode);
     	restUtil.validateStatusMessage(response, statusMessage);
@@ -306,44 +275,39 @@ public class class1Steps {
 	@Then("Admin receives {int} Ok status with message for class")
 	public void admin_receives_ok_status_with_message_for_class(Integer statusCode) {
 		restUtil.validateStatusCode(response, statusCode);
-		//restUtil.validateStatusMessage(response, statusMessage);
+		
 	}
 
 	
 	@When("Admin creates DELETE Request with valid classId and Admin sends HTTPS Request  with invalid endpoint for class")
 	public void admin_creates_delete_request_with_valid_class_id_and_admin_sends_https_request_with_invalid_endpoint_for_class() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+	    
 		getClass1DeleteClass = class1Actions.setDetailstoDeleteclasswithinvalidendpoint(getClass1DeleteClass);
 		requestSpecs = getClass1DeleteClass.buildRequest();
 		response = requestSpecs.delete(getClass1DeleteClass.getServiceUrl());
 	}
 	@Then("Admin receives {int} not found for class")
 	public void admin_receives_not_found_for_class(Integer statusCode) {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+	    
 		restUtil.validateStatusCode(response, statusCode);
 	}
 	
 
 @When("Admin creates DELETE Request with invalid classId and Admin sends HTTPS Request  with endpoint for class")
 public void admin_creates_delete_request_with_invalid_class_id_and_admin_sends_https_request_with_endpoint_for_class() {
-    // Write code here that turns the phrase above into concrete actions
-    //throw new io.cucumber.java.PendingException();
+    
 	getClass1DeleteClass = class1Actions.setDetailstoDeleteclasswithinvalidclassid(getClass1DeleteClass);
 	requestSpecs = getClass1DeleteClass.buildRequest();
 	response = requestSpecs.delete(getClass1DeleteClass.getServiceUrl());
 }
 @Then("Admin receives {int} Not Found Status with message and boolean success details for class")
 public void admin_receives_not_found_status_with_message_and_boolean_success_details_for_class(Integer statusCode) {
-    // Write code here that turns the phrase above into concrete actions
-    //throw new io.cucumber.java.PendingException();
+   
 	restUtil.validateStatusCode(response, statusCode);
 }
 @When("Admin creates DELETE Request without authorization with valid classId and Admin sends HTTPS Request  with endpoint for class")
 public void admin_creates_delete_request_without_authorization_with_valid_class_id_and_admin_sends_https_request_with_endpoint_for_class() {
-    // Write code here that turns the phrase above into concrete actions
-    //throw new io.cucumber.java.PendingException();
+    
 	getClass1DeleteClass = class1Actions.setDetailstoDeleteclasswithvalidclassidwithoutauth(getClass1DeleteClass);
 	requestSpecs = getClass1DeleteClass.buildRequest();
 	response = requestSpecs.delete(getClass1DeleteClass.getServiceUrl());

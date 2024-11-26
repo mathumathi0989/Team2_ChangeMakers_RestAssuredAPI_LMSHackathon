@@ -19,8 +19,6 @@ public class ApiUtils {
 
 	public static void setAuth(Response response) {
 		String token = extractFromResponse(response, "token");
-		//System.out.println("Token is " + token);
-		System.out.println("Setting token in Env Variables");
 		EnvVariables.token = token;
 	}
 
