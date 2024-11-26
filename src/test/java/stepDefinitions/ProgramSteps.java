@@ -102,7 +102,8 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} OK Status with program response body")
 	public void admin_receives_ok_status_with_program_response_body(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
+		
 
 	}
 
@@ -121,7 +122,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} OK Status with response body")
 	public void admin_receives_ok_status_with_response_body(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @PostNewProgram
@@ -136,7 +137,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Created Status with program response body containing {string}")
 	public void admin_receives_created_status_with_program_response_body_containing_uniqueprogramids(
 			Integer expectedStatusCode, String setProgramProperty) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 		program.setProgramID(response, setProgramProperty);
 		program.setProgramName(response, setProgramProperty);
 
@@ -154,7 +155,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} OK Status with required program response body")
 	public void admin_receives_ok_status_with_required_program_response_body(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @PutByProgramID
@@ -173,7 +174,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} OK Status with updated value in program response body")
 	public void admin_receives_ok_status_with_updated_value_in_program_response_body(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 		program.setProgramName(response, "UniqueProgramIdOne");// Setting updated programName in EnvVariables
 		System.out.println("Updated program Name is : " + program.getProgramNameOne());
 	}
@@ -197,7 +198,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} Ok status with successful program deletion message")
 	public void admin_receives_ok_status_with_successful_program_deletion_message(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @DeleteProgramByProgramName
@@ -216,7 +217,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} Ok status with message")
 	public void admin_receives_ok_status_with_message(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @MethodNotAllowed
@@ -235,7 +236,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} Method Not Allowed")
 	public void admin_receives_method_not_allowed(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @MethodNotAllowed
@@ -295,7 +296,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} Unauthorized")
 	public void admin_receives_unauthorized(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @NoAuth
@@ -412,7 +413,7 @@ public class ProgramSteps {
 		if (response.getStatusCode() == http_Created) {
 			program.setProgramID(response, "bugProgramIDOne");
 		}
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @PutByProgramID
@@ -437,7 +438,7 @@ public class ProgramSteps {
 		if (response.getStatusCode() == http_Created) {
 			program.setProgramName(response, "bugProgramIDOne");
 		}
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @PutByProgramName
@@ -458,7 +459,7 @@ public class ProgramSteps {
 		@Then("Admin receives {int} Bad Request Status with error message for invalid request body and boolean success details")
 		public void admin_receives_bad_request_status_with_error_message_for_invalid_request_body_and_boolean_success_details(
 				Integer expectedStatusCode) {
-			restUtil.validateStatusCode(response, expectedStatusCode);
+			restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 		}
 
 		// @PutByProgramName
@@ -494,7 +495,7 @@ public class ProgramSteps {
 		}
 		@Then("Admin receives {int} OK Status with updated status in response body")
 		public void admin_receives_ok_status_with_updated_status_in_response_body(Integer expectedStatusCode) {
-			restUtil.validateStatusCode(response, expectedStatusCode);
+			restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 		}
 		
 		//PutByProgramName-updateInvalidProgramDescription
@@ -513,7 +514,7 @@ public class ProgramSteps {
 		}
 		@Then("Admin receives {int} Bad Request Status with invalid programName error message and boolean success details")
 		public void admin_receives_bad_request_status_with_invalid_program_name_error_message_and_boolean_success_details(Integer expectedStatusCode) {
-			restUtil.validateStatusCode(response, expectedStatusCode);
+			restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 		}
 		
 	// @invalidEndPoint
@@ -532,7 +533,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} not found  Status with message and boolean success details")
 	public void admin_receives_not_found_status_with_message_and_boolean_success_details(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 	}
 
 	// @invalidEndPoint
@@ -549,7 +550,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} not found Status with error message")
 	public void admin_receives_not_found_status_with_error_message(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -570,7 +571,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status with error message and boolean success details")
 	public void admin_receives_not_found_status_with_error_message_and_boolean_success_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -589,7 +590,7 @@ public class ProgramSteps {
 
 	@Then("Admin receives {int} not found Status with correct error message")
 	public void admin_receives_not_found_status_with_correct_error_message(Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -610,7 +611,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status with message and boolean success flag details")
 	public void admin_receives_not_found_status_with_message_and_boolean_success_flag_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -631,7 +632,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status with error message and boolean success flag details")
 	public void admin_receives_not_found_status_with_error_message_and_boolean_success_flag_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -652,7 +653,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status along with error message and boolean success details")
 	public void admin_receives_not_found_status_along_with_error_message_and_boolean_success_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -673,7 +674,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status along with message and boolean success flag details")
 	public void admin_receives_not_found_status_along_with_message_and_boolean_success_flag_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -694,7 +695,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status with resp error message and boolean success details")
 	public void admin_receives_not_found_status_with_resp_error_message_and_boolean_success_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
@@ -715,7 +716,7 @@ public class ProgramSteps {
 	@Then("Admin receives {int} Not Found Status with appropriate error message and boolean success flag details")
 	public void admin_receives_not_found_status_with_appropriate_error_message_and_boolean_success_flag_details(
 			Integer expectedStatusCode) {
-		restUtil.validateStatusCode(response, expectedStatusCode);
+		restUtil.validateStatusCode_statusLine_responseTime(response, expectedStatusCode);
 
 	}
 
