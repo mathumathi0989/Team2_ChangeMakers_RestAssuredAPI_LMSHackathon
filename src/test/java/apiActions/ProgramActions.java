@@ -1,5 +1,8 @@
 package apiActions;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
 import generics.ApiUtils;
@@ -9,6 +12,7 @@ import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class ProgramActions {
 
@@ -18,7 +22,9 @@ public class ProgramActions {
 	private static String baseURI = EnvConstants.qaEnvironmentbaseURI;
 	private static String loginRequestBody = EnvConstants.loginRequestBody;
 	private static String jsonContentType = EnvConstants.jsonContentType;
-	// String validProgramDescription = "Java-API-Selenium-RestAssured";
+	private static String getProgramByIdServiceUrl = EnvConstants.endPoint_GetProgramByID;
+	private static RequestSpecification requestSpecification;
+
 	DataBuilder build = new DataBuilder();
 
 	/*
@@ -109,24 +115,18 @@ public class ProgramActions {
 
 	public BaseRequest setDetailsToReadProgram(BaseRequest getProgram, String auth, String baseURI, String endPoint) {
 		getProgram = RequestFactory.setAuthentication(getProgram, "get", auth, baseURI);
-		// return RequestFactory.createRequest(getProgram,
-		// jsonContentType,"",getAllProgramsServiceUrl,"0");
 		return RequestFactory.createRequest(getProgram, jsonContentType, "", endPoint, "0");
 	}
 
 	public BaseRequest setDetailsToReadProgramByPrgmID(BaseRequest getProgram, String auth, String baseURI,
 			String endPoint, Integer prgramID) {
 		getProgram = RequestFactory.setAuthentication(getProgram, "get", auth, baseURI);
-//		return RequestFactory.createRequest(getProgram, jsonContentType, "",
-//				getProgramByIdServiceUrl, prgramID);
 		return RequestFactory.createRequest(getProgram, jsonContentType, "", endPoint, prgramID);
 	}
 
 	public BaseRequest setDetailsToReadProgramWithAdmins(BaseRequest getProgram, String auth, String baseURI,
 			String endPoint) {
 		getProgram = RequestFactory.setAuthentication(getProgram, "get", auth, baseURI);
-		// return RequestFactory.createRequest(getProgram, jsonContentType, "",
-		// getProgramWithUsersServiceUrl, "");
 		return RequestFactory.createRequest(getProgram, jsonContentType, "", endPoint, "");
 	}
 
@@ -136,8 +136,6 @@ public class ProgramActions {
 		generateAndSetValidProgramNameInEnvVariables();
 		System.out.println("New Generated ProgramName is : " + EnvVariables.programNameToCreateProgram);
 		String requestBody = jsonUtil.run_all_test_scenarios_from_json_data(programType);
-		// return RequestFactory.createRequest(postProgram, jsonContentType,
-		// requestBody,postProgramServiceUrl, 0);
 		return RequestFactory.createRequest(postProgram, jsonContentType, requestBody, endPoint, 0);
 	}
 
@@ -145,8 +143,6 @@ public class ProgramActions {
 			String endPoint, String programType, Object programID) {
 		putProgram = RequestFactory.setAuthentication(putProgram, "put", auth, baseURI);
 		String requestBody = jsonUtil.run_all_test_scenarios_from_json_data(programType);
-		// return RequestFactory.createRequest(putProgram, jsonContentType,
-		// requestBody,updateProgramByIdServiceUrl, EnvVariables.programIDOne);
 		return RequestFactory.createRequest(putProgram, jsonContentType, requestBody, endPoint, programID);
 
 	}
@@ -155,8 +151,6 @@ public class ProgramActions {
 			String endPoint, String programType, Object programName) {
 		putProgram = RequestFactory.setAuthentication(putProgram, "put", auth, baseURI);
 		String requestBody = jsonUtil.run_all_test_scenarios_from_json_data(programType);
-		// return RequestFactory.createRequest(putProgram, jsonContentType,
-		// requestBody,updateProgramByIdServiceUrl, programNamePathParam);
 		return RequestFactory.createRequest(putProgram, jsonContentType, requestBody, endPoint, programName);
 
 	}
@@ -164,8 +158,6 @@ public class ProgramActions {
 	public BaseRequest setDetailsToDeleteProgramByID(BaseRequest deleteProgram, String auth, String baseURI,
 			String endPoint, Object programID) {
 		deleteProgram = RequestFactory.setAuthentication(deleteProgram, "delete", auth, baseURI);
-		// return RequestFactory.createRequest(deleteProgram, jsonContentType, "",
-		// deleteByProgramIdServiceUrl, programIdToDelete);
 		return RequestFactory.createRequest(deleteProgram, jsonContentType, "", endPoint, programID);
 
 	}
@@ -173,8 +165,6 @@ public class ProgramActions {
 	public BaseRequest setDetailsToDeleteProgramByName(BaseRequest deleteProgram, String auth, String baseURI,
 			String endPoint, Object programName) {
 		deleteProgram = RequestFactory.setAuthentication(deleteProgram, "delete", auth, baseURI);
-		// return RequestFactory.createRequest(deleteProgram, jsonContentType,
-		// "",deleteByProgramNameServiceUrl,programNamePathParam);
 		return RequestFactory.createRequest(deleteProgram, jsonContentType, "", endPoint, programName);
 
 	}
@@ -183,6 +173,26 @@ public class ProgramActions {
 		String prgmName = "";
 		prgmName = build.getProgramName();
 		EnvVariables.programNameToCreateProgram = prgmName;
+	}
+
+	private String updateProgramProperty(Response response, String propertyName, String propertyValue) {
+		// Read the response body and update given propertyName with given propertyValue
+		JsonObject responseJson = JsonParser.parseString(response.getBody().asString()).getAsJsonObject();
+		responseJson.addProperty(propertyName, propertyValue);
+		return responseJson.toString();
+	}
+	
+	// Below method retrieve the program by ID then update property in program responseBody and set updated requestBody to put request
+	public BaseRequest setDetailsToUpdateProgramByName(BaseRequest getProgram, BaseRequest putProgram, String auth,
+			String baseURI, String endPoint, String propertyName, String propertyValue, Object programID,
+			Object programName) {
+		putProgram = RequestFactory.setAuthentication(putProgram, "put", auth, baseURI);
+		getProgram = RequestFactory.setAuthentication(getProgram, "get", auth, baseURI);
+		getProgram = RequestFactory.createRequest(getProgram, jsonContentType, "", getProgramByIdServiceUrl, programID);
+		requestSpecification = getProgram.buildRequest();
+		Response response = requestSpecification.get(getProgram.getServiceUrl() + getProgram.getPathparam());
+		String requestBody = updateProgramProperty(response, propertyName, propertyValue);
+		return RequestFactory.createRequest(putProgram, jsonContentType, requestBody, endPoint, programName);
 	}
 
 }
