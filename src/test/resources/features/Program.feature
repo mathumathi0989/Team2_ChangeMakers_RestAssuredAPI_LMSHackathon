@@ -35,18 +35,6 @@ Feature: ProgramModule
     When Admin sends HTTPS PUT Request with valid endpoint to update program
     Then Admin receives 200 OK Status with updated value in program response body
 
-  @DeleteProgramByProgramID
-  Scenario: Check if Admin able to delete a program with valid program ID
-    Given Admin creates DELETE Request for the LMS Program API endpoint and valid program ID
-    When Admin sends HTTPS DELETE program by programId Request with valid endpoint
-    Then Admin receives 200 Ok status with successful program deletion message
-
-  @DeleteProgramByProgramName
-  Scenario: Check if Admin able to delete a program with valid programName
-    Given Admin creates DELETE Request for the LMS API endpoint and valid programName
-    When Admin sends HTTPS DELETE program by programName Request with endpoint
-    Then Admin receives 200 Ok status with message
-
   @MethodNotAllowed
   Scenario: Check if Admin able to create a program with invalid method
     Given Admin creates POST Program Request for the LMS with request body
@@ -125,7 +113,7 @@ Feature: ProgramModule
     When Admin sends HTTPS POST Request and invalid program request Body with endpoint
     Then Admin receives 400 Bad Request Status
 
-  Examples: 
+    Examples: 
       | invalidData                               |
       | ExistingProgramName                       |
       | MissingMandatoryDetails                   |
@@ -139,7 +127,7 @@ Feature: ProgramModule
     When Admin sends HTTPS PUT Request and invalid program request Body with endpoint
     Then Admin receives 400 Bad Request Status with message for invalid request body and boolean success details
 
-  Examples: 
+    Examples: 
       | invalidDataToUpdate                                      |
       | ExistingProgramNameToUpdate                              |
       | MissingMandatoryDetailsToUpdateProgram                   |
@@ -153,7 +141,7 @@ Feature: ProgramModule
     When Admin sends HTTPS PUT by programName Request and invalid program request Body with endpoint
     Then Admin receives 400 Bad Request Status with error message for invalid request body and boolean success details
 
-  Examples: 
+    Examples: 
       | invalidDataToUpdate                                      |
       | ExistingProgramNameToUpdate                              |
       | MissingMandatoryDetailsToUpdateProgram                   |
@@ -166,8 +154,31 @@ Feature: ProgramModule
     When Admin sends HTTPS PUT Request with valid programName endpoint to update program
     Then Admin receives 200 OK Status with updated value in program response body
 
+  @PutByProgramName
+  Scenario: Check if Admin able to update a program status
+    Given Admin creates PUT Request for the LMS API endpoint and Valid program Name and "programStatus"
+    When Admin sends HTTPS PUT by programName Request with valid programName endpoint to update program status
+    Then Admin receives 200 OK Status with updated status in response body
+
+  @PutByProgramName
+  Scenario: Check if Admin able to update a program by programName with  invalid program Description
+    Given Admin creates PUT Request for the LMS API endpoint and invalid "programDescription"
+    When Admin sends HTTPS PUT by programName Request with valid programName endpoint to update program
+    Then Admin receives 400 Bad Request Status with invalid programName error message and boolean success details
+
+  @DeleteProgramByProgramID
+  Scenario: Check if Admin able to delete a program with valid program ID
+    Given Admin creates DELETE Request for the LMS Program API endpoint and valid program ID
+    When Admin sends HTTPS DELETE program by programId Request with valid endpoint
+    Then Admin receives 200 Ok status with successful program deletion message
+
+  @DeleteProgramByProgramName
+  Scenario: Check if Admin able to delete a program with valid programName
+    Given Admin creates DELETE Request for the LMS API endpoint and valid programName
+    When Admin sends HTTPS DELETE program by programName Request with endpoint
+    Then Admin receives 200 Ok status with message
+
   #######Invalid endpoint#####################
-  
   @invalidEndPoint
   Scenario: Check if Admin able to create a program with invalid endpoint
     Given Admin creates POST Request with invalid endpoint for the LMS with request body
@@ -217,7 +228,6 @@ Feature: ProgramModule
     Then Admin receives 404 Not Found Status along with message and boolean success flag details
 
   #######Invalid baseURI#####################
-  
   @invalidBaseURI
   Scenario: Check if Admin able to retrieve a program by programID with invalid baseURI
     Given Admin creates GET Request to retrieve a program by programID for the LMS API with invalid baseURI

@@ -28,6 +28,11 @@ public class ProgramSteps {
 	private static String deleteByProgramIdServiceUrl = EnvConstants.endPoint_DeleteProgramById;
 	private static String deleteByProgramNameServiceUrl = EnvConstants.endPoint_DeleteProgramByName;
 	private static int programID_updateNegativeScenarios = EnvConstants.programID_negativeTesting;
+	private static String programActiveStatus = EnvConstants.programActiveStatus;
+	private static String programInactiveStatus = EnvConstants.programInactiveStatus;
+	private static String programDescription = EnvConstants.programDescription;
+	private static String invalidProgramDescription= EnvConstants.invalidProgramDescription;
+	
 	private int http_Created = EnvConstants.http_Created;
 	private int http_OK = EnvConstants.http_OK;
 	private int http_NotFound = EnvConstants.http_NotFound;
@@ -473,6 +478,44 @@ public class ProgramSteps {
 			program.setProgramName(response, "UniqueProgramIdTwo");
 		}
 
+		//@PutByProgramName-update status
+		@Given("Admin creates PUT Request for the LMS API endpoint and Valid program Name and {string}")
+		public void admin_creates_put_request_for_the_lms_api_endpoint_and_valid_program_name_and(String propertyName) {
+			int program_ID = program.getProgramIDTwo();
+			String program_Name = program.getProgramNameTwo();
+			String authToken = program.getAuthToken();
+			putProgram = program.setDetailsToUpdateProgramByName(getProgram,putProgram, authToken, baseURI, updateProgramByNameServiceUrl,
+					propertyName,programActiveStatus,program_ID,program_Name);//get the program by ID and update status in responseBody and set updated requestBody to put request
+			requestSpecs = putProgram.buildRequest();
+		}
+		@When("Admin sends HTTPS PUT by programName Request with valid programName endpoint to update program status")
+		public void admin_sends_https_put_by_program_name_request_with_valid_program_name_endpoint_to_update_program_status() {
+		   response = requestSpecs.put(putProgram.getServiceUrl()+putProgram.getPathparam());
+		}
+		@Then("Admin receives {int} OK Status with updated status in response body")
+		public void admin_receives_ok_status_with_updated_status_in_response_body(Integer expectedStatusCode) {
+			restUtil.validateStatusCode(response, expectedStatusCode);
+		}
+		
+		//PutByProgramName-updateInvalidProgramDescription
+		@Given("Admin creates PUT Request for the LMS API endpoint and invalid {string}")
+		public void admin_creates_put_request_for_the_lms_api_endpoint_and_invalid(String propertyName) {
+			int program_ID = program.getProgramIDTwo();
+			String program_Name = program.getProgramNameTwo();
+			String authToken = program.getAuthToken();
+			putProgram = program.setDetailsToUpdateProgramByName(getProgram,putProgram, authToken, baseURI, updateProgramByNameServiceUrl,
+					propertyName,invalidProgramDescription,program_ID,program_Name);//get the program by ID and update status in responseBody and set updated requestBody to put request
+			requestSpecs = putProgram.buildRequest();
+		}
+		@When("Admin sends HTTPS PUT by programName Request with valid programName endpoint to update program")
+		public void admin_sends_https_put_by_program_name_request_with_valid_program_name_endpoint_to_update_program() {
+			response = requestSpecs.put(putProgram.getServiceUrl()+putProgram.getPathparam());
+		}
+		@Then("Admin receives {int} Bad Request Status with invalid programName error message and boolean success details")
+		public void admin_receives_bad_request_status_with_invalid_program_name_error_message_and_boolean_success_details(Integer expectedStatusCode) {
+			restUtil.validateStatusCode(response, expectedStatusCode);
+		}
+		
 	// @invalidEndPoint
 	@Given("Admin creates POST Request with invalid endpoint for the LMS with request body")
 	public void admin_creates_post_request_with_invalid_endpoint_for_the_lms_with_request_body() {
