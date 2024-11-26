@@ -102,6 +102,18 @@ public class ProgramActions {
 		LoggerLoad.info("Reading prgmNameTwo from env variables : " + prgmName);
 		return prgmName;
 	}
+	
+	/* get invalid pathParameter*/
+	public String getinvalidpathParameter(String pathParam) {
+		String givenPathParam = pathParam.toLowerCase();
+	
+		switch (givenPathParam) {
+		case "zero" : return EnvConstants.invalidpathParamZero;
+		case "negativeid" : return EnvConstants.invalidpathParamNegativeID;
+		case "overflowinteger" : return EnvConstants.invalidpathParamOverflowinteger;
+		default : return "Please specify path parameter type!!";
+		}
+	}
 
 	public String getAuthToken() {
 		return EnvVariables.token;
@@ -126,6 +138,14 @@ public class ProgramActions {
 		LoggerLoad.info("Setting details[authentication, baseURI, path parameter, endpoint ]to read newly created program by programID!!");
 		return RequestFactory.createRequest(getProgram, jsonContentType, "", endPoint, prgramID);
 	}
+	
+	public BaseRequest setDetailsToReadProgramByPrgmID(BaseRequest getProgram,String auth, String baseURI, String endPoint,Object prgramID) {
+		getProgram = RequestFactory.setAuthentication(getProgram, "get", auth,
+				baseURI);
+		return RequestFactory.createRequest(getProgram, jsonContentType, "",
+				endPoint, prgramID);
+	}
+
 
 	public BaseRequest setDetailsToReadProgramWithAdmins(BaseRequest getProgram, String auth, String baseURI,
 			String endPoint) {

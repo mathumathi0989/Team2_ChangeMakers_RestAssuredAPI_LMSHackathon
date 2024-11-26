@@ -25,6 +25,9 @@ public class EnvConstants {
 	public static final String programInactiveStatus = "Inactive";
 	public static final String programDescription = "HackathonNov2024_updatedprogramDescriptionTT";
 	public static final String invalidProgramDescription = "----------";
+	public static final String invalidpathParamZero = "0";
+	public static final String invalidpathParamNegativeID = "-1";
+	public static final String invalidpathParamOverflowinteger = "120000000000000000000000000000000000000000000000";
 	public static final String loginRequestBody = "{ \"userLoginEmailId\" : \"sdet@gmail.com\",\n"
 			+ "  \"password\" : \"LmsHackathonApi@2024\"}";
 	public static final int http_OK = 200;
