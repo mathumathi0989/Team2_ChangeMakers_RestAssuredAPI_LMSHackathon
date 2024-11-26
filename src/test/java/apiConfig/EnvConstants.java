@@ -56,6 +56,7 @@ public class EnvConstants {
 	//Adding class constants-SUpriya
 	
 		public static final String endPoint_GetAllclasses="allClasses";
+
 		public static final String endPoint_addClass="CreateClassSchedule";
 		 public static String endPoint_GetClassDetailsClassTopic() {
 		        return "classes/" + EnvVariables.classTopic;
@@ -74,6 +75,6 @@ public class EnvConstants {
 					+ "  \"password\" : \"LmsHackathonApi@2023\"}";
 			public static final String Wrongpassword = "LmsHackathonApi@2023";
 			public static final String endPoint_invalidLogin = "invalidlogin";	
-			
+
 
 }
