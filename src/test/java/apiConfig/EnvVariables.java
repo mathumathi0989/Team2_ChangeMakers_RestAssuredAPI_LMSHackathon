@@ -20,4 +20,5 @@ public class EnvVariables {
 	
 	public static String classTopic="sql";
 	
+
 }
