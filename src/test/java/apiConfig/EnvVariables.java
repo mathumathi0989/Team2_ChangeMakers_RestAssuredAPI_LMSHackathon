@@ -12,9 +12,12 @@ public class EnvVariables {
 	public static int bugProgramIDTwo;
 	public static String bugProgramNameOne;
 	
-	public static String batchID = "8551";
-	public static String csId = "102";
+	public static String batchID = "8594";
+	public static String csId = "176";
 	public static String studentId = "U02";
 	public static String staffId = "U25";
+	
+	
+	public static String classTopic="sql";
 	
 }
