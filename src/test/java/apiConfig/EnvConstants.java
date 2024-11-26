@@ -29,7 +29,7 @@ public class EnvConstants {
 	public static final int http_UnAuthorized = 401;
 	public static final int http_NotFound = 404;
 	public static final int http_MethodNotAllowed = 405;
-	
+
 	
 	//Adding class constants - Mathumathi
 	public static final String endPoint_GetAllRecordings="classrecordings";
@@ -68,10 +68,12 @@ public class EnvConstants {
 		    }
 		
 		// LoginConstants
+
 			public static final String userLoginwrongId = "sdetwrong@gmail.com";
 			public static final String loginRequestBodyWrong = "{ \"userLoginEmailId\" : \"sdetwrong@gmail.com\",\n"
 					+ "  \"password\" : \"LmsHackathonApi@2023\"}";
 			public static final String Wrongpassword = "LmsHackathonApi@2023";
 			public static final String endPoint_invalidLogin = "invalidlogin";	
 			
+
 }
