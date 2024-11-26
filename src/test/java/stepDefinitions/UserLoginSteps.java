@@ -86,8 +86,8 @@ public class UserLoginSteps {
 		
 	}
 	
-	@Then("Admin receives {int} OK Status with program response body")
-	public void admin_receives_ok_status_with_program_response_body(Integer int1) {
+	@Then("Admin receives {int} OK Status with login response body")
+	public void admin_receives_ok_status_with_login_response_body(Integer int1) {
 		restUtil.validateStatusCode(response, int1);
 	}
 	

@@ -7,7 +7,7 @@ Given Admin provides valid authentication details
  
       Scenario:  Admin creates request with valid credentials login
                  When Admin calls Post Https method  with valid endpoint login 
-                 Then Admin receives 200 OK Status with program response body                                                  
+                 Then Admin receives 200 OK Status with login response body                                                  
     
           
  Scenario: Check if Admin able to generate token with invalid endpoint login

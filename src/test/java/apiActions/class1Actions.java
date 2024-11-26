@@ -16,11 +16,6 @@ import io.restassured.specification.RequestSpecification;
 
 
 public class class1Actions {
-	private String loginServiceUrl = EnvConstants.endPoint_Login;
-	private String getclassRecordingBatchIDServiceUrl=EnvConstants.endPoint_GetClassRecordingsBatchID;
-	private String getAllRecordingsServiceUrl = EnvConstants.endPoint_GetAllRecordings;
-	private String updateClassRecordingServiceUrl=EnvConstants.endPoint_UpdateclassRecording();
-	private String updateClass=EnvConstants.endPoint_Updateclass();
 
 	public static BaseRequest validLogin(BaseRequest login) {
 		login = RequestFactory.setAuthentication(login, "post",EnvConstants.userLoginId,EnvConstants.password, EnvConstants.qaEnvironmentbaseURI);
