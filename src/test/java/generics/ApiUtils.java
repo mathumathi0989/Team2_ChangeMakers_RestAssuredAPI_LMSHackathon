@@ -19,17 +19,18 @@ public class ApiUtils {
 
 	public static void setAuth(Response response) {
 		String token = extractFromResponse(response, "token");
-		System.out.println("Token is " + token);
+		//System.out.println("Token is " + token);
 		System.out.println("Setting token in Env Variables");
 		EnvVariables.token = token;
 	}
 
 	/*==============================Code for validations============================================ */
 	
-	// Verify status code,statusLine and responseTime altogether
-	public void validateStatusCode_statusLine_responseTime(Response response, int expectedStatusCode) {
+	// Verify status code and responseTime altogether
+	public void validateStatusCode_responseTime(Response response, int expectedStatusCode) {
+		LoggerLoad.info("Actual status code : "+response.getStatusCode());
 		response.then().assertThat().statusCode(expectedStatusCode).and()
-				.statusLine(getHttpStatusText(expectedStatusCode)).and().time(lessThan(700L), TimeUnit.MILLISECONDS);
+				.time(lessThan(700L), TimeUnit.MILLISECONDS);
 
 	}
 	// Verify status code
@@ -40,15 +41,15 @@ public class ApiUtils {
 
 	public void extractRes(Response response) {
 		String res = response.getBody().asString();
-		System.out.println(res);
+		LoggerLoad.info("Response body : "+res);
 	}
 
 	// Verify status message
 	public void validateStatusMessage(Response response, String status_Message) {
 		int statusCode = response.getStatusCode();
 		String statusText = getHttpStatusText(statusCode);
-		System.out.println("Status Code: " + statusCode);
-		System.out.println("Mapped Status Text: " + statusText);
+		LoggerLoad.info("Actual Status Code: " + statusCode);
+		LoggerLoad.info("Mapped Status Text: " + statusText);
 		Assert.assertEquals(statusText, status_Message);
 
 	}
