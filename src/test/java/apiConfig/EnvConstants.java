@@ -89,5 +89,19 @@ public class EnvConstants {
 			+ "  \"password\" : \"LmsHackathonApi@2023\"}";
 	public static final String Wrongpassword = "LmsHackathonApi@2023";
 	public static final String endPoint_invalidLogin = "invalidlogin";
+	
+	//<=====================================BATCH MODULE=================================================================================>
+
+		public static final String file_Path_CreateBatch = "/Users/prasad/Team2_ChangeMakers_RestAssuredAPI_LMSHackathon/src/test/resources/TestData/TestDataBatch.json";
+		public static final String file_Path_UpdateBatch = "/Users/prasad/Team2_ChangeMakers_RestAssuredAPI_LMSHackathon/src/test/resources/TestData/TestDataBatch.json";
+		public static final String file_Path_DeleteBatch = "/Users/prasad/Team2_ChangeMakers_RestAssuredAPI_LMSHackathon/src/test/resources/TestData/TestDataBatch.json";
+		public static final String file_Path_CreateBatchJsonSchema = "/Users/prasad/Team2_ChangeMakers_RestAssuredAPI_LMSHackathon/src/test/resources/TestData/TestDataBatch.json";
+		public static final String endPoint_CreateBatch = "batches";
+		public static final String endPoint_UpdateBatchByBatchID = " batches/{batchId}";
+		public static final String endPoint_DeleteBatchByBatchID = " /batches/{id}";
+		public static final String endPoint_GetAllBatches = "/batches";
+		public static final String endPoint_GetBatchByBatchID = "/batches/batchId/{batchId}";
+		public static final String endPoint_GetBatchByBatchName = "batches/batchName/{batchName}";
+		public static final String endPoint_GetBatchByProgramID = "/batches/program/{programId}";
 
 }
