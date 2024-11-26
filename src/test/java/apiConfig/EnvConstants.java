@@ -44,4 +44,13 @@ public class EnvConstants {
 	public static final String endPoint_GetClassDetailsStaffID="classesByStaff/"+EnvVariables.staffId;
 	
 	
+	//Adding class constants-SUpriya
+	
+		public static final String endPoint_GetAllclasses="allClasses";
+		public static final String endPoint_GetClassDetailsClassTopic="classes/"+EnvVariables.classTopic;
+		public static final String endPoint_GetClassDetailsClassId="class/"+EnvVariables.csId;
+		public static final String endPoint_DeleteClassDetailsByClassId="deleteByClass/"+EnvVariables.csId;
+		
+		
+	
 }
