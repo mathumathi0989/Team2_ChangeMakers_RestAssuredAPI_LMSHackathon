@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import org.testng.annotations.BeforeMethod;
 
+import apiActions.ProgramActions;
 import apiActions.class1Actions;
 import apiActions.class2Actions;
 //import apiActions.ProgramActions;
@@ -33,7 +34,9 @@ public class class1Steps {
 	private static BaseRequest getProgram;
 	private static BaseRequest getClass1AllClass;
 	private static BaseRequest getClass1DeleteClass;
+	private static BaseRequest addClass1;
 	ApiUtils restUtil = new ApiUtils();
+	class1Actions class1 = new class1Actions();
 	static String requestBody="";
 	private static boolean isAuthTokenGenerated = false;
 	public static String token;
@@ -347,13 +350,52 @@ public void admin_creates_delete_request_without_authorization_with_valid_class_
 }
 @Then("Admin receives {int} Unauthorized Status  for class")
 public void admin_receives_unauthorized_status_for_class(Integer statusCode) {
-    // Write code here that turns the phrase above into concrete actions
-    //throw new io.cucumber.java.PendingException();
 	restUtil.validateStatusCode(response, statusCode);
 }
 
 	   
+@When("Admin creates POST Request with request body for create class")
+public void admin_creates_post_request_with_request_body_for_create_class() {
+	addClass1 = class1Actions.setDetailsToAddClass(addClass1);
+	requestSpecs = addClass1.buildRequest();
+	response = requestSpecs.post(addClass1.getServiceUrl());
+	
+}
 
+
+@When("Admin creates POST Request with request body for mandatory createClass")
+public void admin_creates_post_request_with_request_body_for_mandatory_createclass() {
+	addClass1 = class1Actions.setDetailsToAddClassMandatory(addClass1);
+	requestSpecs = addClass1.buildRequest();
+	response = requestSpecs.post(addClass1.getServiceUrl());
+	
+}
+
+@When("Admin creates POST Request for only addditional field values createClass")
+public void admin_creates_post_request_for_only_additional_field_values_createclass() {
+	addClass1 = class1Actions.setDetailsToAddClassOnlyAdditional(addClass1);
+	requestSpecs = addClass1.buildRequest();
+	response = requestSpecs.post(addClass1.getServiceUrl());
+	
+}
+
+@Then("Admin receive {int} {string} Status for createClass")
+public void admin_receive_status_for_createClass(Integer statusCode, String statusMessage) {
+	restUtil.extractRes(response);
+	class1Actions.setClassID(response);
+	class1Actions.getClassIDOne();
+	class1Actions.setClassTopic(response);
+	class1Actions.getClassTopicOne();
+	restUtil.validateStatusCode(response, statusCode);
+	restUtil.validateStatusMessage(response, statusMessage);
+
+}
+
+
+@Then("Admin receive {int} bad request for createClass")
+public void admin_receive_bad_request_for_createclass(Integer statusCode) {
+	restUtil.validateStatusCode(response, statusCode);
+}
 	
 	
 }

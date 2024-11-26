@@ -93,10 +93,11 @@ public class class2Actions {
 	// GetClassRecordingsbyClassID step definition
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassIDValid(BaseRequest getClass2RecordingsClassID) {
+		 System.out.println("Accessing csId in class2actions: " + EnvVariables.csId);
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID, 0);
+				"classRecordings/"+EnvVariables.csId, 0);
 	}
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassIDInvalidBatchID(
@@ -120,7 +121,7 @@ public class class2Actions {
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID, 0);
+				EnvConstants.endPoint_GetClassRecordingsClassID(), 0);
 	}
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassIDInvalidAuth(
@@ -128,7 +129,7 @@ public class class2Actions {
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get", "",
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID, 0);
+				EnvConstants.endPoint_GetClassRecordingsClassID(), 0);
 	}
 
 	// GetClassRecordingsbyClassID2 step definition
@@ -137,7 +138,7 @@ public class class2Actions {
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID2, 0);
+				EnvConstants.endPoint_GetClassRecordingsClassID2(), 0);
 	}
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassID2InvalidBatchID(
@@ -161,7 +162,7 @@ public class class2Actions {
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID2, 0);
+				EnvConstants.endPoint_GetClassRecordingsClassID2(), 0);
 	}
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassID2InvalidAuth(
@@ -169,7 +170,7 @@ public class class2Actions {
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get", "",
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
-				EnvConstants.endPoint_GetClassRecordingsClassID2, 0);
+				EnvConstants.endPoint_GetClassRecordingsClassID2(), 0);
 	}
 
 	// GetUpcomingClasses step definition
@@ -218,14 +219,14 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDetails");
 		return RequestFactory.createRequest(putClass, EnvConstants.jsonContentType, classDetails,
-				EnvConstants.endPoint_Updateclass, 0);
+				EnvConstants.endPoint_Updateclass(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassWithoutAuth(BaseRequest putClass) {
 		putClass = RequestFactory.setAuthentication(putClass, "put", "", EnvConstants.qaEnvironmentbaseURI);
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassDetails");
 		return RequestFactory.createRequest(putClass, EnvConstants.jsonContentType, classDetails,
-				EnvConstants.endPoint_Updateclass, 0);
+				EnvConstants.endPoint_Updateclass(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassMandatoryValidClassID(BaseRequest putClass) {
@@ -233,7 +234,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMandatoryValidClassID");
 		return RequestFactory.createRequest(putClass, EnvConstants.jsonContentType, classDetails,
-				EnvConstants.endPoint_Updateclass, 0);
+				EnvConstants.endPoint_Updateclass(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassMandatoryInValidClassID(BaseRequest putClass) {
@@ -249,7 +250,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassMissingMandatoryValidClassID");
 		return RequestFactory.createRequest(putClass, EnvConstants.jsonContentType, classDetails,
-				EnvConstants.endPoint_Updateclass, 0);
+				EnvConstants.endPoint_Updateclass(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassInvalidDataValidClassID(BaseRequest putClass) {
@@ -257,7 +258,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassInvalidDataValidClassID");
 		return RequestFactory.createRequest(putClass, EnvConstants.jsonContentType, classDetails,
-				EnvConstants.endPoint_Updateclass, 0);
+				EnvConstants.endPoint_Updateclass(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassInvalidEndpointValidClassID(BaseRequest putClass) {
@@ -289,7 +290,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classRecordingDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassRecording");
 		return RequestFactory.createRequest(putClassRecordings, EnvConstants.jsonContentType, classRecordingDetails,
-				EnvConstants.endPoint_UpdateclassRecording, 0);
+				EnvConstants.endPoint_UpdateclassRecording(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassRecordings(BaseRequest putClassRecordings) {
@@ -297,7 +298,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classRecordingDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassRecording");
 		return RequestFactory.createRequest(putClassRecordings, EnvConstants.jsonContentType, classRecordingDetails,
-				EnvConstants.endPoint_UpdateclassRecording, 0);
+				EnvConstants.endPoint_UpdateclassRecording(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassRecordingsInvalidClassID(BaseRequest putClassRecordings) {
@@ -314,7 +315,7 @@ public class class2Actions {
 		String classRecordingDetails = jsonUtil
 				.run_all_test_scenarios_from_json_data("updateClassRecordingInvalidData");
 		return RequestFactory.createRequest(putClassRecordings, EnvConstants.jsonContentType, classRecordingDetails,
-				EnvConstants.endPoint_UpdateclassRecording, 0);
+				EnvConstants.endPoint_UpdateclassRecording(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassRecordingsInvalidMethod(BaseRequest putClassRecordings) {
@@ -322,7 +323,7 @@ public class class2Actions {
 				EnvConstants.qaEnvironmentbaseURI);
 		String classRecordingDetails = jsonUtil.run_all_test_scenarios_from_json_data("updateClassRecording");
 		return RequestFactory.createRequest(putClassRecordings, EnvConstants.jsonContentType, classRecordingDetails,
-				EnvConstants.endPoint_UpdateclassRecording, 0);
+				EnvConstants.endPoint_UpdateclassRecording(), 0);
 	}
 
 	public static BaseRequest setDetailsToUpdateClassRecordingsInvalidEndpoint(BaseRequest putClassRecordings) {

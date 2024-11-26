@@ -221,5 +221,48 @@
       "creationTime" : "2024-11-23T01:53:45.092+00:00",
       "lastModTime" : "2024-11-23T01:53:46.794+00:00"
     }
-  } ]
+  },
+  {
+    "feature" : "Add class",
+    "scenarioName" : "Check if admin is able to create class with all valid details",
+    "addClassAllDetails" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classDate" : "2024-12-30",
+      "classTopic" : "Mau Jaa top",
+      "classDescription" : "Mathu class description",
+      "classComments" : "Mathu class comments",
+      "classNotes" : "Mathu notes",
+      "classRecordingPath" : "D://Downloads",
+      "classStaffId" : "U49",
+      "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
+    }
+    },
+  {
+    "feature" : "Add class",
+    "scenarioName" : "Check if admin is able to create class with only mandatory",
+    "addClassAllDetailsMandatory" : {
+      "batchId" : "{{batchId}}",
+      "classNo" : "1",
+      "classTopic" : "Mathu Java topics updated",
+      "classDate" : "2024-12-23",
+      "classStaffId" : "U49",
+      "classStatus" : "Active"
+    }
+    },
+  {
+    "feature" : "Add class",
+    "scenarioName" : "Check if admin is able to create class with only additional",
+    "addClassAllDetailsAdditional" : {
+        "classDescription" : "Mathu class description",
+        "classComments" : "Mathu class comments",
+        "classNotes" : "Mathu notes",
+        "classRecordingPath" : "D://Downloads",
+        "classScheduledDates" : [ "2024-11-29T15:11:08.750Z" ]
+    }
+    }
+  
+  
+    ]
 }
+

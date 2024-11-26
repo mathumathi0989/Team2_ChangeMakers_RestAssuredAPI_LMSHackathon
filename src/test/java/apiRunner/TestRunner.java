@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/resources/features",
 			glue = {"stepDefinitions"},
-			//tags="@GetClassDetailsbyStaffId ",
+			//tags= "@createClass",
 			plugin = {"pretty", "html:target/cucumber-Reports.html" , "json:target/cucumber.json",
 					//"junit:target/Cucumber.xml",
 					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",

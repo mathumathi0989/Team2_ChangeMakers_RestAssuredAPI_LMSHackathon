@@ -13,11 +13,12 @@ public class EnvVariables {
 	public static String bugProgramNameOne;
 	
 	public static String batchID = "8594";
-	public static String csId = "176";
 	public static String studentId = "U02";
 	public static String staffId = "U25";
 	
 	
-	public static String classTopic="sql";
+	public static String classTopic;
+	public static int csId;
+	public static int classIDTwo;
 	
 }

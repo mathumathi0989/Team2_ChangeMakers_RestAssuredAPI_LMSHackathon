@@ -5,6 +5,8 @@ import apiConfig.EnvConstants;
 
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
+import generics.ApiUtils;
+import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
 import io.restassured.response.Response;
@@ -16,13 +18,9 @@ import io.restassured.specification.RequestSpecification;
 public class class1Actions {
 	private String loginServiceUrl = EnvConstants.endPoint_Login;
 	private String getclassRecordingBatchIDServiceUrl=EnvConstants.endPoint_GetClassRecordingsBatchID;
-	//private String getclassRecordingsClassid2ServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID1;
-
-	//	private String getUpcomingClassServiceUrl=EnvConstants.endPoint_GetUpcomingclasses;
-	//private String getClassRecordingsClassidServiceUrl = EnvConstants.endPoint_GetClassRecordingsClassID;
 	private String getAllRecordingsServiceUrl = EnvConstants.endPoint_GetAllRecordings;
-	private String updateClassRecordingServiceUrl=EnvConstants.endPoint_UpdateclassRecording;
-	private String updateClass=EnvConstants.endPoint_Updateclass;
+	private String updateClassRecordingServiceUrl=EnvConstants.endPoint_UpdateclassRecording();
+	private String updateClass=EnvConstants.endPoint_Updateclass();
 
 	public static BaseRequest validLogin(BaseRequest login) {
 		login = RequestFactory.setAuthentication(login, "post",EnvConstants.userLoginId,EnvConstants.password, EnvConstants.qaEnvironmentbaseURI);
@@ -54,7 +52,7 @@ public class class1Actions {
 
 	public static BaseRequest setDetailsToReadClass1classDetailsByvalidClassTopic(BaseRequest getClass1AllClasseswithclasstopic) {
 		getClass1AllClasseswithclasstopic = RequestFactory.setAuthentication(getClass1AllClasseswithclasstopic, "get",EnvVariables.token,EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1AllClasseswithclasstopic,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic,0);
+		return RequestFactory.createRequest(getClass1AllClasseswithclasstopic,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic(),0);
 
 	}
 
@@ -75,20 +73,20 @@ public class class1Actions {
 		// TODO Auto-generated method stub
 		//return null;
 		getClass1AllClaseseWithInalidMethodEndpoint = RequestFactory.setAuthentication(getClass1AllClaseseWithInalidMethodEndpoint, "get",EnvVariables.token,EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1AllClaseseWithInalidMethodEndpoint,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic,0);
+		return RequestFactory.createRequest(getClass1AllClaseseWithInalidMethodEndpoint,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic(),0);
 
 	}
 
 	public static BaseRequest setDetailsToReadClass1GetAllClasswithInvalidAuth(BaseRequest getClass1AllClassUnauthorized) {
 		getClass1AllClassUnauthorized = RequestFactory.setAuthentication(getClass1AllClassUnauthorized, "get","",EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1AllClassUnauthorized,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic,0);
+		return RequestFactory.createRequest(getClass1AllClassUnauthorized,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic(),0);
 
 	}
 //get class details by class id
 	public static BaseRequest setDetailsToReadClass1RecordingsByValidClassID(BaseRequest getClass1ClassdetailsWithValidClassID) {
 		
 		getClass1ClassdetailsWithValidClassID = RequestFactory.setAuthentication(getClass1ClassdetailsWithValidClassID, "get",EnvVariables.token,EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1ClassdetailsWithValidClassID,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassId,0);
+		return RequestFactory.createRequest(getClass1ClassdetailsWithValidClassID,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassId(),0);
 
 	}
 
@@ -109,14 +107,14 @@ public class class1Actions {
 	public static BaseRequest setDetailsToCreateClass1ClassdetailsByInvalidMethod(BaseRequest getClass1AllDetailsByInvalidMethod) {
 
 		getClass1AllDetailsByInvalidMethod = RequestFactory.setAuthentication(getClass1AllDetailsByInvalidMethod, "get",EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1AllDetailsByInvalidMethod,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassId,0);	
+		return RequestFactory.createRequest(getClass1AllDetailsByInvalidMethod,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassId(),0);	
 
 	}
 
 	public static BaseRequest setDetailsToReadClass1ForInvalidAuth(BaseRequest getClass1ClasDetailswithoutAuth) {
 
 		getClass1ClasDetailswithoutAuth = RequestFactory.setAuthentication(getClass1ClasDetailswithoutAuth, "get","",EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1ClasDetailswithoutAuth,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic,0);
+		return RequestFactory.createRequest(getClass1ClasDetailswithoutAuth,EnvConstants.jsonContentType,"",EnvConstants.endPoint_GetClassDetailsClassTopic(),0);
 
 	}
 
@@ -124,7 +122,7 @@ public class class1Actions {
 		// TODO Auto-generated method stub
 		//return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete",EnvVariables.token,EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1DeleteClass,EnvConstants.jsonContentType,"",EnvConstants.endPoint_DeleteClassDetailsByClassId,0);
+		return RequestFactory.createRequest(getClass1DeleteClass,EnvConstants.jsonContentType,"",EnvConstants.endPoint_DeleteClassDetailsByClassId(),0);
 	
 		
 		
@@ -151,13 +149,69 @@ public class class1Actions {
 		// TODO Auto-generated method stub
 		//return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete","",EnvConstants.qaEnvironmentbaseURI);
-		return RequestFactory.createRequest(getClass1DeleteClass,EnvConstants.jsonContentType,"",EnvConstants.endPoint_DeleteClassDetailsByClassId,0);
+		return RequestFactory.createRequest(getClass1DeleteClass,EnvConstants.jsonContentType,"",EnvConstants.endPoint_DeleteClassDetailsByClassId(),0);
 		
 	}
 
 
+	public static BaseRequest setDetailsToAddClass(BaseRequest addClass) {
+		addClass = RequestFactory.setAuthentication(addClass, "post", EnvVariables.token,
+				EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("addClassAllDetails");
+		return RequestFactory.createRequest(addClass, EnvConstants.jsonContentType, classDetails,
+				EnvConstants.endPoint_addClass, 0);
+	}
 
-
+	public static BaseRequest setDetailsToAddClassMandatory(BaseRequest addClass) {
+		addClass = RequestFactory.setAuthentication(addClass, "post", EnvVariables.token,
+				EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("addClassAllDetailsMandatory");
+		return RequestFactory.createRequest(addClass, EnvConstants.jsonContentType, classDetails,
+				EnvConstants.endPoint_addClass, 0);
+	}
+	
+	public static BaseRequest setDetailsToAddClassOnlyAdditional(BaseRequest addClass) {
+		addClass = RequestFactory.setAuthentication(addClass, "post", EnvVariables.token,
+				EnvConstants.qaEnvironmentbaseURI);
+		String classDetails = jsonUtil.run_all_test_scenarios_from_json_data("addClassAllDetailsAdditional");
+		return RequestFactory.createRequest(addClass, EnvConstants.jsonContentType, classDetails,
+				EnvConstants.endPoint_addClass, 0);
+	}
+	
+	public static void setClassID(Response response) {
+		String csIdValue = ApiUtils.extractFromResponse(response, "csId");
+		  if (csIdValue != null) {
+		        int classID = Integer.parseInt(csIdValue);
+		        System.out.println("Setting classID in Env Variables: " + classID);
+		        EnvVariables.csId = classID;
+		    } else {
+		        System.out.println("csId is null in response!");
+		    }
+	}
+	
+	public static void setClassTopic(Response response) {
+		String csTopicValue = ApiUtils.extractFromResponse(response, "classTopic");
+		  if (csTopicValue != null) {
+		        System.out.println("Setting ClassTopic in Env Variables: " + csTopicValue);
+		        EnvVariables.classTopic = csTopicValue;
+		    } else {
+		        System.out.println("csTopic is null in response!");
+		    }
+	}
+	
+	
+	public static int getClassIDOne() {
+		int clsID = EnvVariables.csId;
+		System.out.println("Reading classIDOne from env variables : " + clsID);
+		return clsID;
+	}
+	
+	public static String getClassTopicOne() {
+		String clsTopic = EnvVariables.classTopic;
+		System.out.println("Reading classIDOne from env variables : " + clsTopic);
+		return clsTopic;
+	}
+	
 
 
 
