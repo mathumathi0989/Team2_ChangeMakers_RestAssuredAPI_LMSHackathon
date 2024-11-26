@@ -3,6 +3,7 @@ package apiActions;
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
 import generics.ApiUtils;
+import generics.LoggerLoad;
 import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
@@ -107,8 +108,6 @@ public class class1Actions {
 
 	public static BaseRequest setDetailsToReadClass1allclassesByInvalidClassID(
 			BaseRequest getClass1AllclassByInvalidClassid) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1AllclassByInvalidClassid = RequestFactory.setAuthentication(getClass1AllclassByInvalidClassid, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1AllclassByInvalidClassid, EnvConstants.jsonContentType, "",
@@ -117,8 +116,6 @@ public class class1Actions {
 
 	public static BaseRequest setDetailsToReadClass1ByClassIDforInvalidEndpoint(
 			BaseRequest getClass1ClassDetailsByInvalidClassID) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1ClassDetailsByInvalidClassID = RequestFactory.setAuthentication(getClass1ClassDetailsByInvalidClassID,
 				"get", EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1ClassDetailsByInvalidClassID, EnvConstants.jsonContentType, "",
@@ -145,8 +142,6 @@ public class class1Actions {
 	}
 
 	public static BaseRequest setDetailstoDeleteclass(BaseRequest getClass1DeleteClass) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete", EnvVariables.token,
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1DeleteClass, EnvConstants.jsonContentType, "",
@@ -155,8 +150,6 @@ public class class1Actions {
 	}
 
 	public static BaseRequest setDetailstoDeleteclasswithinvalidendpoint(BaseRequest getClass1DeleteClass) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete", EnvVariables.token,
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1DeleteClass, EnvConstants.jsonContentType, "", "class41/10001", 0);
@@ -164,8 +157,6 @@ public class class1Actions {
 	}
 
 	public static BaseRequest setDetailstoDeleteclasswithinvalidclassid(BaseRequest getClass1DeleteClass) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete", EnvVariables.token,
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1DeleteClass, EnvConstants.jsonContentType, "", "class41/10001", 0);
@@ -173,8 +164,6 @@ public class class1Actions {
 	}
 
 	public static BaseRequest setDetailstoDeleteclasswithvalidclassidwithoutauth(BaseRequest getClass1DeleteClass) {
-		// TODO Auto-generated method stub
-		// return null;
 		getClass1DeleteClass = RequestFactory.setAuthentication(getClass1DeleteClass, "delete", "",
 				EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass1DeleteClass, EnvConstants.jsonContentType, "",
@@ -210,32 +199,32 @@ public class class1Actions {
 		String csIdValue = ApiUtils.extractFromResponse(response, "csId");
 		if (csIdValue != null) {
 			int classID = Integer.parseInt(csIdValue);
-			System.out.println("Setting classID in Env Variables: " + classID);
+			LoggerLoad.info("Setting classID in Env Variables: " + classID);
 			EnvVariables.csId = classID;
 		} else {
-			System.out.println("csId is null in response!");
+			LoggerLoad.info("csId is null in response!");
 		}
 	}
 
 	public static void setClassTopic(Response response) {
 		String csTopicValue = ApiUtils.extractFromResponse(response, "classTopic");
 		if (csTopicValue != null) {
-			System.out.println("Setting ClassTopic in Env Variables: " + csTopicValue);
+			LoggerLoad.info("Setting ClassTopic in Env Variables: " + csTopicValue);
 			EnvVariables.classTopic = csTopicValue;
 		} else {
-			System.out.println("csTopic is null in response!");
+			LoggerLoad.info("csTopic is null in response!");
 		}
 	}
 
 	public static int getClassIDOne() {
 		int clsID = EnvVariables.csId;
-		System.out.println("Reading classIDOne from env variables : " + clsID);
+		LoggerLoad.info("Reading classIDOne from env variables : " + clsID);
 		return clsID;
 	}
 
 	public static String getClassTopicOne() {
 		String clsTopic = EnvVariables.classTopic;
-		System.out.println("Reading classIDOne from env variables : " + clsTopic);
+		LoggerLoad.info("Reading classIDOne from env variables : " + clsTopic);
 		return clsTopic;
 	}
 

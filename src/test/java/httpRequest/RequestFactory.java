@@ -1,6 +1,5 @@
 package httpRequest;
 
-import apiConfig.EnvVariables;
 
 //RequestFactory class
 public class RequestFactory {

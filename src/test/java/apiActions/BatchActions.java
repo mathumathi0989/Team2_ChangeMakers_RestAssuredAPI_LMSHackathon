@@ -4,6 +4,7 @@ package apiActions;
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
 import generics.ApiUtils;
+import generics.LoggerLoad;
 import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
@@ -18,9 +19,8 @@ public class BatchActions {
 
 	public void setBatchIDOld(Response response) {
 		String batchID = (ApiUtils.extractFromResponse(response, "batchId"));
-		System.out.println("batchID is " + batchID);
-		System.out.println("Setting batchID in Env Variables");
-		// EnvVariables.batchID = batchID;
+		LoggerLoad.info("batchID is " + batchID);
+		LoggerLoad.info("Setting batchID in Env Variables");
 	}
 
 	/*
@@ -30,24 +30,16 @@ public class BatchActions {
 
 	public void setBatchNameOld(Response response) {
 		String batchName = ApiUtils.extractFromResponse(response, "batchName");
-		System.out.println("batchName is " + batchName);
-		System.out.println("Setting batchName in Env Variables");
+		LoggerLoad.info("batchName is " + batchName);
+		LoggerLoad.info("Setting batchName in Env Variables");
 		EnvVariables.batchName = batchName;
 	}
-
-	/* Get BatchId from envvariables */
-
-	// public String getBatchIDOls() {
-	// String btchID = EnvVariables.batchID;
-	// System.out.println("Reading btchID from env variables : "+btchID);
-	// return btchID;
-	// }
 
 	/* Get BatchName from envvariables */
 
 	public String getBatchNameOlsd() {
 		String btchName = EnvVariables.batchName;
-		System.out.println("Reading btchName from env variables : " + btchName);
+		LoggerLoad.info("Reading btchName from env variables : " + btchName);
 		return btchName;
 	}
 
@@ -144,32 +136,32 @@ public class BatchActions {
 		String batchIdValue = ApiUtils.extractFromResponse(response, "batchId");
 		if (batchIdValue != null) {
 			int batcID = Integer.parseInt(batchIdValue);
-			System.out.println("Setting batchID in Env Variables: " + batcID);
+			LoggerLoad.info("Setting batchID in Env Variables: " + batcID);
 			EnvVariables.batchID = batcID;
 		} else {
-			System.out.println("batchId is null in response!");
+			LoggerLoad.info("batchId is null in response!");
 		}
 	}
 
 	public static void setBatchName(Response response) {
 		String batchNameValue = ApiUtils.extractFromResponse(response, "batchName");
 		if (batchNameValue != null) {
-			System.out.println("Setting batchName in Env Variables: " + batchNameValue);
+			LoggerLoad.info("Setting batchName in Env Variables: " + batchNameValue);
 			EnvVariables.batchName = batchNameValue;
 		} else {
-			System.out.println("batchName is null in response!");
+			LoggerLoad.info("batchName is null in response!");
 		}
 	}
 
 	public static int getBatchIDOne() {
 		int batcID = EnvVariables.batchID;
-		System.out.println("Reading classIDOne from env variables : " + batcID);
+		LoggerLoad.info("Reading classIDOne from env variables : " + batcID);
 		return batcID;
 	}
 
 	public static String getBatchNameOne() {
 		String batchNam = EnvVariables.batchName;
-		System.out.println("Reading classIDOne from env variables : " + batchNam);
+		LoggerLoad.info("Reading classIDOne from env variables : " + batchNam);
 		return batchNam;
 	}
 

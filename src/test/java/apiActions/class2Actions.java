@@ -2,6 +2,7 @@ package apiActions;
 
 import apiConfig.EnvConstants;
 import apiConfig.EnvVariables;
+import generics.LoggerLoad;
 import generics.jsonUtil;
 import httpRequest.BaseRequest;
 import httpRequest.RequestFactory;
@@ -90,7 +91,7 @@ public class class2Actions {
 	// GetClassRecordingsbyClassID step definition
 
 	public static BaseRequest setDetailsToReadClass2RecordingsByClassIDValid(BaseRequest getClass2RecordingsClassID) {
-		System.out.println("Accessing csId in class2actions: " + EnvVariables.csId);
+		LoggerLoad.info("Accessing csId in class2actions: " + EnvVariables.csId);
 		getClass2RecordingsClassID = RequestFactory.setAuthentication(getClass2RecordingsClassID, "get",
 				EnvVariables.token, EnvConstants.qaEnvironmentbaseURI);
 		return RequestFactory.createRequest(getClass2RecordingsClassID, EnvConstants.jsonContentType, "",
