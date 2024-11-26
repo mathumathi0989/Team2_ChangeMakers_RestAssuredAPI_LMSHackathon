@@ -227,6 +227,27 @@ Feature: ProgramModule
     When Admin sends HTTPS DELETE by invalid programID Request with endpoint
     Then Admin receives 404 Not Found Status along with message and boolean success flag details
 
+@invalidPathParameter
+Scenario Outline: Check if Admin able to delete a program with valid LMS API,invalid pathParameter ProgramID
+Given Admin creates DELETE Request for the LMS API endpoint  and  "<invalidPathParameterprogramID>"
+    When Admin sends HTTPS DELETE by invalid programID Request with endpoint
+    Then Admin receives 404 Not Found Status along with message and boolean success flag details
+Examples: 
+| invalidPathParameterprogramID |
+| zero 													|
+| negativeID 										|
+| overFlowInteger								|
+
+Scenario Outline: Check if Admin able to read a program with valid LMS API,invalid pathParameter ProgramID
+Given Admin creates GET Request for the LMS API endpoint  and  "<invalidPathParameterprogramID>"
+    When Admin sends HTTPS GET by invalid programID Request with endpoint
+    Then Admin receives 404 Not Found Status along with message and boolean success flag details
+Examples: 
+| invalidPathParameterprogramID |
+| zero 													|
+| negativeID 										|
+| overFlowInteger								|
+
   #######Invalid baseURI#####################
   @invalidBaseURI
   Scenario: Check if Admin able to retrieve a program by programID with invalid baseURI
